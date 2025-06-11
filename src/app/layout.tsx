@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Christian Garcia's Website",
-  description: "A website designed to highlight the skills, projects, and other achievements at Valparaiso University",
+  title: "Christian Garcia's Portfolio",
+  description: "A website designed to highlight Christian's skills, projects, and more.",
 };
 
 export default function RootLayout({
