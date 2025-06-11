@@ -4,12 +4,14 @@ import christianImage from "../../assets/ChristianGarciaPhoto.jpg";
 import NavBar from "@/components/NavBar";
 import SectionHeader from "@/components/SectionHeader";
 import Image from "next/image";
+import SideBar from "@/components/SideBar";
 
 export default function Home() {
   return (
     <>
       <NavBar/>
       <div className="pt-16">
+        <SideBar />
         <div id="home">
           <SectionHeader title="Home" /> 
           {/*Remove the section header later */}
