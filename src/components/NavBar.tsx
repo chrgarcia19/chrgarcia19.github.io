@@ -14,7 +14,7 @@ const NavBar = () => {
 
     return (
         <>
-            <nav className="flex w-full p-1 items-center justify-between bg-sky-600 overflow-hidden fixed">
+            <nav className="flex w-full p-1 items-center justify-between bg-sky-600 overflow-hidden fixed z-10">
                 <div className="flex justify-start">
                         <NavItem href={"#home"} text={""}/>
                         <div className="flex justify-center items-center gap-2">
