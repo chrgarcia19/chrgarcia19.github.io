@@ -5,7 +5,9 @@ const NavBar = () => {
     const NAV_ITEMS = [
         { text: "Home", href: "" },
         { text: "About", href: "#about" },
+        { text: "Skills", href: "#skills" },
         { text: "Projects", href: "#projects" }, 
+        { text: "Experience", href: "#experience"},
         { text: "Contact", href: "#contact"}
     ]
 
@@ -15,7 +17,7 @@ const NavBar = () => {
                 <div className="flex justify-start">
                     <StyledButton href={""} text={"Christian Garcia"} color={"bg-sky-600"} hoveredColor={"bg-sky-500"} icon={undefined}/>
                 </div>    
-                <div className="flex space-x-32 mr-10">
+                <div className="flex space-x-12 mr-10">
                     {NAV_ITEMS.map((item: any, index: number) => (
                         <StyledButton key={index} href={item.href} text={item.text} color={"bg-sky-600"} hoveredColor={"bg-sky-500"} icon={undefined} />
                     ))}
