@@ -34,10 +34,10 @@ export default function Home() {
           <StyledButton href={""} text={"Download Resume"} color={"bg-sky-600"} hoveredColor={"bg-sky-500"} icon={undefined}/>
         </div>
         <div className="flex gap-4 pt-20">
-            <StyledButton href={"https://www.linkedin.com/in/chrgarcia19/"} text={""} color={"bg-sky-500"} hoveredColor={"bg-sky-600"} icon={<FaLinkedin className="w-7 h-7"/>} />
-            <StyledButton href={"https://profile.indeed.com/p/christiang-mg6ntmr"} text={""} color={"bg-sky-500"} hoveredColor={"bg-sky-600"} icon={<SiIndeed className="w-6 h-6"/>} />
-            <StyledButton href={"https://github.com/chrgarcia19"} text={""} color={"bg-sky-500"} hoveredColor={"bg-sky-600"} icon={<FaGithubSquare className="w-7 h-7"/>} />
-            <StyledButton href={"mailto:christian.garcia@valpo.edu"} text={""} color={"bg-sky-500"} hoveredColor={"bg-sky-600"} icon={<IoIosMail className="w-11 h-11"/>} />
+            <StyledButton href={"https://www.linkedin.com/in/chrgarcia19/"} text={""} color={"bg-sky-500"} hoveredColor={"bg-sky-600"} icon={<FaLinkedin size={36}/>} />
+            <StyledButton href={"https://profile.indeed.com/p/christiang-mg6ntmr"} text={""} color={"bg-sky-500"} hoveredColor={"bg-sky-600"} icon={<SiIndeed size={36}/>} />
+            <StyledButton href={"https://github.com/chrgarcia19"} text={""} color={"bg-sky-500"} hoveredColor={"bg-sky-600"} icon={<FaGithubSquare size={36}/>} />
+            <StyledButton href={"mailto:christian.garcia@valpo.edu"} text={""} color={"bg-sky-500"} hoveredColor={"bg-sky-600"} icon={<IoIosMail size={36}/>} />
         </div>
       </div>
       <div id="about">
