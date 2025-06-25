@@ -44,18 +44,17 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div id="about">
-        <SectionHeader title={"About"} />
-        <div className="flex items-center justify-center p-10">
-          <div className="w-4/5 p-4">
-            <p className="text-xl font-semibold">Hello! My name is Christian Garcia. </p>
+  
+      <div id="about" className="flex items-center justify-center p-5 w-full h-screen">
+        <h2 className="flex items-start justify-start font-bold text-3xl p-6">About Me</h2>
+          <div className="flex w-1/2">
+            <p className="text-xl font-semibold">Hello! I'm Christian,</p>
             <br/>
-            <p>I recently graduated Summa Cum Laude from Valparaiso University with a Bachelor’s of Science in Computer Science and a minor in Mathematics. During my tenure at Valparaiso University, I filled two important positions in regards to the Department of Computing and Information Sciences. I served as the Webmaster and later the President of the Valpo Association for Computing Machinery (ACM). In addition to my duties with ACM, I provided help sessions and tutoring to students as a teaching assistant for two academic years.</p>
-            <br />
-            <p>I am currently seeking full time employment as a software engineer or full stack developer. My versatile skill set will allow me to adapt to whatever set of technologies needed for employment. My passion for creating software gives me the desire to collaborate with a team not only to create a product, but to continuously learn and improve my skills. If you are interested in viewing my work, my GitHub page is linked in the footer of this website.   </p>
-          </div> 
-                
-        </div>
+            <p>An aspiring Software Engineer constructing reliable yet impactful software solutions to provide a functional user experience. With a Bachelor’s of Science in Computer Science, I am enthusiastic about Software Engineering and Full Stack Development. My journey into the Computer Science field initially centered around curiosity. That curiosity has blossomed into a profound passion to learn, design, and collaborate on software that will make a difference. </p>
+          </div>
+          <div className="flex w-1/2">
+
+          </div>               
       </div>
       <div id="projects">
         <SectionHeader title={"Projects"} />
