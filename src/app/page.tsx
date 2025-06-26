@@ -3,7 +3,7 @@ import paintImage from "../../assets/PaintTestImage.png";
 import NavBar from "@/components/NavBar";
 import SectionHeader from "@/components/SectionHeader";
 import Homepage from "./(home)/page";
-import AboutMe from "./#about/page";
+import AboutMe from "./about/page";
 
 export default function Home() {
   return (
