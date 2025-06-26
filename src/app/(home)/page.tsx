@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import StyledButton from "@/components/StyledButton";
 import christianImage from "../../../assets/ChristianGarciaPhoto.jpg";
