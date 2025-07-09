@@ -1,7 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import Image from "next/image";
 import StyledButton from "@/components/StyledButton";
-import christianImage from "../../../assets/ChristianGarciaPhoto.jpg";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { SiIndeed } from "react-icons/si";
 import { IoIosMail } from "react-icons/io";

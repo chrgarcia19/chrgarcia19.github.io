@@ -4,6 +4,7 @@ import NavBar from "@/components/NavBar";
 import SectionHeader from "@/components/SectionHeader";
 import Homepage from "./(home)/page";
 import AboutMe from "./about/page";
+import Skills from "./skills/page";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <NavBar/>
       <Homepage />
       <AboutMe />
+      <Skills />
       <div id="projects">
         <SectionHeader title={"Projects"} />
         <ProjectCard 
