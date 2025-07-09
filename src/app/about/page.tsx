@@ -6,7 +6,7 @@ const AboutMe = () => {
     return (
         <>
             <div id="about" className="p-5 pt-14 w-full h-screen">
-                <h2 className="flex justify-center items-center font-bold text-3xl p-5">About Me</h2>
+                <h2 className="flex justify-center items-center font-bold text-3xl p-10">About Me</h2>
                 <div className="flex items-center justify-center">
                     <div className="flex flex-col items-center justify-normal w-1/2 p-10">
                         <div className="border border-black rounded-3xl overflow-hidden">
@@ -16,10 +16,10 @@ const AboutMe = () => {
                                 width={350} 
                                 />
                         </div>
-                        <div className="justify-center space-y-2 gap-y-4">
+                        <div className="justify-center p-6">
                             <p className="flex text-xl font-semibold justify-center">Hello! I'm Christian,</p>
                             <br/>
-                            <p>An aspiring Software Engineer constructing reliable yet impactful software solutions to provide a functional user experience. With a Bachelor’s of Science in Computer Science, I am enthusiastic about Software Engineering and Full Stack Development. My journey into the Computer Science field initially centered around curiosity. That curiosity has blossomed into a profound passion to learn, design, and collaborate on software that will make a difference. </p>
+                            <p className="pl-4 pr-4 text-center">An aspiring Software Engineer constructing reliable yet impactful software solutions to provide a functional user experience. With a Bachelor’s of Science in Computer Science, I am enthusiastic about Software Engineering and Full Stack Development. My journey into the Computer Science field initially centered around curiosity. That curiosity has blossomed into a profound passion to learn, design, and collaborate on software that will make a difference. </p>
                         </div>
                     </div>
                     <div className="flex flex-col w-1/2 items-center justify-center gap-y-12">
