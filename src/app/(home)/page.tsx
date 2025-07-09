@@ -9,22 +9,13 @@ import { IoIosMail } from "react-icons/io";
 const Homepage = () => {
     return (
         <>
-            <div className="flex pt-14 h-screen w-full">
-                <div className="flex items-center justify-center w-1/4 pl-6">
-                    <div className="border border-black rounded-3xl overflow-hidden">
-                        <Image 
-                        src={christianImage} 
-                        alt={"An Image of Christian"}
-                        width={1800} 
-                        />
-                    </div>
-                </div>
-                <div className="flex flex-col items-center justify-center w-3/4">
+            <div className="flex justify-center items-center pt-14 h-screen w-full">
+                <div className="flex flex-col items-center justify-center">
                     <div className="flex justify-center items-center gap-x-16 p-10">
                         <div className="justify-center space-y-2">
                             <p className="flex font-extrabold text-7xl justify-center">Hi! I'm Christian Garcia</p>
                             <br/>
-                            <p>An aspiring Software Engineer passionate about creating and contributing to software that makes a meaningful impact on users.</p>
+                            <p className="text-2xl">An aspiring Software Engineer passionate about creating and contributing to software that makes a meaningful impact on users.</p>
                         </div>
                     </div>
                     <div className="flex gap-8">
