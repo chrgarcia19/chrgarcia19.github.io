@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import ItemBox from "@/components/ItemBox";
 import christianImage from "../../../assets/ChristianGarciaPhoto.jpg";
 import Image from "next/image";
 
@@ -24,24 +25,24 @@ const AboutMe = () => {
                     </div>
                     <div className="flex flex-col w-1/2 items-center justify-center gap-y-12">
                         <div className="flex text-xl font-semibold justify-center">My Academic & Professional Journey</div>
-                        <div className="bg-cyan-600 p-6 rounded-lg w-3/5 h-auto">
+                        <ItemBox color={"bg-cyan-600"} width={"w-3/5"} boxType={"rounded-lg"} padding={"p-6"} other={"text-center"}>
                             <p className="font-bold text-2xl">Valparaiso University</p>
                             <p className="">Bachelor's of Science in Computer Science</p>
                             <p className="">August 2020 - May 2024</p>
                             <p>Overall GPA: 3.854</p>
-                        </div> 
-                        <div className="bg-cyan-600 p-6 rounded-lg w-3/5 h-auto">
+                        </ItemBox>
+                        <ItemBox color={"bg-cyan-600"} width={"w-3/5"} boxType={"rounded-lg"} padding={"p-6"} other={"text-center"}>
                             <p className="font-bold text-2xl">Association for Computing Machinery (ACM)</p>
                             <p className="">Positions: President, Webmaster</p>
                             <p className="">March 2022 - May 2024</p>
                             <p>Learn More Here: [ADD LINK LATER]</p>
-                        </div> 
-                        <div className="bg-cyan-600 p-6 rounded-lg w-3/5 h-auto">
+                        </ItemBox>
+                        <ItemBox color={"bg-cyan-600"} width={"w-3/5"} boxType={"rounded-lg"} padding={"p-6"} other={"text-center"}>
                             <p className="font-bold text-2xl">New Prairie High School</p>
                             <p className="">High School Diploma with Honors</p>
                             <p className="">August 2016 - May 2020</p>
                             <p>Overall GPA: 3.960</p>
-                        </div> 
+                        </ItemBox>
                     </div>               
                 </div>
             </div>
