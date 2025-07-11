@@ -14,7 +14,7 @@ const DeveloperTools = () => {
                         <SiGithub size={30}/>
                         <p className="font-bold">GitHub</p>
                     </ItemBox>
-                    <ItemBox color={"bg-cyan-400"} width={"w-1/12"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center space-y-2 text-center"}>
+                    <ItemBox color={"bg-cyan-400"} width={"w-auto"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center space-y-2 text-center"}>
                         <SiGnubash size={30}/>
                         <p className="font-bold">Scripting (Shell & Bash)</p>
                     </ItemBox>
@@ -22,7 +22,7 @@ const DeveloperTools = () => {
                         <SiMongoose size={30}/>
                         <p className="font-bold">Mongoose</p>
                     </ItemBox>
-                    <ItemBox color={"bg-cyan-400"} width={"w-1/12"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center space-y-2 text-center"}>
+                    <ItemBox color={"bg-cyan-400"} width={"w-auto"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center space-y-2 text-center"}>
                         <SiApache size={30}/>
                         <p className="font-bold">Apache HTTP Server</p>
                     </ItemBox>

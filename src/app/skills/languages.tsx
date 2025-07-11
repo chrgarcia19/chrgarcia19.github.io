@@ -9,80 +9,116 @@ const ProgrammingLanguages = () => {
     return (
         <>
             <div className="flex flex-col">
-                <div className="flex justify-start p-4 space-x-8">
-                    <ItemBox color={"bg-cyan-400"} width={"w-1/12"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center space-y-2"}>
-                        <SiTypescript size={30}/>
-                        <p className="font-bold">TypeScript</p>
+                <div className="flex justify-start p-2 space-x-6">
+                    <ItemBox color={"bg-cyan-400"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center"}>
+                        <span className="flex space-x-2">
+                            <SiTypescript size={25}/>
+                            <p className="font-bold">TypeScript</p>
+                        </span>
                     </ItemBox>
-                    <ItemBox color={"bg-cyan-400"} width={"w-1/12"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center space-y-2"}>
-                        <SiJavascript size={30}/>
-                        <p className="font-bold">JavaScript</p>
+                    <ItemBox color={"bg-cyan-400"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center"}>
+                        <span className="flex space-x-2">
+                            <SiJavascript size={25}/>
+                            <p className="font-bold">JavaScript</p>
+                        </span>
                     </ItemBox>
-                    <ItemBox color={"bg-cyan-400"} width={"w-1/12"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center space-y-2"}>
-                        <SiHtml5 size={30}/>
-                        <p className="font-bold">HTML5</p>
+                    <ItemBox color={"bg-cyan-400"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center"}>
+                        <span className="flex space-x-2">
+                            <SiHtml5 size={25}/>
+                            <p className="font-bold">HTML5</p>
+                        </span>
                     </ItemBox>
-                    <ItemBox color={"bg-cyan-400"} width={"w-1/12"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center space-y-2"}>
-                        <SiCss3 size={30}/>
-                        <p className="font-bold">CSS3</p>
+                    <ItemBox color={"bg-cyan-400"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center"}>
+                        <span className="flex space-x-2">
+                            <SiCss3 size={25}/>
+                            <p className="font-bold">CSS3</p>
+                        </span>
                     </ItemBox>
-                    <ItemBox color={"bg-cyan-400"} width={"w-1/12"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center space-y-2"}>
-                        <FaJava size={30}/>
-                        <p className="font-bold">Java</p>
+                    <ItemBox color={"bg-cyan-400"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center"}>
+                        <span className="flex space-x-2">
+                            <FaJava size={25}/>
+                            <p className="font-bold">Java</p>
+                        </span>
                     </ItemBox>
-                    <ItemBox color={"bg-cyan-400"} width={"w-1/12"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center space-y-2"}>
-                        <SiPython size={30}/>
-                        <p className="font-bold">Python 3</p>
+                    <ItemBox color={"bg-cyan-400"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center"}>
+                        <span className="flex space-x-2">
+                            <SiPython size={25}/>
+                            <p className="font-bold">Python 3</p>
+                        </span>
                     </ItemBox>
-                    <ItemBox color={"bg-cyan-400"} width={"w-1/12"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center space-y-2"}>
-                        <C size={"30"} />
-                        <p className="font-bold">C</p>
+                    <ItemBox color={"bg-cyan-400"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center"}>
+                        <span className="flex space-x-2">
+                            <C size={"25"} />
+                            <p className="font-bold">C</p>
+                        </span>
                     </ItemBox>
-                    <ItemBox color={"bg-cyan-400"} width={"w-1/12"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center space-y-2"}>
-                        <SiCplusplus size={30}/>
-                        <p className="font-bold">C++</p>
+                    <ItemBox color={"bg-cyan-400"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center"}>
+                        <span className="flex space-x-2">
+                            <SiCplusplus size={25}/>
+                            <p className="font-bold">C++</p>
+                        </span>
                     </ItemBox>
-                    <ItemBox color={"bg-cyan-400"} width={"w-1/12"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center space-y-2"}>
-                        <SiGo size={30}/>
-                        <p className="font-bold">Go/Golang</p>
+                    <ItemBox color={"bg-cyan-400"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center"}>
+                        <span className="flex space-x-2">
+                            <SiGo size={25}/>
+                            <p className="font-bold">Go/Golang</p>
+                        </span>
+                    </ItemBox>
+                    <ItemBox color={"bg-cyan-400"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center"}>
+                        <span className="flex space-x-2">
+                            <SiRuby size={25}/>
+                            <p className="font-bold">Ruby</p>
+                        </span>
+                    </ItemBox>
+                    <ItemBox color={"bg-cyan-400"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center"}>
+                        <span className="flex space-x-2">
+                            <SiSwift size={25}/>
+                            <p className="font-bold">Swift</p>
+                        </span>
+                    </ItemBox>
+                    <ItemBox color={"bg-cyan-400"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center"}>
+                        <span className="flex space-x-2">
+                            <SiPhp size={25}/>
+                            <p className="font-bold">PHP</p>
+                        </span>
                     </ItemBox>
                 </div>
-                <div className="flex justify-start p-3 space-x-8">
-                    <ItemBox color={"bg-cyan-400"} width={"w-1/12"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center space-y-2"}>
-                        <SiRuby size={30}/>
-                        <p className="font-bold">Ruby</p>
+                <div className="flex justify-start p-2 space-x-6">
+                    <ItemBox color={"bg-cyan-400"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center"}>
+                        <span className="flex space-x-2">
+                            <SiScala size={25}/>
+                            <p className="font-bold">Scala</p>
+                        </span>
                     </ItemBox>
-                    <ItemBox color={"bg-cyan-400"} width={"w-1/12"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center space-y-2"}>
-                        <SiSwift size={30}/>
-                        <p className="font-bold">Swift</p>
+                    <ItemBox color={"bg-cyan-400"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center"}>
+                        <span className="flex space-x-2">
+                            <SiR size={25}/>
+                            <p className="font-bold">R</p>
+                        </span>
                     </ItemBox>
-                    <ItemBox color={"bg-cyan-400"} width={"w-1/12"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center space-y-2"}>
-                        <SiPhp size={30}/>
-                        <p className="font-bold">PHP</p>
+                    <ItemBox color={"bg-cyan-400"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center"}>
+                        <span className="flex space-x-2">
+                            <SiRust size={25}/>
+                            <p className="font-bold">Rust</p>
+                        </span>
                     </ItemBox>
-                    <ItemBox color={"bg-cyan-400"} width={"w-1/12"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center space-y-2"}>
-                        <SiScala size={30}/>
-                        <p className="font-bold">Scala</p>
+                    <ItemBox color={"bg-cyan-400"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center"}>
+                        <span className="flex space-x-2">
+                            <SiClojure size={25}/>
+                            <p className="font-bold">Clojure</p>
+                        </span>
                     </ItemBox>
-                    <ItemBox color={"bg-cyan-400"} width={"w-1/12"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center space-y-2"}>
-                        <SiR size={30}/>
-                        <p className="font-bold">R</p>
+                    <ItemBox color={"bg-cyan-400"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center"}>
+                        <span className="flex space-x-2">
+                            <CommonLisp size={"25"} />
+                            <p className="font-bold">Lisp</p>
+                        </span>
                     </ItemBox>
-                    <ItemBox color={"bg-cyan-400"} width={"w-1/12"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center space-y-2"}>
-                        <SiRust size={30}/>
-                        <p className="font-bold">Rust</p>
-                    </ItemBox>
-                    <ItemBox color={"bg-cyan-400"} width={"w-1/12"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center space-y-2"}>
-                        <SiClojure size={30}/>
-                        <p className="font-bold">Clojure</p>
-                    </ItemBox>
-                    <ItemBox color={"bg-cyan-400"} width={"w-1/12"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center space-y-2"}>
-                        <CommonLisp size={"30"} />
-                        <p className="font-bold">Lisp</p>
-                    </ItemBox>
-                    <ItemBox color={"bg-cyan-400"} width={"w-1/12"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center space-y-2"}>
-                        <DiProlog size={30}/>
-                        <p className="font-bold">Prolog</p>
+                    <ItemBox color={"bg-cyan-400"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center"}>
+                        <span className="flex space-x-2">
+                            <DiProlog size={25}/>
+                            <p className="font-bold">Prolog</p>
+                        </span>
                     </ItemBox>
                 </div>
             </div>

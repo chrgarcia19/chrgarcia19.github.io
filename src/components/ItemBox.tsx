@@ -15,7 +15,7 @@ type Props = {
 const ItemBox = (props: Props) => {
     return (
         <>
-            <div className={`${props.color} ${props.padding} ${props.boxType} ${props.width} h-auto ${props.other}`}>
+            <div className={`${props.color} ${props.padding} ${props.boxType} ${props.width} h-fit ${props.other}`}>
                 {props.children}
             </div>
         </>
