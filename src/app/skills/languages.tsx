@@ -1,4 +1,5 @@
 import ItemBox from "@/components/ItemBox";
+import { DiProlog } from "react-icons/di";
 import { FaJava } from "react-icons/fa6";
 import { SiTypescript, SiJavascript, SiHtml5, SiCss3, SiPython, SiCplusplus, SiGo, SiRuby, SiSwift, SiPhp, SiScala, SiR, SiRust, SiClojure } from "react-icons/si";
 
@@ -14,10 +15,6 @@ const ProgrammingLanguages = () => {
                     <ItemBox color={"bg-cyan-400"} width={"w-1/12"} boxType={"rounded-lg"} padding={"p-4"} other={"place-items-center space-y-2"}>
                         <SiJavascript size={30}/>
                         <p className="font-bold">JavaScript</p>
-                    </ItemBox>
-                    <ItemBox color={"bg-cyan-400"} width={"w-1/12"} boxType={"rounded-lg"} padding={"p-4"} other={"place-items-center space-y-2"}>
-                        <SiHtml5 size={30}/>
-                        <p className="font-bold">HTML</p>
                     </ItemBox>
                     <ItemBox color={"bg-cyan-400"} width={"w-1/12"} boxType={"rounded-lg"} padding={"p-4"} other={"place-items-center space-y-2"}>
                         <SiHtml5 size={30}/>
@@ -46,6 +43,8 @@ const ProgrammingLanguages = () => {
                         <SiGo size={30}/>
                         <p className="font-bold">Go/Golang</p>
                     </ItemBox>
+                </div>
+                <div className="flex justify-start p-4 space-x-8">
                     <ItemBox color={"bg-cyan-400"} width={"w-1/12"} boxType={"rounded-lg"} padding={"p-4"} other={"place-items-center space-y-2"}>
                         <SiRuby size={30}/>
                         <p className="font-bold">Ruby</p>
@@ -54,8 +53,6 @@ const ProgrammingLanguages = () => {
                         <SiSwift size={30}/>
                         <p className="font-bold">Swift</p>
                     </ItemBox>
-                </div>
-                <div className="flex justify-start p-4 space-x-8">
                     <ItemBox color={"bg-cyan-400"} width={"w-1/12"} boxType={"rounded-lg"} padding={"p-4"} other={"place-items-center space-y-2"}>
                         <SiPhp size={30}/>
                         <p className="font-bold">PHP</p>
@@ -78,6 +75,10 @@ const ProgrammingLanguages = () => {
                     </ItemBox>
                     <ItemBox color={"bg-cyan-400"} width={"w-1/12"} boxType={"rounded-lg"} padding={"p-4"} other={"place-items-center space-y-2"}>
                         <p className="font-bold">Lisp</p>
+                    </ItemBox>
+                    <ItemBox color={"bg-cyan-400"} width={"w-1/12"} boxType={"rounded-lg"} padding={"p-4"} other={"place-items-center space-y-2"}>
+                        <DiProlog size={30}/>
+                        <p className="font-bold">Prolog</p>
                     </ItemBox>
                 </div>
             </div>
