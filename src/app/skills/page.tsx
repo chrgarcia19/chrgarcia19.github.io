@@ -1,6 +1,7 @@
 import ProgrammingLanguages from "./languages";
 import FrameworksLibraries from "./frameworkslibs";
 import Databases from "./dbs";
+import DeveloperTools from "./devtools";
 
 const Skills = () => {
     return (
@@ -14,6 +15,8 @@ const Skills = () => {
                 <FrameworksLibraries />
                 <h3 className="flex justify-start text-2xl font-bold">Databases</h3>
                 <Databases />
+                <h3 className="flex justify-start text-2xl font-bold">Developer Tools</h3>
+                <DeveloperTools />
             </div>
         </>
     )
