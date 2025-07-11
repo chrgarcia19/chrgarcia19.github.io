@@ -1,4 +1,6 @@
+import C from "@/components/CLogo";
 import ItemBox from "@/components/ItemBox";
+import CommonLisp from "@/components/LispLogo";
 import { DiProlog } from "react-icons/di";
 import { FaJava } from "react-icons/fa6";
 import { SiTypescript, SiJavascript, SiHtml5, SiCss3, SiPython, SiCplusplus, SiGo, SiRuby, SiSwift, SiPhp, SiScala, SiR, SiRust, SiClojure } from "react-icons/si";
@@ -33,6 +35,7 @@ const ProgrammingLanguages = () => {
                         <p className="font-bold">Python 3</p>
                     </ItemBox>
                     <ItemBox color={"bg-cyan-400"} width={"w-1/12"} boxType={"rounded-lg"} padding={"p-4"} other={"place-items-center space-y-2"}>
+                        <C size={"30"} />
                         <p className="font-bold">C</p>
                     </ItemBox>
                     <ItemBox color={"bg-cyan-400"} width={"w-1/12"} boxType={"rounded-lg"} padding={"p-4"} other={"place-items-center space-y-2"}>
@@ -74,6 +77,7 @@ const ProgrammingLanguages = () => {
                         <p className="font-bold">Clojure</p>
                     </ItemBox>
                     <ItemBox color={"bg-cyan-400"} width={"w-1/12"} boxType={"rounded-lg"} padding={"p-4"} other={"place-items-center space-y-2"}>
+                        <CommonLisp size={"30"} />
                         <p className="font-bold">Lisp</p>
                     </ItemBox>
                     <ItemBox color={"bg-cyan-400"} width={"w-1/12"} boxType={"rounded-lg"} padding={"p-4"} other={"place-items-center space-y-2"}>
