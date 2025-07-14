@@ -3,6 +3,7 @@ import FrameworksLibraries from "./frameworkslibs";
 import Databases from "./dbs";
 import DeveloperTools from "./devtools";
 import OperatingSystems from "./os";
+import AdditionalTools from "./moretools";
 
 const Skills = () => {
     return (
@@ -19,6 +20,9 @@ const Skills = () => {
                 <DeveloperTools />
                 <h3 className="flex justify-start text-2xl font-bold">Operating Systems</h3>
                 <OperatingSystems />
+                <h3 className="flex justify-start text-2xl font-bold">Additional Tools</h3>
+                <AdditionalTools />
+                <h3 className="flex justify-start text-2xl font-bold">Concepts</h3>
             </div>
         </>
     )
