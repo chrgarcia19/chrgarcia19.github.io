@@ -64,8 +64,6 @@ const ProgrammingLanguages = () => {
                             <p className="font-bold">Go/Golang</p>
                         </span>
                     </ItemBox>
-                </div>
-                <div className="flex justify-start p-2 space-x-6">
                     <ItemBox color={"bg-cyan-400"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center"}>
                         <span className="flex space-x-2">
                             <SiRuby size={25}/>
@@ -90,6 +88,8 @@ const ProgrammingLanguages = () => {
                             <p className="font-bold">Scala</p>
                         </span>
                     </ItemBox>
+                </div>
+                <div className="flex justify-start p-2 space-x-6">
                     <ItemBox color={"bg-cyan-400"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center"}>
                         <span className="flex space-x-2">
                             <SiR size={25}/>

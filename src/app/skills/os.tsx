@@ -1,33 +1,40 @@
 import ItemBox from "@/components/ItemBox";
-import { SiMongodb, SiMysql, SiNeo4J, SiSqlite } from "react-icons/si";
+import { FaWindows } from "react-icons/fa";
+import { SiApple, SiFedora, SiManjaro, SiUbuntu } from "react-icons/si";
 
-const Databases = () => {
+const OperatingSystems = () => {
     return (
         <>
             <div className="flex flex-col">
                 <div className="flex justify-start p-2 space-x-6">
                     <ItemBox color={"bg-cyan-400"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center"}>
                         <span className="flex space-x-2">
-                            <SiMongodb size={25}/>
-                            <p className="font-bold">MongoDB</p>
+                            <SiManjaro size={25} />                          
+                            <p className="font-bold">Manjaro Linux</p>
                         </span>
                     </ItemBox>
                     <ItemBox color={"bg-cyan-400"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center"}>
                         <span className="flex space-x-2">
-                            <SiMysql size={25}/>
-                            <p className="font-bold">MySQL</p>
+                            <SiUbuntu size={25} />
+                            <p className="font-bold">Ubuntu Linux</p>
                         </span>
                     </ItemBox>
                     <ItemBox color={"bg-cyan-400"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center"}>
                         <span className="flex space-x-2">
-                            <SiSqlite size={25}/>
-                            <p className="font-bold">SQLite</p>
+                            <FaWindows size={25} />
+                            <p className="font-bold">Windows</p>
                         </span>
                     </ItemBox>
                     <ItemBox color={"bg-cyan-400"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center"}>
                         <span className="flex space-x-2">
-                            <SiNeo4J size={25}/>
-                            <p className="font-bold">Neo4J</p>
+                            <SiFedora size={25} />
+                            <p className="font-bold">Fedora Linux</p>
+                        </span>
+                    </ItemBox>
+                    <ItemBox color={"bg-cyan-400"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center"}>
+                        <span className="flex space-x-2">
+                            <SiApple size={25} />
+                            <p className="font-bold">macOS</p>
                         </span>
                     </ItemBox>
                 </div>
@@ -36,4 +43,4 @@ const Databases = () => {
     );
 }
 
-export default Databases;
+export default OperatingSystems;
