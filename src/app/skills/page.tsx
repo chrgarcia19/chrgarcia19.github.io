@@ -4,11 +4,12 @@ import Databases from "./dbs";
 import DeveloperTools from "./devtools";
 import OperatingSystems from "./os";
 import AdditionalTools from "./moretools";
+import Concepts from "./concepts";
 
 const Skills = () => {
     return (
         <>
-            <div id="skills" className="flex flex-col pt-14 pl-14 pr-14 h-screen w-full">
+            <div id="skills" className="flex flex-col pt-10 pl-14 pr-14 h-screen w-full">
                 <h2 className="flex justify-center items-center font-bold text-3xl p-10">My Techical Skills</h2>
                 <h3 className="flex justify-start text-2xl font-bold">Programming Languages</h3>
                 <ProgrammingLanguages />
@@ -23,6 +24,7 @@ const Skills = () => {
                 <h3 className="flex justify-start text-2xl font-bold">Additional Tools</h3>
                 <AdditionalTools />
                 <h3 className="flex justify-start text-2xl font-bold">Concepts</h3>
+                <Concepts />
             </div>
         </>
     )
