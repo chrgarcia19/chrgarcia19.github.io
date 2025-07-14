@@ -6,33 +6,33 @@ const Projects = () => {
         <>
             <div id="projects" className="flex flex-col p-5 pt-14 w-full h-screen gap-6">
                 <h2 className="flex justify-center items-center font-bold text-3xl p-10">Projects</h2>
-                <div className="flex flex-row gap-12">
+                <div className="flex flex-row gap-12 justify-center">
                     <ProjectCard 
                         name={"Paint"}
-                        description={"This project required me to create my own representation of a drawing and editing application with similar capabilities to Microsoft Paint using Java and JavaFX."}
+                        description={"A simplified drawing app modeled after Microsoft Paint, built under tight weekly deadlines with a predefined feature set. Focused on usability, responsiveness, and efficient time management."}
                         tools={["Java", "JavaFX", "Unit Testing", "Netbeans", "IntelliJ", "JUnit", "Javadoc", "GitHub"]}
                         image={paintImage} imageAlt={"A Screenshot from Christian's Paint project"}
                         link={"https://github.com/chrgarcia19/Paint-n-Suffering"} 
                         concepts={["Agile Method of Software Development", "Unified Modeling Language (UML)"]} />
                     <ProjectCard 
                         name={"Driving Time Tracker"}
-                        description={""}
+                        description={"Developed a mobile app with a team of three to monitor driving hours for learner drivers in Indiana. Transformed client requirements into practical features, ensuring the app met user needs."}
                         tools={["Swift", "SwiftUI", "GitHub"]}
                         image={paintImage} imageAlt={"A Screenshot from the Driving Time Tracker project"}
                         link={"https://github.com/chrgarcia19/Paint-n-Suffering"} 
                         concepts={["Agile Method of Software Development", "Unified Modeling Language (UML)"]} />
                 </div>
-                <div className="flex flex-row gap-12">
+                <div className="flex flex-row gap-12 justify-center">
                     <ProjectCard 
                         name={"Cash Money Citations"}
-                        description={""}
+                        description={"Collaborated with a team of four to build a web app for managing citation data and bibliographies. Took a lead role in client communication, feature planning, and UI design, while contributing to the development and maintenance of the web server."}
                         tools={["TypeScript", "JavaScript", "Visual Studio Code", "Git", "GitHub", "MongoDB", "Apache HTTP Server", "Ubuntu Linux"]}
                         image={paintImage} imageAlt={"A Screenshot from Cash Money Citations"}
                         link={"https://github.com/chrgarcia19/Paint-n-Suffering"} 
                         concepts={["Agile Method of Software Development"]} />
                     <ProjectCard 
                         name={"Wordle Assistant (Command Line)"}
-                        description={""}
+                        description={"Created a command-line tool to assist Wordle players by suggesting potential guesses based on user input and letter status. Designed to enhance gameplay strategy for daily puzzles."}
                         tools={["Python", "Git", "GitHub"]}
                         image={paintImage} imageAlt={"A Screenshot from the Driving Time Tracker project"}
                         link={"https://github.com/chrgarcia19/Paint-n-Suffering"} 
