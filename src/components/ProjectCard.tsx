@@ -25,7 +25,7 @@ const ProjectCard = (props: Props) => {
                     <p className="font-bold underline">Technologies Used:</p>
                     <div className="flex flex-wrap gap-3">
                         {props.tools.map((tool: String, index: number) => (
-                        <p key={index} className="rounded-full bg-green-400 px-3 shadow-md">
+                        <p key={index} className="rounded-full bg-green-400 px-3 shadow-md text-sm">
                             {tool}
                         </p>
                         ))}
@@ -36,7 +36,7 @@ const ProjectCard = (props: Props) => {
                     <p className="font-bold underline">Concepts Used:</p>
                     <div className="flex flex-wrap gap-3">
                         {props.concepts.map((concept: String, index: number) => (
-                        <p key={index} className="rounded-full bg-green-400 px-3 shadow-md">
+                        <p key={index} className="rounded-full bg-green-400 px-3 shadow-md text-sm">
                             {concept}
                         </p>
                         ))}

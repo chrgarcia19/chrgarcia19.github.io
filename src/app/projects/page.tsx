@@ -7,7 +7,7 @@ import waImage from "@/../assets/WordleAssistantCMD.png";
 const Projects = () => {
     return (
         <>
-            <div id="projects" className="flex flex-col p-5 pt-14 w-full h-screen gap-6">
+            <div id="projects" className="flex flex-col flex-grow p-5 pt-14 w-full gap-6">
                 <h2 className="flex justify-center items-center font-bold text-3xl p-4">Projects</h2>
                 <div className="flex flex-row gap-12 justify-center">
                     <ProjectCard 
