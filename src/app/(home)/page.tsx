@@ -3,6 +3,7 @@ import StyledButton from "@/components/StyledButton";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { SiIndeed } from "react-icons/si";
 import { IoIosMail } from "react-icons/io";
+import DownloadButton from "@/components/DownloadButton";
 
 const Homepage = () => {
     return (
@@ -18,7 +19,7 @@ const Homepage = () => {
                     </div>
                     <div className="flex gap-8">
                         <StyledButton href={"#projects"} text={"View Projects"} color={"bg-sky-600"} hoveredColor={"bg-sky-500"} icon={undefined}/>
-                        <StyledButton href={""} text={"Download Resume"} color={"bg-sky-600"} hoveredColor={"bg-sky-500"} icon={undefined}/>
+                        <DownloadButton />
                     </div>
                     <div className="flex gap-4 pt-12">
                         <StyledButton href={"https://www.linkedin.com/in/chrgarcia19/"} text={""} color={"bg-sky-500"} hoveredColor={"bg-sky-600"} icon={<FaLinkedin size={36}/>} />

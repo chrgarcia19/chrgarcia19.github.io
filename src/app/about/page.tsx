@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import ItemBox from "@/components/ItemBox";
-import christianImage from "../../../assets/ChristianGarciaPhoto.jpg";
+import christianImage from "@/../public/ChristianGarciaPhoto.jpg";
 import Image from "next/image";
 
 const AboutMe = () => {

@@ -1,8 +1,8 @@
 import ProjectCard from "@/components/ProjectCard";
-import paintImage from "@/../assets/PaintTestImage.png";
-import dttImage from "@/../assets/DrivingTimeTrackerCollage.png";
-import cmcImage from "@/../assets/CashMoneyCitationsImage.png";
-import waImage from "@/../assets/WordleAssistantCMD.png";
+import paintImage from "@/../public/PaintTestImage.png";
+import dttImage from "@/../public/DrivingTimeTrackerCollage.png";
+import cmcImage from "@/../public/CashMoneyCitationsImage.png";
+import waImage from "@/../public/WordleAssistantCMD.png";
 
 const Projects = () => {
     return (
