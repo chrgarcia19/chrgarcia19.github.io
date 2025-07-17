@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from "react";
+import toast from "react-hot-toast";
 
 export default function DownloadButton() {
 
@@ -8,13 +9,7 @@ export default function DownloadButton() {
     const itemEntered = () => setIsHovered(true);
     const itemExited = () => setIsHovered(false);
 
-    const [download, setDownload] = useState(false);
-    const [loading, setLoading] = useState(false);
-    const [error, setError] = useState('');
-
     const handleDownload = async () => {
-        setLoading(true);
-        setError('');
 
         try {
             const response = await fetch("ChristianGarciaResume.pdf");      
@@ -33,20 +28,20 @@ export default function DownloadButton() {
             link.click();
 
             link.remove();
-            window.URL.revokeObjectURL(url);        
+            window.URL.revokeObjectURL(url);   
+        
+            toast.success("Download Successful!");
         } catch (error) {
             console.error("Error downloading file!: ", error);
-            setError("Could not download file!");
+            toast.error("Download Failed!");
         }
     }
-
-    //{error && <p className="text-red-500 text-sm">{error}</p>}
 
     return (
         <>
             <button onClick={handleDownload} onMouseEnter={itemEntered} onMouseLeave={itemExited}
                     className={`text-lg font-semibold shadow-sm rounded-full ease-in-out text-white inline-block px-6 py-1 hover:text-gray-200 bg-sky-600 ${isHovered ? "bg-sky-500 font-bold text-xl shadow-xl" : ''}`}>
-                    Download Resume
+                    Download Résumé
             </button>
         </>
     );
