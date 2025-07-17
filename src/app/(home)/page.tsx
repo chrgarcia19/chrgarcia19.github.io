@@ -18,14 +18,14 @@ const Homepage = () => {
                         </div>
                     </div>
                     <div className="flex gap-8">
-                        <StyledButton href={"#projects"} text={"View Projects"} color={"bg-sky-600"} hoveredColor={"bg-sky-500"} icon={undefined}/>
+                        <StyledButton href={"#projects"} text={"View Projects"} color={"bg-sky-600"} hoveredColor={"bg-sky-500"} icon={undefined} other={undefined}/>
                         <DownloadButton />
                     </div>
                     <div className="flex gap-4 pt-12">
-                        <StyledButton href={"https://www.linkedin.com/in/chrgarcia19/"} text={""} color={"bg-sky-500"} hoveredColor={"bg-sky-600"} icon={<FaLinkedin size={36}/>} />
-                        <StyledButton href={"https://profile.indeed.com/p/christiang-mg6ntmr"} text={""} color={"bg-sky-500"} hoveredColor={"bg-sky-600"} icon={<SiIndeed size={36}/>} />
-                        <StyledButton href={"https://github.com/chrgarcia19"} text={""} color={"bg-sky-500"} hoveredColor={"bg-sky-600"} icon={<FaGithubSquare size={36}/>} />
-                        <StyledButton href={"mailto:christian.garcia@valpo.edu"} text={""} color={"bg-sky-500"} hoveredColor={"bg-sky-600"} icon={<IoIosMail size={36}/>} />
+                        <StyledButton href={"https://www.linkedin.com/in/chrgarcia19/"} text={""} color={"bg-sky-500"} hoveredColor={"bg-sky-600"} icon={<FaLinkedin size={36} />} other={undefined} />
+                        <StyledButton href={"https://profile.indeed.com/p/christiang-mg6ntmr"} text={""} color={"bg-sky-500"} hoveredColor={"bg-sky-600"} icon={<SiIndeed size={36} />} other={undefined} />
+                        <StyledButton href={"https://github.com/chrgarcia19"} text={""} color={"bg-sky-500"} hoveredColor={"bg-sky-600"} icon={<FaGithubSquare size={36} />} other={undefined} />
+                        <StyledButton href={"mailto:christian.garcia@valpo.edu"} text={""} color={"bg-sky-500"} hoveredColor={"bg-sky-600"} icon={<IoIosMail size={36} />} other={undefined} />
                     </div>
                 </div>
             </div>

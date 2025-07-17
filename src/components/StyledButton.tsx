@@ -5,10 +5,11 @@ import { ReactNode, useState } from "react";
 
 type Props = {
     href: string;
-    text: string;
+    text: string | undefined;
     color: string;
     hoveredColor: string;
-    icon: ReactNode; // The React Icon that will act as the button
+    icon: ReactNode | undefined; // The React Icon that will act as the button 
+    other: string | undefined; //Other CSS styling
 }
 
 const StyledButton = (props: Props) => {
@@ -23,7 +24,7 @@ const StyledButton = (props: Props) => {
                 onMouseEnter={itemEntered} 
                 onMouseLeave={itemExited}
                 href={props.href}  
-                className={`${props.color} text-lg font-semibold shadow-sm rounded-full ease-in-out text-white inline-block px-6 py-1 hover:text-gray-200 ${isHovered ? `${props.hoveredColor} font-bold text-xl shadow-xl` : ''}`}>
+                className={`${props.color} text-lg font-semibold shadow-sm rounded-full ease-in-out text-white inline-block px-6 py-1 hover:text-gray-200 ${isHovered ? `${props.hoveredColor} font-bold text-xl shadow-xl` : ''} ${props.other}`}>
                     {props.text}
             </Link>
         ) || (
@@ -31,7 +32,7 @@ const StyledButton = (props: Props) => {
                 onMouseEnter={itemEntered} 
                 onMouseLeave={itemExited}
                 href={props.href}  
-                className={`${props.color} flex justify-center items-center shadow-sm rounded-3xl px-4 py-1 ease-in-out text-white ${isHovered ? `${props.hoveredColor} shadow-xl` : ''}`}>
+                className={`${props.color} flex justify-center items-center shadow-sm rounded-3xl px-4 py-1 ease-in-out text-white ${isHovered ? `${props.hoveredColor} shadow-xl` : ''} ${props.other}`}>
                     {props.icon}
             </Link>
         )}
