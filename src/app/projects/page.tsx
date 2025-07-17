@@ -18,7 +18,7 @@ const Projects = () => {
                         link={"https://github.com/chrgarcia19/Paint-n-Suffering"} />
                     <ProjectCard 
                         name={"Driving Time Tracker"}
-                        description={"Developed a mobile app with a team of three to monitor driving hours for learner drivers in Indiana. Transformed client requirements into practical features, ensuring the app met user needs."}
+                        description={"Developed a mobile app with a team of three to monitor driving hours for residents learning to drive in Indiana. Transformed client requirements into practical features, ensuring the app met user needs."}
                         skills={["Swift", "SwiftUI", "GitHub", "Agile Method of Software Development", "Unified Modeling Language (UML)"]}
                         image={dttImage} imageAlt={"A Screenshot from the Driving Time Tracker"}
                         link={"https://github.com/chrgarcia19/Paint-n-Suffering"} />
@@ -26,7 +26,7 @@ const Projects = () => {
                 <div className="flex flex-row gap-12 justify-center">
                     <ProjectCard 
                         name={"Cash Money Citations"}
-                        description={"Collaborated with a team of four to build a web app for managing citation data and bibliographies. Took a lead role in client communication, feature planning, and UI design, while contributing to the development and maintenance of the web server."}
+                        description={"Collaborated with a team of four to build a web app for managing citation data and bibliographies. Took a lead role in client communication, feature planning, and UI design, while contributing to development and maintenance of the web server."}
                         skills={["TypeScript", "JavaScript", "Visual Studio Code", "Git", "GitHub", "MongoDB", "Apache HTTP Server", "Ubuntu Linux", "Agile Method of Software Development"]}
                         image={cmcImage} imageAlt={"A Screenshot from Cash Money Citations"}
                         link={"https://github.com/chrgarcia19/Paint-n-Suffering"} />
