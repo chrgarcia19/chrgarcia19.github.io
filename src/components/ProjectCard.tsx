@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import StyledButton from "./StyledButton";
+import { SiGithub } from "react-icons/si";
 
 type Props = {
     link: string; // The url for the project page
@@ -31,7 +32,7 @@ const ProjectCard = (props: Props) => {
                     </div>
                     </span>
                     <div className="flex p-2">
-                        <StyledButton href={props.link} text={"View Project"} color={"bg-green-500"} hoveredColor={"bg-green-200"} icon={undefined} other={"w-full text-center"} />
+                        <StyledButton href={props.link} text={"GitHub"} color={"bg-green-500"} hoveredColor={"bg-green-200"} icon={<SiGithub />} other={"w-full text-center"} />
                     </div>
                 </div>
             </div>

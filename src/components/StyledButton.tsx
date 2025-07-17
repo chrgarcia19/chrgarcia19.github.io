@@ -27,13 +27,24 @@ const StyledButton = (props: Props) => {
                 className={`${props.color} text-lg font-semibold shadow-sm rounded-full ease-in-out text-white inline-block px-6 py-1 hover:text-gray-200 ${isHovered ? `${props.hoveredColor} font-bold text-xl shadow-xl` : ''} ${props.other}`}>
                     {props.text}
             </Link>
-        ) || (
+        ) || props.text === undefined && (
             <Link 
                 onMouseEnter={itemEntered} 
                 onMouseLeave={itemExited}
                 href={props.href}  
                 className={`${props.color} flex justify-center items-center shadow-sm rounded-3xl px-4 py-1 ease-in-out text-white ${isHovered ? `${props.hoveredColor} shadow-xl` : ''} ${props.other}`}>
                     {props.icon}
+            </Link>
+        ) || (
+            <Link 
+                onMouseEnter={itemEntered} 
+                onMouseLeave={itemExited}
+                href={props.href}  
+                className={`${props.color} text-lg font-semibold shadow-sm rounded-full ease-in-out text-white px-6 py-1 hover:text-gray-200 ${isHovered ? `${props.hoveredColor} font-bold text-xl shadow-xl` : ''} ${props.other}`}>
+                    <div className="flex flex-row items-center justify-center gap-1">
+                        {props.icon} {props.text}
+                    </div>
+                    
             </Link>
         )}
             
