@@ -3,13 +3,14 @@ import paintImage from "@/../public/PaintTestImage.png";
 import dttImage from "@/../public/DrivingTimeTrackerCollage.png";
 import cmcImage from "@/../public/CashMoneyCitationsImage.png";
 import waImage from "@/../public/WordleAssistantCMD.png";
+import portfolioImage from "@/../public/Portfolio.png";
 
 const Projects = () => {
     return (
         <>
             <div id="projects" className="flex flex-col flex-grow p-5 pt-14 w-full gap-8 bg-zinc-300">
                 <h2 className="flex justify-center items-center font-bold text-3xl p-4">Projects</h2>
-                <div className="flex flex-row gap-12 justify-center">
+                <div className="flex flex-row flex-wrap gap-12 justify-center">
                     <ProjectCard 
                         name={"Paint"}
                         description={"A simplified drawing app modeled after Microsoft Paint, built under tight weekly deadlines with a predefined feature set. Focused on usability, responsiveness, and efficient time management."}
@@ -24,8 +25,6 @@ const Projects = () => {
                         image={dttImage} imageAlt={"A Screenshot from the Driving Time Tracker"}
                         link={"https://github.com/chrgarcia19/Paint-n-Suffering"} 
                         status={true} />
-                </div>
-                <div className="flex flex-row gap-12 justify-center">
                     <ProjectCard 
                         name={"Cash Money Citations"}
                         description={"Collaborated with a team of four to build a web app for managing citation data and bibliographies. Took a lead role in client communication, feature planning, and UI design, while contributing to development and maintenance of the web server."}
@@ -33,6 +32,13 @@ const Projects = () => {
                         image={cmcImage} imageAlt={"A Screenshot from Cash Money Citations"}
                         link={"https://github.com/chrgarcia19/Paint-n-Suffering"} 
                         status={true} />
+                    <ProjectCard 
+                        name={"Christian's Portfolio Website"}
+                        description={"A personal portfolio highlighting my academic and professional journey, ongoing and completed projects, and technical skills. Designed to be clean, organized, and easy to navigate as a central hub for my work and growth as a developer."}
+                        skills={["Next.js", "React", "TypeScript", "TailwindCSS", "Git", "GitHub"]}
+                        image={portfolioImage} imageAlt={"A Screenshot from Christian's Portfolio Website"}
+                        link={"https://github.com/chrgarcia19/christian-garcia.github.io"} 
+                        status={false} />
                     <ProjectCard 
                         name={"Wordle Assistant (Command Line)"}
                         description={"Created a command-line tool to assist Wordle players by suggesting potential guesses based on user input and letter status. Designed to enhance gameplay strategy for daily puzzles."}
