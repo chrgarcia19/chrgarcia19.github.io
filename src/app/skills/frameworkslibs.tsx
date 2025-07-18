@@ -1,6 +1,6 @@
 import ItemBox from "@/components/ItemBox";
 import { FaJava } from "react-icons/fa";
-import { SiJunit5, SiNextdotjs, SiNextui, SiReact, SiRubyonrails, SiSwift } from "react-icons/si";
+import { SiJunit5, SiNextdotjs, SiNextui, SiReact, SiRubyonrails, SiSwift, SiTailwindcss } from "react-icons/si";
 
 const FrameworksLibraries = () => {
     return (
@@ -17,6 +17,12 @@ const FrameworksLibraries = () => {
                         <span className="flex space-x-2">
                             <SiReact size={25}/>
                             <p className="font-bold">React</p>
+                        </span>
+                    </ItemBox>
+                    <ItemBox color={"bg-cyan-400"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center"} hoveredColor={"bg-cyan-500"}>
+                        <span className="flex space-x-2">
+                            <SiTailwindcss size={25}/>
+                            <p className="font-bold">TailwindCSS</p>
                         </span>
                     </ItemBox>
                     <ItemBox color={"bg-cyan-400"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center"} hoveredColor={"bg-cyan-500"}>
