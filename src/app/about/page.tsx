@@ -25,7 +25,7 @@ const AboutMe = () => {
                     </div>
                     <div className="flex flex-col w-1/2 items-center justify-center gap-y-12">
                         <div className="flex text-xl font-semibold justify-center">My Academic & Professional Journey</div>
-                        <ItemBox color={"bg-cyan-600"} width={"w-4/6"} boxType={"rounded-lg"} padding={"p-6"} other={"text-center"} hoveredColor={undefined}>
+                        <ItemBox color={"bg-cyan-600"} width={"w-4/6"} boxType={"rounded-lg"} padding={"p-6"} other={"text-center"} hoveredColor={"shadow-slate-500"}>
                             <p className="font-bold text-2xl">Valparaiso University</p>
                             <p className="">Bachelor's of Science in Computer Science</p>
                             <p className="">August 2020 - May 2024</p>
@@ -37,13 +37,13 @@ const AboutMe = () => {
                             </span>
                             
                         </ItemBox>
-                        <ItemBox color={"bg-cyan-600"} width={"w-4/6"} boxType={"rounded-lg"} padding={"p-6"} other={"text-center"} hoveredColor={undefined}>
+                        <ItemBox color={"bg-cyan-600"} width={"w-4/6"} boxType={"rounded-lg"} padding={"p-6"} other={"text-center"} hoveredColor={"shadow-slate-500"}>
                             <p className="font-bold text-2xl">Association for Computing Machinery (ACM)</p>
                             <p className="">Positions: President, Webmaster</p>
                             <p className="">March 2022 - May 2024</p>
                             <p>Managed ACM’s website and coordinated diverse events, including professional development workshops and campus activities. Initiated and led a speaker series exploring computing’s role across disciplines.</p>
                         </ItemBox>
-                        <ItemBox color={"bg-cyan-600"} width={"w-4/6"} boxType={"rounded-lg"} padding={"p-6"} other={"text-center"} hoveredColor={undefined}>
+                        <ItemBox color={"bg-cyan-600"} width={"w-4/6"} boxType={"rounded-lg"} padding={"p-6"} other={"text-center"} hoveredColor={"shadow-slate-500"}>
                             <p className="font-bold text-2xl">New Prairie High School</p>
                             <p className="">High School Diploma with Honors</p>
                             <p className="">August 2016 - May 2020</p>
