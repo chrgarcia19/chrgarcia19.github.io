@@ -4,6 +4,7 @@ import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { SiIndeed } from "react-icons/si";
 import { IoIosMail } from "react-icons/io";
 import DownloadButton from "@/components/DownloadButton";
+import HomeText from "@/components/HomeText";
 
 const Homepage = () => {
     return (
@@ -12,9 +13,10 @@ const Homepage = () => {
                 <div className="flex flex-col items-center justify-center">
                     <div className="flex justify-center items-center gap-x-16 p-10">
                         <div className="justify-center space-y-2">
-                            <p className="flex font-extrabold text-7xl justify-center">Hi! I'm Christian Garcia</p>
+                            <p className="flex justify-center text-3xl font-semibold">Hi! I am</p>
+                            <p className="flex font-extrabold text-7xl justify-center text-blue-950">Christian Garcia</p>
                             <br/>
-                            <p className="text-2xl">An aspiring Software Engineer passionate about creating and contributing to software that makes a meaningful impact on users.</p>
+                            <HomeText />
                         </div>
                     </div>
                     <div className="flex gap-8">
