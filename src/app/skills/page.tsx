@@ -10,7 +10,7 @@ const Skills = () => {
     return (
         <>
             <div id="skills" className="flex flex-col pt-10 pl-14 pr-14 h-screen w-full bg-zinc-300">
-                <h2 className="flex justify-center items-center font-bold text-3xl p-10">My Techical Skills</h2>
+                <h2 className="flex justify-center items-center font-bold text-5xl text-blue-950 p-10">My Techical Skills</h2>
                 <h3 className="flex justify-start text-2xl font-bold">Programming Languages</h3>
                 <ProgrammingLanguages />
                 <h3 className="flex justify-start text-2xl font-bold">Frameworks & Libraries</h3>
