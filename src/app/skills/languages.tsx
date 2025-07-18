@@ -9,7 +9,7 @@ const ProgrammingLanguages = () => {
     return (
         <>
             <div className="flex flex-col">
-                <div className="flex justify-start p-2 space-x-6">
+                <div className="flex flex-wrap justify-start p-2 gap-5 text-center">
                     <ItemBox color={"bg-cyan-400"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center"} hoveredColor={"bg-cyan-500"}>
                         <span className="flex space-x-2">
                             <SiTypescript className="" size={25}/>
@@ -88,8 +88,6 @@ const ProgrammingLanguages = () => {
                             <p className="font-bold">Scala</p>
                         </span>
                     </ItemBox>
-                </div>
-                <div className="flex justify-start p-2 space-x-6">
                     <ItemBox color={"bg-cyan-400"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center"} hoveredColor={"bg-cyan-500"}>
                         <span className="flex space-x-2">
                             <SiR size={25}/>

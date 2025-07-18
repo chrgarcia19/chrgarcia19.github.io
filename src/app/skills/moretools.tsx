@@ -5,7 +5,7 @@ const AdditionalTools = () => {
     return (
         <>
             <div className="flex flex-col">
-                <div className="flex justify-start p-2 space-x-6">
+                <div className="flex justify-start p-2 gap-5 text-center">
                     <ItemBox color={"bg-cyan-400"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center"} hoveredColor={"bg-cyan-500"}>
                         <span className="flex space-x-2">
                             <SiLatex size={25} />                          
@@ -37,7 +37,7 @@ const AdditionalTools = () => {
                     <ItemBox color={"bg-cyan-400"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center"} hoveredColor={"bg-cyan-500"}>
                         <span className="flex space-x-2">    
                             <SiAnsible size={25}/>                  
-                            <p className="font-bold">Wireshark</p>
+                            <p className="font-bold">Ansible</p>
                         </span>
                     </ItemBox>
                 </div>

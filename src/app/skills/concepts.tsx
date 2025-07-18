@@ -4,7 +4,7 @@ const Concepts = () => {
     return (
         <>
             <div className="flex flex-col">
-                <div className="flex justify-start p-2 space-x-6">
+                <div className="flex justify-start p-2 gap-5 text-center">
                     <ItemBox color={"bg-cyan-400"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center"} hoveredColor={"bg-cyan-500"}>                      
                             <p className="font-bold">Software Development Life Cycle (SDLC)</p>
                     </ItemBox>
@@ -19,6 +19,9 @@ const Concepts = () => {
                     </ItemBox>
                     <ItemBox color={"bg-cyan-400"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center"} hoveredColor={"bg-cyan-500"}>                      
                             <p className="font-bold">Unified Modeling Language (UML)</p>
+                    </ItemBox>
+                    <ItemBox color={"bg-cyan-400"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center"} hoveredColor={"bg-cyan-500"}>                      
+                            <p className="font-bold">TCP/IP</p>
                     </ItemBox>
                 </div>
             </div>
