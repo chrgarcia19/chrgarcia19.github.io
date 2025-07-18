@@ -25,7 +25,7 @@ const ProjectCard = (props: Props) => {
     return (
         <>
             <div onMouseEnter={itemEntered} onMouseLeave={itemExited} 
-                className={`flex flex-col rounded-2xl border-2 border-gray-400 w-1/3 overflow-hidden ${isHovered ? `shadow-xl shadow-slate-500` : ''}`}>
+                className={`flex flex-col rounded-2xl border-2 border-slate-400 w-1/3 overflow-hidden ${isHovered ? `shadow-xl shadow-slate-500` : ''}`}>
                 <div className="relative w-full h-[300px]">
                     <Image className="object-cover object-center" src={props.image} alt={props.imageAlt} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                 </div>
