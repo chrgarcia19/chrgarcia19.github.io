@@ -6,7 +6,7 @@ import Image from "next/image";
 const AboutMe = () => {
     return (
         <>
-            <div id="about" className="p-5 pt-14 w-full h-screen bg-zinc-300 dark:bg-zinc-900">
+            <div id="about" className="p-5 pt-14 w-full h-screen bg-zinc-300 dark:bg-zinc-800">
                 <h2 className="flex justify-center items-center font-bold text-5xl p-10 text-blue-950 dark:text-blue-300">About Me</h2>
                 <div className="flex items-center justify-center">
                     <div className="flex flex-col items-center justify-normal w-1/2 p-10">

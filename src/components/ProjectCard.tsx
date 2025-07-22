@@ -31,11 +31,11 @@ const ProjectCard = (props: Props) => {
                 </div>
                 <div className="flex flex-col p-4 w-full">
                     <span className="flex flex-row items-center space-x-3">
-                        <p className="font-bold text-xl underline">{props.name}</p>
+                        <p className="font-bold text-2xl underline">{props.name}</p>
                         {props.status && (
-                            <p className="bg-green-500 w-fit rounded-full px-2 text-sm">Completed</p>
+                            <p className="bg-green-500 dark:bg-green-600 font-semibold w-fit rounded-full px-2 text-sm">Completed</p>
                         ) || (
-                            <p className="bg-yellow-300 w-fit rounded-full px-2 text-sm">In Progress</p>
+                            <p className="bg-yellow-300 dark:bg-yellow-500 font-semibold w-fit rounded-full px-2 text-sm">In Progress</p>
                         )}
                     </span>
                     <p>{props.description}</p>
@@ -44,7 +44,7 @@ const ProjectCard = (props: Props) => {
                     <div className="flex flex-wrap gap-2 p-2 m-2 place-content-center">
                         {props.skills.map((skill: String, index: number) => (
                             <div key={index}>
-                                <ItemBox color={"bg-blue-950 dark:bg-blue-300"} hoveredColor={"bg-blue-800"} width={""} boxType={"rounded-full"} padding={"px-2"} other={"text-white dark:text-black"}>
+                                <ItemBox color={"bg-blue-800 dark:bg-blue-300"} hoveredColor={"bg-blue-950 dark:bg-blue-600"} width={""} boxType={"rounded-full"} padding={"px-2"} other={"text-white dark:text-black"}>
                                     {skill}
                                 </ItemBox>
                             </div>

@@ -8,7 +8,7 @@ import portfolioImage from "@/../public/Portfolio.png";
 const Projects = () => {
     return (
         <>
-            <div id="projects" className="flex flex-col flex-grow p-5 pt-14 w-full gap-8 bg-zinc-300 dark:bg-zinc-900">
+            <div id="projects" className="flex flex-col flex-grow p-5 pt-14 w-full gap-8 bg-zinc-300 dark:bg-zinc-800">
                 <h2 className="flex justify-center items-center font-bold text-5xl text-blue-950 dark:text-blue-300 p-4">Projects</h2>
                 <div className="flex flex-row flex-wrap gap-12 justify-center">
                     <ProjectCard 

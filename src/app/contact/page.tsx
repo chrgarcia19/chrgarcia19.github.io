@@ -5,8 +5,8 @@ import { SiIndeed } from "react-icons/si";
 const Contact = () => {
     return (
         <>
-            <div id="contact" className="flex flex-col pt-10 w-full bg-zinc-300 dark:bg-zinc-900">
-                <div className="flex flex-col items-center justify-center bg-blue-950 dark:bg-blue-300 gap-6 p-10">
+            <div id="contact" className="flex flex-col pt-10 w-full bg-zinc-300 dark:bg-zinc-800">
+                <div className="flex flex-col items-center justify-center bg-blue-950 dark:bg-blue-950 gap-6 p-10">
                     <h3 className="font-bold text-5xl p-10 text-zinc-300 dark:text-white">Get In Touch</h3>
                     <p className="text-2xl text-center w-1/2 p-5 text-white">I am actively seeking new opportunities in software engineering. If you have a role or project that aligns with my skills and experience, I would welcome the chance to connect. Please feel free to reach out!</p>
                     <StyledButton href={"mailto:christian.garcia@valpo.edu"} text={"Connect With Christian"} color={"bg-cyan-500 dark:bg-cyan-700"} hoveredColor={"bg-cyan-600 dark:hover:bg-cyan-600"} icon={null} other={"py-6 text-xl"} />

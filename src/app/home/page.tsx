@@ -9,7 +9,7 @@ import HomeText from "@/components/HomeText";
 const Homepage = () => {
     return (
         <>
-            <div className="flex justify-center items-center pt-14 w-full h-screen bg-zinc-300 dark:bg-zinc-900">
+            <div className="flex justify-center items-center pt-14 w-full h-screen bg-zinc-300 dark:bg-zinc-800">
                 <div className="flex flex-col items-center justify-center">
                     <div className="flex justify-center items-center gap-x-16 p-10">
                         <div className="justify-center space-y-2">
