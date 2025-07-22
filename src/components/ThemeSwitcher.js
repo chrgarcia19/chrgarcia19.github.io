@@ -20,7 +20,7 @@ export default function ThemeSwitcher() {
          <div className="flex items-center space-x-2">
             {theme === 'light' && (
                 <>
-                    <button className={`p-2 rounded-lg transition-colors duration-300 ${theme === 'dark' ? 'bg-gray-200 text-gray-800' : 'bg-indigo-800 text-gray-200'}`}
+                    <button className={`p-2 rounded-lg transition-colors duration-300 ${theme === 'dark' ? 'bg-gray-200 text-gray-800' : 'bg-blue-800 text-gray-200'}`}
                             onClick={() => setTheme('dark')}>
                         <FaMoon className="text-lg"/>
                     </button>
