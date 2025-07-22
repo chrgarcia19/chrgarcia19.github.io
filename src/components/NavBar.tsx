@@ -1,6 +1,7 @@
 import DownloadButton from "./DownloadButton";
 import ItemBox from "./ItemBox";
 import StyledButton from "./StyledButton";
+import ThemeSwitcher from "@/components/ThemeSwitcher";
 
 const NavBar = () => {
 
@@ -25,6 +26,7 @@ const NavBar = () => {
                         <StyledButton key={index} href={item.href} text={item.text} color={"bg-cyan-500"} hoveredColor={"bg-cyan-600"} icon={null} other={""} />
                     ))}
                     <DownloadButton text={"Résumé"} />
+                    <ThemeSwitcher />
                 </div>
             </nav>       
         </>
