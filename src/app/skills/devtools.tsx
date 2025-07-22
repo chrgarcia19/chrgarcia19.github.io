@@ -1,5 +1,5 @@
 import ItemBox from "@/components/ItemBox";
-import { SiApache, SiGit, SiGithub, SiGnubash, SiIntellijidea, SiMongoose, SiVsco } from "react-icons/si";
+import { SiApache, SiGit, SiGithub, SiGnubash, SiIntellijidea, SiJson, SiMongoose, SiVsco } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
 const DeveloperTools = () => {
@@ -28,6 +28,12 @@ const DeveloperTools = () => {
                         <span className="flex space-x-2">
                             <SiGnubash size={25}/>
                             <p className="font-bold">Scripting (Shell & Bash)</p>
+                        </span>
+                    </ItemBox>
+                    <ItemBox color={"bg-cyan-400"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center"} hoveredColor={"bg-cyan-500"}>
+                        <span className="flex space-x-2">
+                            <SiJson size={25}/>
+                            <p className="font-bold">JSON</p>
                         </span>
                     </ItemBox>
                     <ItemBox color={"bg-cyan-400"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center"} hoveredColor={"bg-cyan-500"}>
