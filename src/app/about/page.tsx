@@ -18,7 +18,7 @@ const AboutMe = () => {
                                 />
                         </div>
                         <div className="justify-center p-6">
-                            <p className="flex text-xl font-semibold justify-center">Hello! I'm Christian,</p>
+                            <p className="flex text-2xl font-semibold justify-center">Hello! I'm Christian,</p>
                             <br/>
                             <p className="pl-4 pr-4 text-center">An aspiring Software Engineer with a strong interest in Full Stack Development, committed to building reliable and impactful digital solutions. With a Bachelor of Science in Computer Science, I bring a solid technical foundation and a passion for creating user-centered applications. 
                                 What began as a spark of curiosity has grown into a deep enthusiasm for learning, designing, and collaborating on software that solves real problems and improves user experiences. I'm eager to contribute to projects that blend technical precision with meaningful impact.</p>
