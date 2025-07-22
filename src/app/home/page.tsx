@@ -20,15 +20,15 @@ const Homepage = () => {
                         </div>
                     </div>
                     <div className="flex gap-8">
-                        <StyledButton href={"#projects"} text={"View Projects"} color={"bg-cyan-500 dark:bg-cyan-700"} hoveredColor={"bg-cyan-600 dark:bg-cyan-600"} icon={null} other={"py-3"}/>
-                        <StyledButton href={"#about"} text={"More About Me"} color={"bg-cyan-500 dark:bg-cyan-700"} hoveredColor={"bg-cyan-600 dark:bg-cyan-600"} icon={null} other={"py-3"}/>
+                        <StyledButton href={"#projects"} text={"View Projects"} color={"bg-cyan-500 dark:bg-cyan-700"} hoveredColor={"bg-cyan-600 dark:hover:bg-cyan-600"} icon={null} other={"py-3"}/>
+                        <StyledButton href={"#about"} text={"More About Me"} color={"bg-cyan-500 dark:bg-cyan-700"} hoveredColor={"bg-cyan-600 dark:hover:bg-cyan-600"} icon={null} other={"py-3"}/>
                         <DownloadButton text={"Download Résumé"} />
                     </div>
                     <div className="flex gap-4 pt-12">
-                        <StyledButton href={"https://www.linkedin.com/in/chrgarcia19/"} text={""} color={"bg-cyan-500 dark:bg-cyan-700"} hoveredColor={"bg-cyan-600 dark:bg-cyan-600"} icon={<FaLinkedin size={32} />} other={""} />
-                        <StyledButton href={"https://profile.indeed.com/p/christiang-mg6ntmr"} text={""} color={"bg-cyan-500 dark:bg-cyan-700"} hoveredColor={"bg-cyan-600 dark:bg-cyan-600"} icon={<SiIndeed size={32} />} other={""} />
-                        <StyledButton href={"https://github.com/chrgarcia19"} text={""} color={"bg-cyan-500 dark:bg-cyan-700"} hoveredColor={"bg-cyan-600 dark:bg-cyan-600"} icon={<FaGithubSquare size={32} />} other={""} />
-                        <StyledButton href={"mailto:christian.garcia@valpo.edu"} text={""} color={"bg-cyan-500 dark:bg-cyan-700"} hoveredColor={"bg-cyan-600 dark:bg-cyan-600"} icon={<IoIosMail size={32} />} other={""} />
+                        <StyledButton href={"https://www.linkedin.com/in/chrgarcia19/"} text={""} color={"bg-cyan-500 dark:bg-cyan-700"} hoveredColor={"bg-cyan-600 dark:hover:bg-cyan-600"} icon={<FaLinkedin size={32} />} other={""} />
+                        <StyledButton href={"https://profile.indeed.com/p/christiang-mg6ntmr"} text={""} color={"bg-cyan-500 dark:bg-cyan-700"} hoveredColor={"bg-cyan-600 dark:hover:bg-cyan-600"} icon={<SiIndeed size={32} />} other={""} />
+                        <StyledButton href={"https://github.com/chrgarcia19"} text={""} color={"bg-cyan-500 dark:bg-cyan-700"} hoveredColor={"bg-cyan-600 dark:hover:bg-cyan-600"} icon={<FaGithubSquare size={32} />} other={""} />
+                        <StyledButton href={"mailto:christian.garcia@valpo.edu"} text={""} color={"bg-cyan-500 dark:bg-cyan-700"} hoveredColor={"bg-cyan-600 dark:hover:bg-cyan-600"} icon={<IoIosMail size={32} />} other={""} />
                     </div>
                 </div>
             </div>
