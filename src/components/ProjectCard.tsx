@@ -25,7 +25,7 @@ const ProjectCard = (props: Props) => {
     return (
         <>
             <div onMouseEnter={itemEntered} onMouseLeave={itemExited} 
-                className={`flex flex-col rounded-2xl border-2 border-slate-400 w-1/3 overflow-hidden ${isHovered ? `shadow-xl shadow-slate-500` : ''}`}>
+                className={`flex flex-col rounded-2xl border-2 border-slate-400 dark:border-slate-700 w-1/3 overflow-hidden ${isHovered ? `shadow-xl shadow-slate-500` : ''}`}>
                 <div className="relative w-full h-[300px]">
                     <Image className="object-cover object-center" src={props.image} alt={props.imageAlt} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                 </div>
@@ -44,7 +44,7 @@ const ProjectCard = (props: Props) => {
                     <div className="flex flex-wrap gap-2 p-2 m-2 place-content-center">
                         {props.skills.map((skill: String, index: number) => (
                             <div key={index}>
-                                <ItemBox color={"bg-blue-950"} hoveredColor={"bg-blue-800"} width={""} boxType={"rounded-full"} padding={"px-2"} other={"text-white"}>
+                                <ItemBox color={"bg-blue-950 dark:bg-blue-300"} hoveredColor={"bg-blue-800"} width={""} boxType={"rounded-full"} padding={"px-2"} other={"text-white dark:text-black"}>
                                     {skill}
                                 </ItemBox>
                             </div>
