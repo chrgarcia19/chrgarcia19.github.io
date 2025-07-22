@@ -4,12 +4,12 @@ import { ReactNode, useState } from "react";
 
 type Props = {
     children: ReactNode;
-    color: String | undefined;
-    hoveredColor: String | undefined;
-    width: String | undefined;
-    boxType: String | undefined;
-    padding: String | undefined;
-    other: String | undefined; //Additional TailwindCSS Inputs
+    color: String;
+    hoveredColor: String;
+    width: String;
+    boxType: String;
+    padding: String;
+    other: String; //Additional TailwindCSS Inputs
 }; 
 
 

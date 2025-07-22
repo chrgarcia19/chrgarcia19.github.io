@@ -5,11 +5,11 @@ import { ReactNode, useState } from "react";
 
 type Props = {
     href: string;
-    text: string | undefined;
+    text: string;
     color: string;
     hoveredColor: string;
-    icon: ReactNode | undefined; // The React Icon that will act as the button 
-    other: string | undefined; //Other CSS styling
+    icon: ReactNode; // The React Icon that will act as the button 
+    other: string; //Other CSS styling
 }
 
 const StyledButton = (props: Props) => {

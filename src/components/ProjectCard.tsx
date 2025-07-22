@@ -44,7 +44,7 @@ const ProjectCard = (props: Props) => {
                     <div className="flex flex-wrap gap-2 p-2 m-2 place-content-center">
                         {props.skills.map((skill: String, index: number) => (
                             <div key={index}>
-                                <ItemBox color={"bg-blue-950"} hoveredColor={"bg-blue-800"} width={undefined} boxType={"rounded-full"} padding={"px-2"} other={"text-white"}>
+                                <ItemBox color={"bg-blue-950"} hoveredColor={"bg-blue-800"} width={""} boxType={"rounded-full"} padding={"px-2"} other={"text-white"}>
                                     {skill}
                                 </ItemBox>
                             </div>
