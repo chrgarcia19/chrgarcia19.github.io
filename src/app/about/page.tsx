@@ -34,7 +34,7 @@ const AboutMe = () => {
                         </ItemBox>
                         <ItemBox color={"bg-cyan-600 dark:bg-cyan-700"} width={"w-4/6"} boxType={"rounded-lg"} padding={"p-4"} other={"text-center"} hoveredColor={"shadow-slate-500"}>
                             <p className="font-bold text-2xl">Association for Computing Machinery (ACM)</p>
-                            <p className="italic">President (August 2023 - May 2024), Webmaster (March 2023 - May 2024)</p>
+                            <p className="italic">President (August 2023 - May 2024)</p>
                             <p className="text-sm">Managed ACM’s website and coordinated diverse events, including professional development workshops and campus activities. Initiated and led a speaker series exploring computing’s role across disciplines.</p>
                         </ItemBox>
                         <ItemBox color={"bg-cyan-600 dark:bg-cyan-700"} width={"w-4/6"} boxType={"rounded-lg"} padding={"p-4"} other={"text-center"} hoveredColor={"shadow-slate-500"}>
