@@ -44,7 +44,7 @@ export default function DownloadButton(props: Props) {
     return (
         <>
             <button onClick={handleDownload} onMouseEnter={itemEntered} onMouseLeave={itemExited}
-                    className={`text-lg font-semibold shadow-sm rounded-full ease-in-out text-white inline-block px-6 py-1 hover:text-gray-200 bg-cyan-500 dark:bg-cyan-700 ${isHovered ? "bg-cyan-600 dark:hover:bg-cyan-600 font-bold text-xl shadow-xl" : ''}`}>
+                    className={`text-lg max-sm:text-lg max-lg:text-3xl max-lg:border-2 font-semibold shadow-sm rounded-full ease-in-out text-white inline-block px-6 max-sm:px-10 lg:px-4 py-1 hover:text-gray-200 bg-cyan-500 dark:bg-cyan-700 ${isHovered ? "bg-cyan-600 dark:hover:bg-cyan-600 font-bold text-xl shadow-xl" : ''}`}>
                     {props.text}
             </button>
         </>
