@@ -9,7 +9,7 @@ const AboutMe = () => {
             <div id="about" className="p-5 max-lg:p-1 w-full pt-14 bg-zinc-300 dark:bg-zinc-800">
                 <h2 className="flex justify-center items-center font-bold text-5xl max-sm:text-3xl p-10 text-blue-950 dark:text-blue-300">About Me</h2>
                 <div className="flex max-lg:flex-col items-center justify-center">
-                    <div className="flex flex-col items-center justify-normal w-1/2 max-sm:w-full p-10 max-sm:p-4">
+                    <div className="flex flex-col items-center justify-normal w-1/2 max-lg:w-full p-10 max-sm:p-4">
                         <div className="border-2 border-slate-400 dark:border-slate-700 rounded-3xl overflow-hidden">
                             <Image 
                                 src={christianImage} 
@@ -17,10 +17,10 @@ const AboutMe = () => {
                                 width={350} 
                                 />
                         </div>
-                        <div className="justify-center p-6 max-sm:p-2">
+                        <div className="justify-center p-6 max-md:p-2">
                             <p className="flex text-2xl max-sm:text-lg font-semibold justify-center text-center">Hello! I'm Christian,</p>
                             <br/>
-                            <p className="pl-4 pr-4 max-sm:pl-1 max-sm:pr-1 max-sm:text-sm text-center">An aspiring Software Engineer with a strong interest in Full Stack Development, committed to building reliable and impactful digital solutions. With a Bachelor of Science in Computer Science, I bring a solid technical foundation and a passion for creating user-centered applications. 
+                            <p className="pl-4 pr-4 max-md:pl-1 max-md:pr-1 max-sm:text-sm text-center">An aspiring Software Engineer with a strong interest in Full Stack Development, committed to building reliable and impactful digital solutions. With a Bachelor of Science in Computer Science, I bring a solid technical foundation and a passion for creating user-centered applications. 
                                 What began as a spark of curiosity has grown into a deep enthusiasm for learning, designing, and collaborating on software that solves real problems and improves user experiences. I'm eager to contribute to projects that blend technical precision with meaningful impact.</p>
                         </div>
                     </div>
