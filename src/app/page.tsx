@@ -10,8 +10,8 @@ export default function Home() {
     <>
       <NavBar/>
       <Homepage />
-      {/*<AboutMe />
-      <Skills />
+      <AboutMe />
+      {/*<Skills />
       <Projects />
       <Contact />*/}
     </>
