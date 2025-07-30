@@ -27,7 +27,7 @@ const HomeText = () => {
 
     return (
         <>
-            <div className={`flex items-center justify-center text-5xl font-semibold transition-opacity duration-500 ${fade ? "opacity-100" : "opacity-0"}`}>
+            <div className={`z-0 flex items-center justify-center text-5xl max-sm:text-2xl text-center font-semibold transition-opacity duration-500 ${fade ? "opacity-100" : "opacity-0"}`}>
                 {phrases[index]}
             </div>
         </>

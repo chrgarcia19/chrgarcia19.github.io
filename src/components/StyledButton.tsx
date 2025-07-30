@@ -6,6 +6,8 @@ import { ReactNode, useState } from "react";
 type Props = {
     href: string;
     text: string;
+    textSize: string;
+    padding: string;
     color: string;
     hoveredColor: string;
     icon: ReactNode; // The React Icon that will act as the button 
@@ -23,7 +25,7 @@ const StyledButton = (props: Props) => {
                 onMouseEnter={itemEntered} 
                 onMouseLeave={itemExited}
                 href={props.href}  
-                className={`${props.color} text-lg max-sm:text-lg max-lg:text-3xl max-lg:border-2 font-semibold shadow-sm rounded-full ease-in-out text-white px-6 sm:px-5 lg:px-4 py-1 hover:text-gray-200 ${isHovered ? `${props.hoveredColor} font-bold text-xl shadow-xl` : ''} ${props.other}`}>
+                className={`${props.color} ${props.textSize} max-lg:border-2 text-center font-semibold shadow-sm rounded-full ease-in-out text-white ${props.padding} hover:text-gray-200 ${isHovered ? `${props.hoveredColor} font-bold text-xl shadow-xl` : ''} ${props.other}`}>
                     <div className="flex flex-row items-center justify-center gap-1">
                         {props.icon} {props.text}
                     </div>

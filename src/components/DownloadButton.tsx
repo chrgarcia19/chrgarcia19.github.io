@@ -5,6 +5,8 @@ import toast from "react-hot-toast";
 
 type Props = {
     text: string;
+    textSize: string;
+    padding: string;
 };
 
 export default function DownloadButton(props: Props) {
@@ -44,7 +46,7 @@ export default function DownloadButton(props: Props) {
     return (
         <>
             <button onClick={handleDownload} onMouseEnter={itemEntered} onMouseLeave={itemExited}
-                    className={`text-lg max-sm:text-lg max-lg:text-3xl max-lg:border-2 font-semibold shadow-sm rounded-full ease-in-out text-white inline-block px-6 max-sm:px-10 lg:px-4 py-1 hover:text-gray-200 bg-cyan-500 dark:bg-cyan-700 ${isHovered ? "bg-cyan-600 dark:hover:bg-cyan-600 font-bold text-xl shadow-xl" : ''}`}>
+                    className={`${props.textSize} max-lg:border-2 max-sm:text-center font-semibold shadow-sm rounded-full ease-in-out text-white  ${props.padding} hover:text-gray-200 bg-cyan-500 dark:bg-cyan-700 ${isHovered ? "bg-cyan-600 dark:hover:bg-cyan-600 font-bold text-xl shadow-xl" : ''}`}>
                     {props.text}
             </button>
         </>
