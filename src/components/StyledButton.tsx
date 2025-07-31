@@ -6,6 +6,8 @@ import { ReactNode, useState } from "react";
 type Props = {
     href: string;
     text: string;
+    label: string;
+    title: string;
     textSize: string;
     padding: string;
     color: string;
@@ -25,6 +27,8 @@ const StyledButton = (props: Props) => {
                 onMouseEnter={itemEntered} 
                 onMouseLeave={itemExited}
                 href={props.href}  
+                aria-label={props.label}
+                title={props.title}
                 className={`${props.color} ${props.textSize} max-lg:border-2 text-center font-semibold shadow-sm rounded-full ease-in-out text-white ${props.padding} hover:text-gray-200 ${isHovered ? `${props.hoveredColor} font-bold text-xl shadow-xl` : ''} ${props.other}`}>
                     <div className="flex flex-row items-center justify-center gap-1">
                         {props.icon} {props.text}
