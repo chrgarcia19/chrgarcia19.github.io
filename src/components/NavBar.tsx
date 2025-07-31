@@ -45,7 +45,7 @@ const NavBar = () => {
                         {menuOpen ? <AiOutlineClose size={25} className="text-white"/> : <AiOutlineMenu size={25} className="text-white" />}
                     </div> 
                 </div>   
-                <div className={menuOpen ? "lg:hidden fixed z-10 top-10 left-0 right-0 bottom-0 flex justify-center items-center w-full h-fit bg-cyan-500 dark:bg-cyan-700 text-center ease-in duration-500 p-4" : "lg:hidden fixed z-10 top-10 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-fit bg-cyan-500 dark:bg-cyan-700 text-center ease-in duration-500 p-4"}>
+                <div className={menuOpen ? "lg:hidden fixed z-10 top-12 left-0 right-0 bottom-0 flex justify-center items-center w-full h-fit border-t-2 border-white bg-cyan-500 dark:bg-cyan-700 text-center opacity-95 ease-in duration-500 p-4" : "lg:hidden fixed z-10 top-12 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-fit bg-cyan-500 dark:bg-cyan-700 text-center opacity-95 ease-in duration-500 p-4"}>
                     <ul className="flex flex-col gap-4">
                         {NAV_ITEMS.map((item: any, index: number) => (
                             <StyledButton key={index} href={item.href} text={item.text} color={"bg-cyan-500 dark:bg-cyan-700"} hoveredColor={"bg-cyan-600 dark:hover:bg-cyan-600"} icon={null} other={""} textSize={"max-sm:text-xl max-lg:text-3xl"} padding={"max-sm:px-4 max-sm:py-1 lg:px-4"} />
