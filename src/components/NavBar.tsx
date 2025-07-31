@@ -25,7 +25,7 @@ const NavBar = () => {
 
     return (
         <>
-            <nav className="flex w-full p-2 items-center justify-between bg-cyan-500 dark:bg-cyan-700 overflow-hidden lg:fixed z-10">
+            <nav className="flex w-full p-2 items-center justify-between bg-cyan-500 dark:bg-cyan-700 overflow-hidden fixed z-10">
                 <div className="flex">
                     <ItemBox color={"bg-cyan-500 dark:bg-cyan-700"} hoveredColor={"bg-cyan-600 dark:hover:bg-cyan-600"} width={""} boxType={"rounded-full"} padding={"px-4 max-sm:px-2"} other={""}>
                         <h1 className="text-xl sm:text-3xl text-white font-bold">Christian Garcia</h1> 
@@ -45,7 +45,7 @@ const NavBar = () => {
                         {menuOpen ? <AiOutlineClose size={25} className="text-white"/> : <AiOutlineMenu size={25} className="text-white" />}
                     </div> 
                 </div>   
-                <div className={menuOpen ? "lg:hidden absolute z-10 top-10 left-0 right-0 bottom-0 flex justify-center items-center w-full h-fit bg-cyan-500 dark:bg-cyan-700 text-center ease-in duration-500 p-4" : "lg:hidden absolute z-10 top-10 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-fit bg-cyan-500 dark:bg-cyan-700 text-center ease-in duration-500 p-4"}>
+                <div className={menuOpen ? "lg:hidden fixed z-10 top-10 left-0 right-0 bottom-0 flex justify-center items-center w-full h-fit bg-cyan-500 dark:bg-cyan-700 text-center ease-in duration-500 p-4" : "lg:hidden fixed z-10 top-10 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-fit bg-cyan-500 dark:bg-cyan-700 text-center ease-in duration-500 p-4"}>
                     <ul className="flex flex-col gap-4">
                         {NAV_ITEMS.map((item: any, index: number) => (
                             <StyledButton key={index} href={item.href} text={item.text} color={"bg-cyan-500 dark:bg-cyan-700"} hoveredColor={"bg-cyan-600 dark:hover:bg-cyan-600"} icon={null} other={""} textSize={"max-sm:text-xl max-lg:text-3xl"} padding={"max-sm:px-4 max-sm:py-1 lg:px-4"} />
