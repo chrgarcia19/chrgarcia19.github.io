@@ -9,113 +9,113 @@ const ProgrammingLanguages = () => {
     return (
         <>
             <div className="flex flex-col">
-                <div className="flex flex-wrap justify-start p-2 gap-5 text-center">
-                    <ItemBox color={"bg-cyan-400 dark:bg-cyan-800"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center dark:hover:text-black dark:hover:text-black"} hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}>
+                <div className="flex flex-wrap justify-start max-md:justify-center p-2 pt-2 pb-8 max-md:pb-5 gap-5 max-md:gap-2 text-center">
+                    <ItemBox color={"bg-cyan-400 dark:bg-cyan-800"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3 max-md:p-2"} other={"place-items-center dark:hover:text-black dark:hover:text-black"} hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}>
                         <span className="flex space-x-2">
-                            <SiTypescript className="" size={25}/>
-                            <p className="font-bold">TypeScript</p>
+                            <SiTypescript className="w-6 h-6 max-md:w-5 max-md:h-5"/>
+                            <p className="font-bold max-md:text-sm">TypeScript</p>
                         </span>
                     </ItemBox>
-                    <ItemBox color={"bg-cyan-400 dark:bg-cyan-800"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center dark:hover:text-black"} hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}>
+                    <ItemBox color={"bg-cyan-400 dark:bg-cyan-800"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3 max-md:p-2"} other={"place-items-center dark:hover:text-black"} hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}>
                         <span className="flex space-x-2">
-                            <SiJavascript size={25}/>
-                            <p className="font-bold">JavaScript</p>
+                            <SiJavascript className="w-6 h-6 max-md:w-5 max-md:h-5"/>
+                            <p className="font-bold max-md:text-sm">JavaScript</p>
                         </span>
                     </ItemBox>
-                    <ItemBox color={"bg-cyan-400 dark:bg-cyan-800"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center dark:hover:text-black"} hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}>
+                    <ItemBox color={"bg-cyan-400 dark:bg-cyan-800"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3 max-md:p-2"} other={"place-items-center dark:hover:text-black"} hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}>
                         <span className="flex space-x-2">
-                            <SiHtml5 size={25}/>
-                            <p className="font-bold">HTML5</p>
+                            <SiHtml5 className="w-6 h-6 max-md:w-5 max-md:h-5"/>
+                            <p className="font-bold max-md:text-sm">HTML5</p>
                         </span>
                     </ItemBox>
-                    <ItemBox color={"bg-cyan-400 dark:bg-cyan-800"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center dark:hover:text-black"} hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}>
+                    <ItemBox color={"bg-cyan-400 dark:bg-cyan-800"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3 max-md:p-2"} other={"place-items-center dark:hover:text-black"} hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}>
                         <span className="flex space-x-2">
-                            <SiCss3 size={25}/>
-                            <p className="font-bold">CSS3</p>
+                            <SiCss3 className="w-6 h-6 max-md:w-5 max-md:h-5"/>
+                            <p className="font-bold max-md:text-sm">CSS3</p>
                         </span>
                     </ItemBox>
-                    <ItemBox color={"bg-cyan-400 dark:bg-cyan-800"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center dark:hover:text-black"} hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}>
+                    <ItemBox color={"bg-cyan-400 dark:bg-cyan-800"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3 max-md:p-2"} other={"place-items-center dark:hover:text-black"} hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}>
                         <span className="flex space-x-2">
-                            <FaJava size={25}/>
-                            <p className="font-bold">Java</p>
+                            <FaJava className="w-6 h-6 max-md:w-5 max-md:h-5"/>
+                            <p className="font-bold max-md:text-sm">Java</p>
                         </span>
                     </ItemBox>
-                    <ItemBox color={"bg-cyan-400 dark:bg-cyan-800"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center dark:hover:text-black"} hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}>
+                    <ItemBox color={"bg-cyan-400 dark:bg-cyan-800"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3 max-md:p-2"} other={"place-items-center dark:hover:text-black"} hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}>
                         <span className="flex space-x-2">
-                            <SiPython size={25}/>
-                            <p className="font-bold">Python 3</p>
+                            <SiPython className="w-6 h-6 max-md:w-5 max-md:h-5"/>
+                            <p className="font-bold max-md:text-sm">Python 3</p>
                         </span>
                     </ItemBox>
-                    <ItemBox color={"bg-cyan-400 dark:bg-cyan-800"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center dark:hover:text-black"} hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}>
+                    <ItemBox color={"bg-cyan-400 dark:bg-cyan-800"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3 max-md:p-2"} other={"place-items-center dark:hover:text-black"} hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}>
                         <span className="flex space-x-2">
                             <C size={"25"} />
-                            <p className="font-bold">C</p>
+                            <p className="font-bold max-md:text-sm">C</p>
                         </span>
                     </ItemBox>
-                    <ItemBox color={"bg-cyan-400 dark:bg-cyan-800"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center dark:hover:text-black"} hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}>
+                    <ItemBox color={"bg-cyan-400 dark:bg-cyan-800"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3 max-md:p-2"} other={"place-items-center dark:hover:text-black"} hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}>
                         <span className="flex space-x-2">
-                            <SiCplusplus size={25}/>
-                            <p className="font-bold">C++</p>
+                            <SiCplusplus className="w-6 h-6 max-md:w-5 max-md:h-5"/>
+                            <p className="font-bold max-md:text-sm">C++</p>
                         </span>
                     </ItemBox>
-                    <ItemBox color={"bg-cyan-400 dark:bg-cyan-800"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center dark:hover:text-black"} hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}>
+                    <ItemBox color={"bg-cyan-400 dark:bg-cyan-800"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3 max-md:p-2"} other={"place-items-center dark:hover:text-black"} hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}>
                         <span className="flex space-x-2">
-                            <SiGo size={25}/>
-                            <p className="font-bold">Go/Golang</p>
+                            <SiGo className="w-6 h-6 max-md:w-5 max-md:h-5"/>
+                            <p className="font-bold max-md:text-sm">Go/Golang</p>
                         </span>
                     </ItemBox>
-                    <ItemBox color={"bg-cyan-400 dark:bg-cyan-800"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center dark:hover:text-black"} hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}>
+                    <ItemBox color={"bg-cyan-400 dark:bg-cyan-800"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3 max-md:p-2"} other={"place-items-center dark:hover:text-black"} hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}>
                         <span className="flex space-x-2">
-                            <SiRuby size={25}/>
-                            <p className="font-bold">Ruby</p>
+                            <SiRuby className="w-6 h-6 max-md:w-5 max-md:h-5"/>
+                            <p className="font-bold max-md:text-sm">Ruby</p>
                         </span>
                     </ItemBox>
-                    <ItemBox color={"bg-cyan-400 dark:bg-cyan-800"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center dark:hover:text-black"} hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}>
+                    <ItemBox color={"bg-cyan-400 dark:bg-cyan-800"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3 max-md:p-2"} other={"place-items-center dark:hover:text-black"} hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}>
                         <span className="flex space-x-2">
-                            <SiSwift size={25}/>
-                            <p className="font-bold">Swift</p>
+                            <SiSwift className="w-6 h-6 max-md:w-5 max-md:h-5"/>
+                            <p className="font-bold max-md:text-sm">Swift</p>
                         </span>
                     </ItemBox>
-                    <ItemBox color={"bg-cyan-400 dark:bg-cyan-800"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center dark:hover:text-black"} hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}>
+                    <ItemBox color={"bg-cyan-400 dark:bg-cyan-800"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3 max-md:p-2"} other={"place-items-center dark:hover:text-black"} hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}>
                         <span className="flex space-x-2">
-                            <SiPhp size={25}/>
-                            <p className="font-bold">PHP</p>
+                            <SiPhp className="w-6 h-6 max-md:w-5 max-md:h-5"/>
+                            <p className="font-bold max-md:text-sm">PHP</p>
                         </span>
                     </ItemBox>
-                    <ItemBox color={"bg-cyan-400 dark:bg-cyan-800"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center dark:hover:text-black"} hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}>
+                    <ItemBox color={"bg-cyan-400 dark:bg-cyan-800"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3 max-md:p-2"} other={"place-items-center dark:hover:text-black"} hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}>
                         <span className="flex space-x-2">
-                            <SiScala size={25}/>
-                            <p className="font-bold">Scala</p>
+                            <SiScala className="w-6 h-6 max-md:w-5 max-md:h-5"/>
+                            <p className="font-bold max-md:text-sm">Scala</p>
                         </span>
                     </ItemBox>
-                    <ItemBox color={"bg-cyan-400 dark:bg-cyan-800"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center dark:hover:text-black"} hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}>
+                    <ItemBox color={"bg-cyan-400 dark:bg-cyan-800"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3 max-md:p-2"} other={"place-items-center dark:hover:text-black"} hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}>
                         <span className="flex space-x-2">
-                            <SiR size={25}/>
-                            <p className="font-bold">R</p>
+                            <SiR className="w-6 h-6 max-md:w-5 max-md:h-5"/>
+                            <p className="font-bold max-md:text-sm">R</p>
                         </span>
                     </ItemBox>
-                    <ItemBox color={"bg-cyan-400 dark:bg-cyan-800"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center dark:hover:text-black"} hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}>
+                    <ItemBox color={"bg-cyan-400 dark:bg-cyan-800"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3 max-md:p-2"} other={"place-items-center dark:hover:text-black"} hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}>
                         <span className="flex space-x-2">
-                            <SiRust size={25}/>
-                            <p className="font-bold">Rust</p>
+                            <SiRust className="w-6 h-6 max-md:w-5 max-md:h-5"/>
+                            <p className="font-bold max-md:text-sm">Rust</p>
                         </span>
                     </ItemBox>
-                    <ItemBox color={"bg-cyan-400 dark:bg-cyan-800"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center dark:hover:text-black"} hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}>
+                    <ItemBox color={"bg-cyan-400 dark:bg-cyan-800"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3 max-md:p-2"} other={"place-items-center dark:hover:text-black"} hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}>
                         <span className="flex space-x-2">
-                            <SiClojure size={25}/>
-                            <p className="font-bold">Clojure</p>
+                            <SiClojure className="w-6 h-6 max-md:w-5 max-md:h-5"/>
+                            <p className="font-bold max-md:text-sm">Clojure</p>
                         </span>
                     </ItemBox>
-                    <ItemBox color={"bg-cyan-400 dark:bg-cyan-800"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center dark:hover:text-black"} hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}>
+                    <ItemBox color={"bg-cyan-400 dark:bg-cyan-800"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3 max-md:p-2"} other={"place-items-center dark:hover:text-black"} hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}>
                         <span className="flex space-x-2">
                             <CommonLisp size={"25"} />
-                            <p className="font-bold">Lisp</p>
+                            <p className="font-bold max-md:text-sm">Lisp</p>
                         </span>
                     </ItemBox>
-                    <ItemBox color={"bg-cyan-400 dark:bg-cyan-800"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3"} other={"place-items-center dark:hover:text-black"} hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}>
+                    <ItemBox color={"bg-cyan-400 dark:bg-cyan-800"} width={"w-fit"} boxType={"rounded-lg"} padding={"p-3 max-md:p-2"} other={"place-items-center dark:hover:text-black"} hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}>
                         <span className="flex space-x-2">
-                            <DiProlog size={25}/>
-                            <p className="font-bold">Prolog</p>
+                            <DiProlog className="w-6 h-6 max-md:w-5 max-md:h-5"/>
+                            <p className="font-bold max-md:text-sm">Prolog</p>
                         </span>
                     </ItemBox>
                 </div>

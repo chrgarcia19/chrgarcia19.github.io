@@ -11,8 +11,8 @@ export default function Home() {
       <NavBar/>
       <Homepage />
       <AboutMe />
-      {/*<Skills />
-      <Projects />
+      <Skills />
+      {/*<Projects />
       <Contact />*/}
     </>
   );

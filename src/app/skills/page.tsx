@@ -9,21 +9,21 @@ import Concepts from "./concepts";
 const Skills = () => {
     return (
         <>
-            <div id="skills" className="flex flex-col pt-10 pl-14 pr-14 h-screen w-full bg-zinc-300 dark:bg-zinc-800">
-                <h2 className="flex justify-center items-center font-bold text-5xl text-blue-950 dark:text-blue-300 p-10">My Techical Skills</h2>
-                <h3 className="flex justify-start text-2xl font-bold">Programming Languages</h3>
+            <div id="skills" className="flex flex-col pt-10 pl-14 pr-14 max-md:pl-4 max-md:pr-4 w-full bg-zinc-300 dark:bg-zinc-800">
+                <h2 className="flex justify-center font-bold text-5xl max-md:text-3xl text-blue-950 dark:text-blue-300 p-10 max-md:p-3">My Techical Skills</h2>
+                <h3 className="flex justify-start max-md:justify-center text-2xl max-md:text-xl font-bold">Programming Languages</h3>
                 <ProgrammingLanguages />
-                <h3 className="flex justify-start text-2xl font-bold">Frameworks & Libraries</h3>
+                <h3 className="flex justify-start max-md:justify-center text-2xl max-md:text-xl font-bold">Frameworks & Libraries</h3>
                 <FrameworksLibraries />
-                <h3 className="flex justify-start text-2xl font-bold">Databases</h3>
+                <h3 className="flex justify-start max-md:justify-center text-2xl max-md:text-xl font-bold">Databases</h3>
                 <Databases />
-                <h3 className="flex justify-start text-2xl font-bold">Developer Tools</h3>
+                <h3 className="flex justify-start max-md:justify-center text-2xl max-md:text-xl font-bold">Developer Tools</h3>
                 <DeveloperTools />
-                <h3 className="flex justify-start text-2xl font-bold">Operating Systems</h3>
+                <h3 className="flex justify-start max-md:justify-center text-2xl max-md:text-xl font-bold">Operating Systems</h3>
                 <OperatingSystems />
-                <h3 className="flex justify-start text-2xl font-bold">Additional Tools</h3>
+                <h3 className="flex justify-start max-md:justify-center text-2xl max-md:text-xl font-bold">Additional Tools</h3>
                 <AdditionalTools />
-                <h3 className="flex justify-start text-2xl font-bold">Concepts</h3>
+                <h3 className="flex justify-start max-md:justify-center text-2xl max-md:text-xl font-bold">Concepts</h3>
                 <Concepts />
             </div>
         </>
