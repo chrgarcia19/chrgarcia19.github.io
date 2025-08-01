@@ -6,16 +6,18 @@ import Image from "next/image";
 const AboutMe = () => {
     return (
         <>
-            <div id="about" className="p-5 max-lg:p-1 w-full pt-14 bg-zinc-300 dark:bg-zinc-800">
+            <div id="about" className="p-5 w-full pt-14 bg-zinc-300 dark:bg-zinc-800">
                 <h2 className="flex justify-center items-center font-bold text-5xl max-sm:text-3xl p-10 text-blue-950 dark:text-blue-300">About Me</h2>
                 <div className="flex max-lg:flex-col items-center justify-center">
                     <div className="flex flex-col items-center justify-normal w-1/2 max-lg:w-full p-10 max-sm:p-4">
-                        <div className="border-2 border-slate-400 dark:border-slate-700 rounded-3xl overflow-hidden">
-                            <Image 
-                                src={christianImage} 
-                                alt={"An Image of Christian"}
-                                width={350} 
-                                />
+                       <div className="w-[70vw] sm:w-[60vw] md:w-[350px] border-2 border-slate-400 dark:border-slate-700 rounded-3xl overflow-hidden">
+                            <Image
+                                src={christianImage}
+                                alt="An Image of Christian"
+                                width={350}
+                                className="w-full h-auto object-cover"
+                                sizes="(max-width: 640px) 70vw, (max-width: 768px) 60vw, 350px"
+                            />
                         </div>
                         <div className="justify-center p-6 max-md:p-2">
                             <p className="flex text-2xl max-sm:text-lg font-semibold justify-center text-center">Hello! I'm Christian,</p>
