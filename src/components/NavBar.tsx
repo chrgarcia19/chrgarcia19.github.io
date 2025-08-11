@@ -28,14 +28,14 @@ const NavBar = () => {
             <nav className="flex w-full p-2 items-center justify-between bg-cyan-500 dark:bg-cyan-700 overflow-hidden fixed z-10">
                 <div className="flex">
                     <ItemBox color={"bg-cyan-500 dark:bg-cyan-700"} hoveredColor={"bg-cyan-600 dark:hover:bg-cyan-600"} width={""} boxType={"rounded-full"} padding={"px-4 max-sm:px-2 3xl:px-6 3xl:py-1"} other={""}>
-                        <h1 className="text-xl sm:text-3xl 3xl:text-7xl text-white font-bold">Christian Garcia</h1> 
+                        <h1 className="text-xl sm:text-3xl 3xl:text-5xl 4k:text-7xl text-white font-bold">Christian Garcia</h1> 
                     </ItemBox>
                 </div>    
                 <div className="max-lg:hidden flex items-center xl:space-x-6 lg:space-x-2 mr-4 max-lg:mr-2">
                     {NAV_ITEMS.map((item: any, index: number) => (
-                        <StyledButton key={index} href={item.href} text={item.text} color={"bg-cyan-500 dark:bg-cyan-700"} hoveredColor={"bg-cyan-600 dark:hover:bg-cyan-600"} icon={null} other={""} textSize={"text-lg max-sm:text-sm max-lg:text-3xl 3xl:text-4xl"} padding={"px-6 max-sm:px-2 lg:px-4 3xl:px-6 py-1 3xl:py-2"} label={item.label} title={item.title} />
+                        <StyledButton key={index} href={item.href} text={item.text} color={"bg-cyan-500 dark:bg-cyan-700"} hoveredColor={"bg-cyan-600 dark:hover:bg-cyan-600"} icon={null} other={""} textSize={"text-lg max-sm:text-sm max-lg:text-3xl 3xl:text-2xl 4k:text-4xl"} padding={"px-6 max-sm:px-2 lg:px-4 3xl:px-6 py-1 3xl:py-2"} label={item.label} title={item.title} />
                     ))}
-                    <DownloadButton text={"Résumé"} padding={"px-6 max-sm:px-2 lg:px-4 3xl:px-6 py-1 3xl:py-2"} textSize={"text-lg max-sm:text-sm max-lg:text-3xl 3xl:text-4xl"} view={false} />
+                    <DownloadButton text={"Résumé"} padding={"px-6 max-sm:px-2 lg:px-4 3xl:px-6 py-1 3xl:py-2"} textSize={"text-lg max-sm:text-sm max-lg:text-3xl 3xl:text-2xl 4k:text-4xl"} view={false} />
                     <ThemeSwitcher />
                 </div>
                 {/*For Mobile*/}

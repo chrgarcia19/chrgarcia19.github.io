@@ -13,8 +13,8 @@ const Homepage = () => {
                 <div className="flex flex-col items-center justify-center">
                     <div className="flex justify-center items-center gap-x-16 p-10 max-sm:p-6">
                         <div className="justify-center space-y-2">
-                            <p className="flex justify-center text-3xl max-sm:text-2xl font-semibold">Hi! I am</p>
-                            <p className="flex font-extrabold text-7xl max-sm:text-3xl justify-center text-blue-950 dark:text-blue-300">Christian Garcia</p>
+                            <p className="flex justify-center text-3xl max-sm:text-2xl 3xl:tefont-semibold">Hi! I am</p>
+                            <p className="flex font-extrabold text-7xl max-sm:text-3xl 3xl:text-9xl justify-center text-blue-950 dark:text-blue-300">Christian Garcia</p>
                             <br/>
                             <HomeText />
                         </div>
