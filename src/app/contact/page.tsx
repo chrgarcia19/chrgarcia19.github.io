@@ -20,7 +20,7 @@ const Contact = () => {
                     <span className="flex flex-col items-center text-center">
                         <p className="text-white max-md:text-sm">Christian Garcia ©2025</p>
                         <p className="text-white text-sm max-md:text-xs">Created with Next.js, TypeScript, React, and TailwindCSS</p>
-                        <p className="text-white text-sm max-md:text-xs">Hosted on ...</p>
+                        <p className="text-white text-sm max-md:text-xs">Hosted on GitHub Pages</p>
                     </span>
                 </nav>
             </div>
