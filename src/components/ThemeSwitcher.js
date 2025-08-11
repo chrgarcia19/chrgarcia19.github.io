@@ -19,20 +19,20 @@ export default function ThemeSwitcher() {
             <div className="flex items-center space-x-2">    
                 { resolvedTheme === 'light' && (
                     <>
-                        <button className={`p-2 rounded-lg transition-colors duration-300 bg-blue-800 text-gray-200`}
+                        <button className={`p-2 3xl:p-3 rounded-lg transition-colors duration-300 bg-blue-800 text-gray-200`}
                                 onClick={() => setTheme('dark')}
                                 aria-label="Switch to dark mode"
                                 title="Switch to dark mode">
-                            <FaMoon className="text-lg"/>
+                            <FaMoon className="text-lg 3xl:text-4xl"/>
                         </button>
                     </>
                 ) || resolvedTheme === 'dark' && (
                     <>
-                        <button className={`p-2 rounded-lg transition-colors duration-300 bg-orange-600 text-gray-200`}
+                        <button className={`p-2 3xl:p-3 rounded-lg transition-colors duration-300 bg-orange-600 text-gray-200`}
                                 onClick={() => setTheme('light')}
                                 aria-label="Switch to light mode"
                                 title="Switch to light mode">
-                            <FaSun className="text-lg"/>
+                            <FaSun className="text-lg 3xl:text-4xl"/>
                         </button>
                     </>
                 )}
