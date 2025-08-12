@@ -7,7 +7,7 @@ const AboutMe = () => {
     return (
         <>
             <div id="about" className="p-5 w-full 3xl:h-screen 3xl:place-content-center pt-14 bg-zinc-300 dark:bg-zinc-800">
-                <h2 className="flex justify-center items-center font-bold text-5xl max-sm:text-3xl 4k:text-8xl p-10 text-blue-950 dark:text-blue-300">About Me</h2>
+                <h2 className="flex justify-center items-center font-bold text-5xl max-sm:text-3xl 3xl:text-6xl 4k:text-8xl p-10 text-blue-950 dark:text-blue-300">About Me</h2>
                 <div className="flex max-lg:flex-col items-center justify-center">
                     <div className="flex flex-col items-center justify-normal w-1/2 max-lg:w-full p-10 max-sm:p-4">
                        <div className="w-[70vw] sm:w-[60vw] md:w-[350px] 3xl:w-[500px] 4k:w-[650px] border-2 border-slate-400 dark:border-slate-700 rounded-3xl overflow-hidden">
