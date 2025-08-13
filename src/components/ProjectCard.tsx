@@ -25,11 +25,11 @@ const ProjectCard = (props: Props) => {
     return (
         <>
             <div onMouseEnter={itemEntered} onMouseLeave={itemExited} 
-                className={`flex flex-col rounded-2xl border-2 border-slate-400 dark:border-slate-700 w-1/3 max-xl:w-5/12 max-md:w-full 3xl:w-2/5 overflow-hidden ${isHovered ? `shadow-xl shadow-slate-500` : ''}`}>
+                className={`flex flex-col rounded-2xl border-4 border-slate-400 dark:border-slate-700 w-1/3 max-xl:w-5/12 max-md:w-full 3xl:w-2/5 min-h-full overflow-hidden ${isHovered ? `shadow-xl shadow-slate-500` : ''}`}>
                 <div className="relative w-full max-3xl:h-[300px] 3xl:h-[450px] 4k:h-[500px]">
                     <Image className="object-cover object-center" src={props.image} alt={props.imageAlt} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                 </div>
-                <div className="flex flex-col justify-evenly p-4 4k:p-6 w-full h-1/2">
+                <div className="flex flex-col flex-grow justify-start p-4 4k:p-6 w-full gap-1">
                     <span className="flex xl:flex-row max-md:flex-col items-center pb-2 xl:space-x-4">
                         <p className="font-bold text-2xl max-md:text-xl 3xl:text-3xl 4k:text-5xl underline text-center">{props.name}</p>
                         <div className="p-1">
@@ -41,7 +41,7 @@ const ProjectCard = (props: Props) => {
                         </div>
                     </span>
                     <p className="max-md:text-sm 3xl:text-xl 4k:text-2xl">{props.description}</p>
-                    <span className="pt-2">
+                    <span className="pt-2 pb-2">
                         <p className="font-bold underline 3xl:text-2xl 4k:text-4xl">Skills Used:</p>
                         <div className="flex flex-wrap gap-2 p-2 m-2 place-content-center text-center">
                             {props.skills.map((skill: String, index: number) => (
@@ -54,8 +54,8 @@ const ProjectCard = (props: Props) => {
                         </div>
                     </span>
                 </div>
-                <div className="flex justify-end pb-4 pl-4 pr-4">
-                    <StyledButton href={props.link} text={"GitHub"} color={"bg-green-500"} hoveredColor={"bg-green-200"} icon={<SiGithub className="3xl:w-8 3xl:h-8 4k:w-10 4k:h-10"/>} other={"w-full text-center"} textSize={"3xl:text-2xl"} padding={"3xl:py-1"} label={"View This Project's GitHub Page"} title={"View on GitHub"} />
+                <div className="flex justify-end p-4">
+                    <StyledButton href={props.link} text={"GitHub"} color={"bg-green-500"} hoveredColor={"bg-green-200"} icon={<SiGithub className="w-6 h-6 3xl:w-8 3xl:h-8 4k:w-10 4k:h-10"/>} other={"w-full text-center"} textSize={"text-lg 3xl:text-2xl"} padding={"py-1"} label={"View This Project's GitHub Page"} title={"View on GitHub"} />
                 </div>
             </div>
         </>

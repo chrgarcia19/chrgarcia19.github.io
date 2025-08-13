@@ -10,7 +10,7 @@ const Projects = () => {
         <>
             <div id="projects" className="flex flex-col flex-grow justify-center items-center p-5 pt-14 w-full gap-8 bg-zinc-300 dark:bg-zinc-800">
                 <h2 className="flex justify-center items-center font-bold text-5xl max-sm:text-3xl 3xl:text-6xl 4k:text-8xl text-blue-950 dark:text-blue-300 p-4">Projects</h2>
-                <div className="flex md:flex-row max-md:flex-col flex-wrap gap-12 3xl:gap-16 4k:gap-20 justify-center">
+                <div className="flex flex-row max-md:flex-col flex-wrap h-full gap-12 3xl:gap-16 4k:gap-20 justify-center">
                     <ProjectCard 
                         name={"Paint"}
                         description={"A simplified drawing app modeled after Microsoft Paint, built under tight weekly deadlines with a predefined feature set. Focused on usability, responsiveness, and efficient time management."}
