@@ -25,37 +25,37 @@ const ProjectCard = (props: Props) => {
     return (
         <>
             <div onMouseEnter={itemEntered} onMouseLeave={itemExited} 
-                className={`flex flex-col rounded-2xl border-2 border-slate-400 dark:border-slate-700 w-1/3 max-xl:w-5/12 max-md:w-full overflow-hidden ${isHovered ? `shadow-xl shadow-slate-500` : ''}`}>
-                <div className="relative w-full h-[300px]">
+                className={`flex flex-col rounded-2xl border-2 border-slate-400 dark:border-slate-700 w-1/3 max-xl:w-5/12 max-md:w-full 3xl:w-2/5 overflow-hidden ${isHovered ? `shadow-xl shadow-slate-500` : ''}`}>
+                <div className="relative w-full max-3xl:h-[300px] 3xl:h-[450px] 4k:h-[500px]">
                     <Image className="object-cover object-center" src={props.image} alt={props.imageAlt} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                 </div>
-                <div className="flex flex-col p-4 w-full">
+                <div className="flex flex-col justify-evenly p-4 4k:p-6 w-full h-1/2">
                     <span className="flex xl:flex-row max-md:flex-col items-center pb-2 xl:space-x-4">
-                        <p className="font-bold text-2xl max-md:text-xl underline text-center">{props.name}</p>
+                        <p className="font-bold text-2xl max-md:text-xl 3xl:text-3xl 4k:text-5xl underline text-center">{props.name}</p>
                         <div className="p-1">
                             {props.status && (
-                                <p className="bg-green-500 dark:bg-green-600 font-semibold w-fit rounded-full px-2 max-xl:px-4 max-xl:py-1 text-sm max-md:text-xs text-center">Completed</p>
+                                <p className="bg-green-500 dark:bg-green-600 font-semibold w-fit rounded-full px-2 max-xl:px-4 max-xl:py-1 4k:px-5 4k:py-2 text-sm max-md:text-xs 3xl:text-xl 4k:text-3xl text-center">Completed</p>
                             ) || (
-                                <p className="bg-yellow-300 dark:bg-yellow-500 font-semibold w-fit rounded-full px-2 max-xl:px-4 max-xl:py-1 text-sm max-md:text-xs text-center">In Progress</p>
+                                <p className="bg-yellow-300 dark:bg-yellow-500 font-semibold w-fit rounded-full px-2 max-xl:px-4 max-xl:py-1 4k:px-5 4k:py-2 text-sm max-md:text-xs 3xl:text-xl 4k:text-3xl text-center">In Progress</p>
                             )}
                         </div>
                     </span>
-                    <p className="max-md:text-sm">{props.description}</p>
+                    <p className="max-md:text-sm 3xl:text-xl 4k:text-2xl">{props.description}</p>
                     <span className="pt-2">
-                        <p className="font-bold underline">Skills Used:</p>
+                        <p className="font-bold underline 3xl:text-2xl 4k:text-4xl">Skills Used:</p>
                         <div className="flex flex-wrap gap-2 p-2 m-2 place-content-center text-center">
                             {props.skills.map((skill: String, index: number) => (
                                 <div key={index}>
-                                    <ItemBox color={"bg-blue-800 dark:bg-blue-300"} hoveredColor={"bg-blue-950 dark:bg-blue-600"} width={""} boxType={"rounded-full"} padding={"px-2"} other={"text-white dark:text-black max-md:text-sm"}>
+                                    <ItemBox color={"bg-blue-800 dark:bg-blue-300"} hoveredColor={"bg-blue-950 dark:bg-blue-600"} width={""} boxType={"rounded-full"} padding={"px-2 3xl:px-4 3xl:py-1"} other={"text-white dark:text-black max-md:text-sm 3xl:text-xl 4k:text-2xl"}>
                                         {skill}
                                     </ItemBox>
                                 </div>
                             ))}
                         </div>
                     </span>
-                    <div className="flex pt-2">
-                        <StyledButton href={props.link} text={"GitHub"} color={"bg-green-500"} hoveredColor={"bg-green-200"} icon={<SiGithub />} other={"w-full text-center"} textSize={""} padding={""} label={"View This Project's GitHub Page"} title={"View on GitHub"} />
-                    </div>
+                </div>
+                <div className="flex justify-end pb-4 pl-4 pr-4">
+                    <StyledButton href={props.link} text={"GitHub"} color={"bg-green-500"} hoveredColor={"bg-green-200"} icon={<SiGithub className="3xl:w-8 3xl:h-8 4k:w-10 4k:h-10"/>} other={"w-full text-center"} textSize={"3xl:text-2xl"} padding={"3xl:py-1"} label={"View This Project's GitHub Page"} title={"View on GitHub"} />
                 </div>
             </div>
         </>
