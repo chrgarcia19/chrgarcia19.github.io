@@ -55,7 +55,7 @@ const ProjectCard = (props: Props) => {
                     </span>
                 </div>
                 <div className="flex justify-end p-4">
-                    <StyledButton href={props.link} text={"GitHub"} color={"bg-green-500"} hoveredColor={"bg-green-200"} icon={<SiGithub className="w-6 h-6 3xl:w-8 3xl:h-8 4k:w-10 4k:h-10"/>} other={"w-full text-center"} textSize={"text-lg 3xl:text-2xl"} padding={"py-1"} label={"View This Project's GitHub Page"} title={"View on GitHub"} />
+                    <StyledButton href={props.link} text={"GitHub"} color={"bg-green-500"} hoveredColor={"bg-green-600"} icon={<SiGithub className="w-6 h-6 3xl:w-8 3xl:h-8 4k:w-10 4k:h-10"/>} other={"w-full text-center"} textSize={"text-lg 3xl:text-2xl"} padding={"py-1"} label={"View This Project's GitHub Page"} title={"View on GitHub"} />
                 </div>
             </div>
         </>
