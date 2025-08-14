@@ -26,6 +26,9 @@ const StyledButton = (props: Props) => {
             <Link 
                 onMouseEnter={itemEntered} 
                 onMouseLeave={itemExited}
+                onTouchStart={itemEntered}
+                onTouchEnd={itemExited}
+                onTouchCancel={itemExited}
                 href={props.href}  
                 aria-label={props.label}
                 title={props.title}
