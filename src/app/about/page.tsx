@@ -28,18 +28,18 @@ const AboutMe = () => {
                     </div>
                     <div className="flex flex-col w-1/2 max-lg:w-full items-center justify-center gap-y-12 max-lg:gap-y-4 4k:gap-y-16">
                         <div className="flex text-xl max-lg:text-lg 3xl:text-4xl 4k:text-6xl max-lg:font-bold font-semibold text-center">My Academic & Professional Journey</div>
-                        <ItemBox color={"bg-cyan-600 dark:bg-cyan-700"} width={"w-4/6 max-sm:w-full 3xl:w-5/6"} boxType={"rounded-lg"} padding={"p-4 max-lg:p-2"} other={"text-center"} hoveredColor={"shadow-slate-500"}>
+                        <ItemBox color={"bg-cyan-600 dark:bg-cyan-700"} width={"w-4/6 max-sm:w-full 3xl:w-5/6"} boxType={"rounded-lg"} padding={"p-4 max-lg:p-2"} other={"text-center"} hoveredColor={"xl:shadow-slate-500"}>
                             <p className="font-bold text-2xl max-sm:text-xl 3xl:text-3xl 4k:text-5xl">Valparaiso University</p>
                             <p className="italic max-sm:text-sm 3xl:text-xl 4k:text-3xl">Bachelor of Science in Computer Science</p>
                             <p className="text-sm max-sm:text-xs 3xl:text-lg 4k:text-2xl">August 2020 - May 2024</p>
                             <p className="text-sm max-sm:text-xs 3xl:text-lg 4k:text-2xl">Overall GPA: 3.854</p>
                         </ItemBox>
-                        <ItemBox color={"bg-cyan-600 dark:bg-cyan-700"} width={"w-4/6 max-sm:w-full 3xl:w-5/6"} boxType={"rounded-lg"} padding={"p-4 max-lg:p-2"} other={"text-center"} hoveredColor={"shadow-slate-500"}>
+                        <ItemBox color={"bg-cyan-600 dark:bg-cyan-700"} width={"w-4/6 max-sm:w-full 3xl:w-5/6"} boxType={"rounded-lg"} padding={"p-4 max-lg:p-2"} other={"text-center"} hoveredColor={"xl:shadow-slate-500"}>
                             <p className="font-bold text-2xl max-sm:text-xl 3xl:text-3xl 4k:text-5xl">Association for Computing Machinery (ACM)</p>
                             <p className="italic max-sm:text-sm 3xl:text-lg 4k:text-3xl">President (August 2023 - May 2024)</p>
                             <p className="text-sm max-sm:text-xs 3xl:text-base 4k:text-2xl">Managed ACM’s website and coordinated diverse events, including professional development workshops and campus activities. Initiated and led a speaker series exploring computing’s role across disciplines.</p>
                         </ItemBox>
-                        <ItemBox color={"bg-cyan-600 dark:bg-cyan-700"} width={"w-4/6 max-sm:w-full 3xl:w-5/6"} boxType={"rounded-lg"} padding={"p-4 max-lg:p-2"} other={"text-center"} hoveredColor={"shadow-slate-500"}>
+                        <ItemBox color={"bg-cyan-600 dark:bg-cyan-700"} width={"w-4/6 max-sm:w-full 3xl:w-5/6"} boxType={"rounded-lg"} padding={"p-4 max-lg:p-2"} other={"text-center"} hoveredColor={"xl:shadow-slate-500"}>
                             <p className="font-bold text-2xl max-sm:text-xl 3xl:text-3xl 4k:text-5xl">New Prairie High School</p>
                             <p className="italic max-sm:text-sm 3xl:text-xl 4k:text-3xl">High School Diploma with Honors</p>
                             <p className="text-sm max-sm:text-xs 3xl:text-lg 4k:text-2xl">August 2016 - May 2020</p>
