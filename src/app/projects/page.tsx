@@ -8,8 +8,8 @@ import portfolioImage from "@/../public/Portfolio.png";
 const Projects = () => {
     return (
         <>
-            <div id="projects" className="flex flex-col flex-grow justify-center items-center p-5 pt-14 w-full gap-8 bg-zinc-300 dark:bg-zinc-800">
-                <h2 className="flex justify-center items-center font-bold text-5xl max-sm:text-3xl 3xl:text-6xl 4k:text-8xl text-blue-950 dark:text-blue-300 p-4">Projects</h2>
+            <div id="projects" className="flex flex-col flex-grow justify-center items-center p-10 pt-14 w-full gap-8 bg-zinc-300 dark:bg-zinc-800">
+                <h2 className="flex justify-center items-center font-bold text-5xl max-sm:text-3xl 3xl:text-6xl 4k:text-8xl text-blue-950 dark:text-blue-300 p-10 4k:pt-20">Projects</h2>
                 <div className="flex flex-row max-md:flex-col flex-wrap h-full gap-12 3xl:gap-16 4k:gap-20 justify-center">
                     <ProjectCard 
                         name={"Paint"}
