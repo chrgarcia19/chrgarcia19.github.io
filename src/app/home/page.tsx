@@ -40,7 +40,7 @@ const Homepage = () => {
               color={"bg-cyan-500 dark:bg-cyan-700"}
               hovered={"bg-cyan-600 dark:hover:bg-cyan-600 font-bold text-3xl shadow-2xl"}
               icon={null}
-              other={"shadow-xl"}
+              other={"shadow-xl transition-all duration-300"}
               textSize={"text-2xl max-sm:text-sm 3xl:text-3xl 4k:text-5xl"}
               padding={"max-sm:px-2 md:px-3 lg:px-8 3xl:px-6 4k:px-10 py-3 max-sm:py-1 4k:py-5"}
               label={"View Projects Section"}

@@ -7,8 +7,15 @@ import StyledButton from "./StyledButton";
 import ThemeSwitcher from "@/components/ThemeSwitcher";
 import { useState } from "react";
 
+interface NavItems {
+  text: string,
+  href: string,
+  label: string,
+  title: string,
+};
+
 const NavBar = () => {
-  const NAV_ITEMS = [
+  const NAV_ITEMS: NavItems[] = [
     {
       text: "Home",
       href: "/",
@@ -57,7 +64,7 @@ const NavBar = () => {
             width={""}
             boxType={"rounded-full"}
             padding={"px-4 max-sm:px-2 3xl:px-6 3xl:py-1"}
-            other={""}
+            other={"transition-all duration-300"}
           >
             <h1 className="text-xl sm:text-3xl 3xl:text-5xl 4k:text-7xl text-white font-bold">
               Christian Garcia
@@ -73,7 +80,7 @@ const NavBar = () => {
               color={"bg-cyan-500 dark:bg-cyan-700"}
               hovered={"bg-cyan-600 dark:hover:bg-cyan-600"}
               icon={null}
-              other={""}
+              other={"transition-all duration-300"}
               textSize={"text-lg max-sm:text-sm max-lg:text-3xl 3xl:text-2xl 4k:text-4xl"}
               padding={"px-6 max-sm:px-2 lg:px-4 3xl:px-6 py-1 3xl:py-2"}
               label={item.label}
@@ -114,7 +121,7 @@ const NavBar = () => {
                 color={"bg-cyan-500 dark:bg-cyan-700"}
                 hovered={"bg-cyan-600 dark:hover:bg-cyan-600"}
                 icon={null}
-                other={""}
+                other={"transition-all duration-300"}
                 textSize={"max-sm:text-xl max-lg:text-3xl"}
                 padding={"max-sm:px-4 max-sm:py-1 md:px-5 lg:px-4"}
                 label={item.label}
