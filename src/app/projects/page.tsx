@@ -1,5 +1,5 @@
 import ProjectCard from "@/components/ProjectCard";
-import paintImage from "@/../public/PaintTestImage.png";
+import paintImage from "@/../public/PaintImage.png";
 import dttImage from "@/../public/DrivingTimeTrackerCollage.png";
 import cmcImage from "@/../public/CashMoneyCitationsImage.png";
 import waImage from "@/../public/WordleAssistantCMD.png";
