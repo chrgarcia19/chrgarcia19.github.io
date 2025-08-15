@@ -8,7 +8,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Christian Garcia's Portfolio",
-  description: "A website designed to highlight Christian's skills, projects, and more.",
+  description:
+    "A website designed to highlight Christian's skills, projects, and more.",
 };
 
 export default function RootLayout({
@@ -20,7 +21,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <Providers>
-          <Toaster position="bottom-right"/>
+          <Toaster position="bottom-right" />
           {children}
         </Providers>
       </body>
