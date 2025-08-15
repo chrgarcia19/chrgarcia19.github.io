@@ -26,23 +26,35 @@ const ProjectCard = (props: Props) => {
         <>
             <div onMouseEnter={itemEntered} onMouseLeave={itemExited}
                 className={`flex flex-col rounded-2xl border-4 border-slate-400 dark:border-slate-700 w-1/3 max-xl:w-5/12 max-md:w-full 3xl:w-2/5 min-h-full overflow-hidden ${isHovered ? `xl:shadow-xl xl:shadow-slate-500` : ''}`}>
-                <div className="relative w-full max-3xl:h-[300px] 3xl:h-[450px] 4k:h-[500px]">
-                    <Image className="object-cover object-center" src={props.image} alt={props.imageAlt} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+
+                {/* Image containter for project image */}
+                <div className="relative w-full h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80 3xl:h-[450px] 4k:h-[500px]">
+                    <Image className="object-cover object-top" src={props.image} alt={props.imageAlt} fill sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw" />
                 </div>
+
+                {/* Content container for project details */}
                 <div className="flex flex-col flex-grow justify-start p-4 4k:p-6 w-full gap-1">
-                    <span className="flex xl:flex-row max-md:flex-col items-center pb-2 xl:space-x-4">
-                        <p className="font-bold text-2xl max-md:text-xl 3xl:text-3xl 4k:text-5xl underline text-center">{props.name}</p>
-                        <div className="p-1">
+
+                    {/* Title section */}
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-4 pb-2">
+                        <h3 className="font-bold text-2xl max-md:text-xl 3xl:text-3xl 4k:text-5xl underline text-center">{props.name}</h3>
+                        <div className="flex justify-center sm:justify-end">
                             {props.status && (
-                                <p className="bg-green-500 dark:bg-green-600 font-semibold w-fit rounded-full px-2 max-xl:px-4 max-xl:py-1 4k:px-5 4k:py-2 text-sm max-md:text-xs 3xl:text-xl 4k:text-3xl text-center">Completed</p>
+                                <span className="bg-green-500 dark:bg-green-600 font-semibold rounded-full px-3 py-1 sm:px-4 sm:py-1 4k:px-5 4k:py-2 text-xs sm:text-sm 3xl:text-xl 4k:text-3xl text-white whitespace-nowrap">Completed</span>
                             ) || (
-                                <p className="bg-yellow-300 dark:bg-yellow-500 font-semibold w-fit rounded-full px-2 max-xl:px-4 max-xl:py-1 4k:px-5 4k:py-2 text-sm max-md:text-xs 3xl:text-xl 4k:text-3xl text-center">In Progress</p>
+                                <p className="bg-yellow-300 dark:bg-yellow-500 font-semibold rounded-full px-3 py-1 sm:px-4 sm:py-1 4k:px-5 4k:py-2 text-xs sm:text-sm 3xl:text-xl 4k:text-3xl text-white whitespace-nowrap">In Progress</p>
                             )}
                         </div>
-                    </span>
-                    <p className="max-md:text-sm 3xl:text-xl 4k:text-2xl">{props.description}</p>
-                    <span className="pt-2 pb-2">
-                        <p className="font-bold underline 3xl:text-2xl 4k:text-4xl">Skills Used:</p>
+                    </div>
+
+                    {/* Description section */}
+                    <p className="text-sm sm:text-base md:text-base 3xl:text-xl 4k:text-2xl dark:text-gray-100 leading-relaxed">
+                        {props.description}
+                    </p>
+
+                    {/* Skills section */}
+                    <div className="mt-2 sm:mt-3">
+                        <h5 className="font-bold underline sm:text-lg 3xl:text-2xl 4k:text-4xl">Skills Used:</h5>
                         <div className="flex flex-wrap gap-2 p-2 m-2 place-content-center text-center">
                             {props.skills.map((skill: String, index: number) => (
                                 <div key={index}>
@@ -52,10 +64,12 @@ const ProjectCard = (props: Props) => {
                                 </div>
                             ))}
                         </div>
-                    </span>
+                    </div>
                 </div>
-                <div className="flex justify-end p-4">
-                    <StyledButton href={props.link} text={"GitHub"} color={"bg-green-500"} hoveredColor={"bg-green-600"} icon={<SiGithub className="w-6 h-6 3xl:w-8 3xl:h-8 4k:w-10 4k:h-10"/>} other={"w-full text-center"} textSize={"text-lg 3xl:text-2xl"} padding={"py-1"} label={"View This Project's GitHub Page"} title={"View on GitHub"} />
+
+                {/* Button(s) Section */}
+                <div className="flex justify-center p-4">
+                    <StyledButton href={props.link} text={"GitHub"} color={"bg-green-500"} hoveredColor={"bg-green-600"} icon={<SiGithub className="w-5 h-5 sm:w-6 sm:h-6 3xl:w-8 3xl:h-8 4k:w-10 4k:h-10"/>} other={" text-center"} textSize={"text-lg 3xl:text-2xl"} padding={"px-3 py-1"} label={"View This Project's GitHub Page"} title={"View on GitHub"} />
                 </div>
             </div>
         </>
