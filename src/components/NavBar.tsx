@@ -71,25 +71,20 @@ const NavBar = () => {
               href={item.href}
               text={item.text}
               color={"bg-cyan-500 dark:bg-cyan-700"}
-              hoveredColor={"bg-cyan-600 dark:hover:bg-cyan-600"}
+              hovered={"bg-cyan-600 dark:hover:bg-cyan-600"}
               icon={null}
               other={""}
-              textSize={
-                "text-lg max-sm:text-sm max-lg:text-3xl 3xl:text-2xl 4k:text-4xl"
-              }
+              textSize={"text-lg max-sm:text-sm max-lg:text-3xl 3xl:text-2xl 4k:text-4xl"}
               padding={"px-6 max-sm:px-2 lg:px-4 3xl:px-6 py-1 3xl:py-2"}
               label={item.label}
-              title={item.title}
-            />
+              title={item.title} textColor={""}            />
           ))}
           <DownloadButton
             text={"Résumé"}
             padding={"px-6 max-sm:px-2 lg:px-4 3xl:px-6 py-1 3xl:py-2"}
-            textSize={
-              "text-lg max-sm:text-sm max-lg:text-3xl 3xl:text-2xl 4k:text-4xl"
-            }
-            view={false}
-          />
+            textSize={"text-lg max-sm:text-sm max-lg:text-3xl 3xl:text-2xl 4k:text-4xl"}
+            view={false} 
+            hovered={"bg-cyan-600 dark:hover:bg-cyan-600 font-bold text-xl shadow-xl"} />
           <ThemeSwitcher />
         </div>
         {/*For Mobile*/}
@@ -117,21 +112,21 @@ const NavBar = () => {
                 href={item.href}
                 text={item.text}
                 color={"bg-cyan-500 dark:bg-cyan-700"}
-                hoveredColor={"bg-cyan-600 dark:hover:bg-cyan-600"}
+                hovered={"bg-cyan-600 dark:hover:bg-cyan-600"}
                 icon={null}
                 other={""}
                 textSize={"max-sm:text-xl max-lg:text-3xl"}
                 padding={"max-sm:px-4 max-sm:py-1 md:px-5 lg:px-4"}
                 label={item.label}
-                title={item.title}
-              />
+                title={item.title} 
+                textColor={"text-white"}
+                />
             ))}
             <DownloadButton
               text={"Résumé"}
               padding={"max-sm:px-4 max-sm:py-1 lg:px-4"}
               textSize={"max-sm:text-xl max-lg:text-3xl"}
-              view={false}
-            />
+              view={false} hovered={""}            />
           </ul>
         </div>
       </nav>
