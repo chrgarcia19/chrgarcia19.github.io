@@ -45,7 +45,7 @@ const Homepage = () => {
               padding={"max-sm:px-2 md:px-3 lg:px-8 3xl:px-6 4k:px-10 py-3 max-sm:py-1 4k:py-5"}
               label={"View Projects Section"}
               title={"View Projects Section"} 
-              textColor={""}            
+              textColor={"text-white"}            
               />
             <DownloadButton
               text={"View Résumé"}

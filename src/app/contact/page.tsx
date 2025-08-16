@@ -23,61 +23,55 @@ const Contact = () => {
             href={"mailto:christian.garcia@valpo.edu"}
             text={"Connect With Christian"}
             color={"bg-cyan-500 dark:bg-cyan-700"}
-            hoveredColor={"bg-cyan-600 dark:hover:bg-cyan-600"}
+            hovered={"bg-cyan-600 dark:hover:bg-cyan-600"}
             icon={null}
             other={""}
-            textSize={
-              "text-lg max-sm:text-base md:text-2xl max-lg:text-3xl 3xl:text-3xl 4k:text-5xl"
-            }
-            padding={
-              "px-6 max-sm:px-3 md:px-3 lg:px-4 py-6 max-sm:py-4 md:py-4 3xl:px-6 4k:px-10 4k:py-5"
-            }
+            textSize={"text-lg max-sm:text-base md:text-2xl max-lg:text-3xl 3xl:text-3xl 4k:text-5xl"}
+            padding={"px-6 max-sm:px-3 md:px-3 lg:px-4 py-6 max-sm:py-4 md:py-4 3xl:px-6 4k:px-10 4k:py-5"}
             label={"Send an Email to Christian"}
             title={"Email Christian"}
-          />
+            textColor={"text-white"}            
+              />
           <span className="flex flex-row gap-4 p-4">
             <StyledButton
               href={"https://www.linkedin.com/in/chrgarcia19/"}
               text={""}
               color={"bg-cyan-500  dark:bg-cyan-700"}
-              hoveredColor={"bg-cyan-600 dark:hover:bg-cyan-600"}
-              icon={
-                <FaLinkedin className="w-10 h-10 max-md:w-7 max-md:h-7 3xl:w-12 3xl:h-12 4k:w-16 4k:h-16" />
-              }
+              hovered={"bg-cyan-600 dark:hover:bg-cyan-600"}
+              icon={<FaLinkedin className="w-10 h-10 max-md:w-7 max-md:h-7 3xl:w-12 3xl:h-12 4k:w-16 4k:h-16" />}
               other={""}
               textSize={"text-lg max-sm:text-sm max-lg:text-3xl"}
               padding={"px-6 max-lg:px-3 lg:px-4 4k:px-6 py-1 3xl:py-2"}
               label={"Go to Christian's LinkedIn"}
               title={"Christian's LinkedIn"}
-            />
+              textColor={"text-white"}            
+              />
             <StyledButton
               href={"https://profile.indeed.com/p/christiang-mg6ntmr"}
               text={""}
               color={"bg-cyan-500  dark:bg-cyan-700"}
-              hoveredColor={"bg-cyan-600 dark:hover:bg-cyan-600"}
-              icon={
-                <SiIndeed className="w-10 h-10 max-md:w-7 max-md:h-7 3xl:w-12 3xl:h-12 4k:w-16 4k:h-16" />
-              }
+              hovered={"bg-cyan-600 dark:hover:bg-cyan-600"}
+              icon={<SiIndeed className="w-10 h-10 max-md:w-7 max-md:h-7 3xl:w-12 3xl:h-12 4k:w-16 4k:h-16" />}
               other={"py-1"}
               textSize={"text-lg max-sm:text-sm max-lg:text-3xl"}
               padding={"px-6 max-lg:px-3 lg:px-4 4k:px-6 py-1 3xl:py-2"}
               label={"Go to Christian's Indeed"}
               title={"Christian's Indeed"}
-            />
+              textColor={"text-white"}            
+              />
             <StyledButton
               href={"https://github.com/chrgarcia19"}
               text={""}
               color={"bg-cyan-500 dark:bg-cyan-700"}
-              hoveredColor={"bg-cyan-600 dark:hover:bg-cyan-600"}
-              icon={
-                <FaGithubSquare className="w-10 h-10 max-md:w-7 max-md:h-7 3xl:w-12 3xl:h-12 4k:w-16 4k:h-16" />
-              }
+              hovered={"bg-cyan-600 dark:hover:bg-cyan-600"}
+              icon={<FaGithubSquare className="w-10 h-10 max-md:w-7 max-md:h-7 3xl:w-12 3xl:h-12 4k:w-16 4k:h-16" />}
               other={"py-1"}
               textSize={"text-lg max-sm:text-sm max-lg:text-3xl"}
               padding={"px-6 max-lg:px-3 lg:px-4 4k:px-6 py-1 3xl:py-2"}
               label={"Go to Christian's GitHub"}
-              title={"Christian's GitHub"}
-            />
+              title={"Christian's GitHub"} 
+              textColor={"text-white"}            
+              />
           </span>
         </div>
         <nav className="flex flex-col w-full p-2 items-center justify-center bg-cyan-500 dark:bg-cyan-700 bottom-0">

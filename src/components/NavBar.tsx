@@ -84,7 +84,9 @@ const NavBar = () => {
               textSize={"text-lg max-sm:text-sm max-lg:text-3xl 3xl:text-2xl 4k:text-4xl"}
               padding={"px-6 max-sm:px-2 lg:px-4 3xl:px-6 py-1 3xl:py-2"}
               label={item.label}
-              title={item.title} textColor={""}            />
+              title={item.title} 
+              textColor={"text-white"}            
+              />
           ))}
           <DownloadButton
             text={"Résumé"}

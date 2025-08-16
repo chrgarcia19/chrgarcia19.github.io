@@ -96,16 +96,15 @@ const ProjectCard = (props: Props) => {
             href={props.link}
             text={"GitHub"}
             color={"bg-green-500"}
-            hoveredColor={"bg-green-600"}
-            icon={
-              <SiGithub className="w-5 h-5 sm:w-6 sm:h-6 3xl:w-8 3xl:h-8 4k:w-10 4k:h-10" />
-            }
+            hovered={"bg-green-600"}
+            icon={<SiGithub className="w-5 h-5 sm:w-6 sm:h-6 3xl:w-8 3xl:h-8 4k:w-10 4k:h-10" />}
             other={" text-center"}
             textSize={"text-lg 3xl:text-2xl"}
             padding={"px-3 py-1"}
             label={"View This Project's GitHub Page"}
-            title={"View on GitHub"}
-          />
+            title={"View on GitHub"} 
+            textColor={"text-white"}          
+            />
         </div>
       </div>
     </>
