@@ -30,8 +30,9 @@ const Contact = () => {
             padding={"px-6 max-sm:px-3 md:px-3 lg:px-4 py-6 max-sm:py-4 md:py-4 3xl:px-6 4k:px-10 4k:py-5"}
             label={"Send an Email to Christian"}
             title={"Email Christian"}
-            textColor={"text-white"}            
-              />
+            textColor={"text-white"} 
+            animation={"transition-all duration-300 ease-in-out"}              
+            />
           <span className="flex flex-row gap-4 p-4">
             <StyledButton
               href={"https://www.linkedin.com/in/chrgarcia19/"}
@@ -44,7 +45,8 @@ const Contact = () => {
               padding={"px-6 max-lg:px-3 lg:px-4 4k:px-6 py-1 3xl:py-2"}
               label={"Go to Christian's LinkedIn"}
               title={"Christian's LinkedIn"}
-              textColor={"text-white"}            
+              textColor={"text-white"} 
+              animation={"transition-all duration-300 ease-in-out"}              
               />
             <StyledButton
               href={"https://profile.indeed.com/p/christiang-mg6ntmr"}
@@ -57,7 +59,8 @@ const Contact = () => {
               padding={"px-6 max-lg:px-3 lg:px-4 4k:px-6 py-1 3xl:py-2"}
               label={"Go to Christian's Indeed"}
               title={"Christian's Indeed"}
-              textColor={"text-white"}            
+              textColor={"text-white"} 
+              animation={"transition-all duration-300 ease-in-out"}              
               />
             <StyledButton
               href={"https://github.com/chrgarcia19"}
@@ -69,8 +72,9 @@ const Contact = () => {
               textSize={"text-lg max-sm:text-sm max-lg:text-3xl"}
               padding={"px-6 max-lg:px-3 lg:px-4 4k:px-6 py-1 3xl:py-2"}
               label={"Go to Christian's GitHub"}
-              title={"Christian's GitHub"} 
-              textColor={"text-white"}            
+              title={"Christian's GitHub"}
+              textColor={"text-white"} 
+              animation={"transition-all duration-300 ease-in-out"}              
               />
           </span>
         </div>

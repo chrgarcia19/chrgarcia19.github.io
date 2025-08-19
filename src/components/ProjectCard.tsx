@@ -102,8 +102,9 @@ const ProjectCard = (props: Props) => {
             textSize={"text-lg 3xl:text-2xl"}
             padding={"px-3 py-1"}
             label={"View This Project's GitHub Page"}
-            title={"View on GitHub"} 
-            textColor={"text-white"}          
+            title={"View on GitHub"}
+            textColor={"text-white"} 
+            animation={"transition-all duration-300 ease-in-out"}            
             />
         </div>
       </div>

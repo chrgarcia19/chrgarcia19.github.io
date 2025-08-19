@@ -6,6 +6,7 @@ import ItemBox from "./ItemBox";
 import StyledButton from "./StyledButton";
 import ThemeSwitcher from "@/components/ThemeSwitcher";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 interface NavItems {
   text: string,
@@ -49,6 +50,7 @@ const NavBar = () => {
   ];
 
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   const handleOpen = () => {
     setMenuOpen(!menuOpen);
@@ -80,12 +82,13 @@ const NavBar = () => {
               color={"bg-cyan-500 dark:bg-cyan-700"}
               hovered={"bg-cyan-600 dark:hover:bg-cyan-600"}
               icon={null}
-              other={"transition-all duration-300"}
+              other={""}
               textSize={"text-lg max-sm:text-sm max-lg:text-3xl 3xl:text-2xl 4k:text-4xl"}
               padding={"px-6 max-sm:px-2 lg:px-4 3xl:px-6 py-1 3xl:py-2"}
               label={item.label}
-              title={item.title} 
-              textColor={"text-white"}            
+              title={item.title}
+              textColor={"text-white"} 
+              animation={"transition-all duration-300 ease-in-out"}              
               />
           ))}
           <DownloadButton
@@ -96,6 +99,8 @@ const NavBar = () => {
             hovered={"bg-cyan-600 dark:hover:bg-cyan-600 font-bold text-xl shadow-xl"} />
           <ThemeSwitcher />
         </div>
+
+
         {/*For Mobile*/}
         <div className="lg:hidden flex items-center gap-4 z-10 mr-1">
           <ThemeSwitcher />
@@ -123,12 +128,13 @@ const NavBar = () => {
                 color={"bg-cyan-500 dark:bg-cyan-700"}
                 hovered={"bg-cyan-600 dark:hover:bg-cyan-600"}
                 icon={null}
-                other={"transition-all duration-300"}
+                other={""}
                 textSize={"max-sm:text-xl max-lg:text-3xl"}
                 padding={"max-sm:px-4 max-sm:py-1 md:px-5 lg:px-4"}
                 label={item.label}
-                title={item.title} 
-                textColor={"text-white"}
+                title={item.title}
+                textColor={"text-white"} 
+                animation={"transition-all duration-300 ease-in-out"}                
                 />
             ))}
             <DownloadButton

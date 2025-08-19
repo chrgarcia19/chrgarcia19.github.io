@@ -27,12 +27,13 @@ const Homepage = () => {
               color={"border-cyan-500 dark:border-cyan-700"}
               hovered={"bg-cyan-600 dark:hover:bg-cyan-600 font-bold text-xl shadow-xl"}
               icon={null}
-              other={"shadow-lg border-2 transition-all duration-300"}
+              other={"shadow-lg border-2"}
               textSize={"text-xl max-sm:text-sm 3xl:text-3xl 4k:text-5xl"}
               padding={"max-sm:px-2 md:px-3 lg:px-4 3xl:px-6 4k:px-10 py-3 max-sm:py-1 4k:py-5"}
               label={"Learn More About Christian"}
-              title={"Learn More About Christian"} 
-              textColor={"text-slate-700 dark:text-white"}            
+              title={"Learn More About Christian"}
+              textColor={"text-slate-700 dark:text-white"} 
+              animation={"transition-all duration-300 ease-in-out"}              
               />
             <StyledButton
               href={"#projects"}
@@ -40,12 +41,13 @@ const Homepage = () => {
               color={"bg-cyan-500 dark:bg-cyan-700"}
               hovered={"bg-cyan-600 dark:hover:bg-cyan-600 font-bold text-3xl shadow-2xl"}
               icon={null}
-              other={"shadow-xl transition-all duration-300"}
+              other={"shadow-xl"}
               textSize={"text-2xl max-sm:text-sm 3xl:text-3xl 4k:text-5xl"}
               padding={"max-sm:px-2 md:px-3 lg:px-8 3xl:px-6 4k:px-10 py-3 max-sm:py-1 4k:py-5"}
               label={"View Projects Section"}
-              title={"View Projects Section"} 
-              textColor={"text-white"}            
+              title={"View Projects Section"}
+              textColor={"text-white"} 
+              animation={"transition-all duration-300 ease-in-out"}              
               />
             <DownloadButton
               text={"View Résumé"}
