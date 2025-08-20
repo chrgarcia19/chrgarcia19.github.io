@@ -6,7 +6,7 @@ import Image from "next/image";
 const AboutMe = () => {
   return (
     <>
-      <div
+      <section
         id="about"
         className="p-5 w-full 3xl:h-screen 3xl:place-content-center pt-14 bg-zinc-300 dark:bg-zinc-800"
       >
@@ -112,7 +112,7 @@ const AboutMe = () => {
             </ItemBox>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

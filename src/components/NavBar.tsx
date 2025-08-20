@@ -5,7 +5,7 @@ import DownloadButton from "./DownloadButton";
 import ItemBox from "./ItemBox";
 import StyledButton from "./StyledButton";
 import ThemeSwitcher from "@/components/ThemeSwitcher";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 interface NavItems {
@@ -16,6 +16,7 @@ interface NavItems {
 };
 
 const NavBar = () => {
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const NAV_ITEMS: NavItems[] = [
     {
       text: "Home",
@@ -50,14 +51,94 @@ const NavBar = () => {
   ];
 
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("/");
+
   const pathname = usePathname();
 
   const handleOpen = () => {
     setMenuOpen(!menuOpen);
   };
 
+  useEffect(() => {
+
+    const getActiveSection = () => {
+      const scrollPosition = window.scrollY;
+      const windowHeight = window.innerHeight;
+
+      if (scrollPosition < 100){ return "/"; }
+
+      let currentSection = "/";
+      let closestDistance = Infinity;
+
+      for (const item of NAV_ITEMS){
+        if (item.href.startsWith("#")){
+          const sectionId = item.href.substring(1);
+          const section = document.getElementById(sectionId);
+
+          if (section){
+            const rect = section.getBoundingClientRect();
+            const sectionTop = rect.top + window.scrollY;
+            const sectionCenter = sectionTop + (rect.height / 2);
+            const viewportCenter = scrollPosition + (windowHeight / 2);
+
+            const distance = Math.abs(sectionCenter - viewportCenter);
+
+            if (distance < closestDistance) {
+              closestDistance = distance;
+              currentSection = item.href;
+            }
+          }
+        }
+      }
+      return currentSection;
+    };
+
+    const handleScroll = () => {
+      const active = getActiveSection();
+      if (active !== activeSection){
+        setActiveSection(active);
+      }
+    };
+
+    const timer = setTimeout(() => {
+      handleScroll();
+    }, 100);
+
+    let ticking = false;
+    const throttledHandleScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          handleScroll();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }
+
+    window.addEventListener("scroll", throttledHandleScroll, { passive: true });
+
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("scroll", throttledHandleScroll);
+    }
+  }, [activeSection, NAV_ITEMS]);
+
+  const isActive = (href: string) => {
+    if (pathname !== "/" && href === "/"){
+      return false;
+    }
+    return (activeSection === href);
+  };
+
   return (
     <>
+      {/* Debug info - remove after fixing */}
+      <div style={{position: 'fixed', top: '60px', left: '10px', background: 'black', color: 'white', padding: '10px', zIndex: 1000, fontSize: '12px'}}>
+        <div>Active Section: {activeSection}</div>
+        <div>Pathname: {pathname}</div>
+        <div>Scroll Y: {typeof window !== 'undefined' ? window.scrollY : 'N/A'}</div>
+      </div>
+
       <nav className="flex w-full p-2 items-center justify-between bg-cyan-500 dark:bg-cyan-700 overflow-hidden fixed z-10">
         <div className="flex">
           <ItemBox
@@ -73,22 +154,22 @@ const NavBar = () => {
             </h1>
           </ItemBox>
         </div>
-        <div className="max-lg:hidden flex items-center xl:space-x-6 lg:space-x-2 mr-4 max-lg:mr-2">
+        <div className="max-lg:hidden flex items-center xl:space-x-6 lg:space-x-2 mr-4 max-lg:mr-2 text-slate">
           {NAV_ITEMS.map((item: any, index: number) => (
-            <StyledButton
-              key={index}
-              href={item.href}
-              text={item.text}
-              color={"bg-cyan-500 dark:bg-cyan-700"}
-              hovered={"bg-cyan-600 dark:hover:bg-cyan-600"}
-              icon={null}
-              other={""}
-              textSize={"text-lg max-sm:text-sm max-lg:text-3xl 3xl:text-2xl 4k:text-4xl"}
-              padding={"px-6 max-sm:px-2 lg:px-4 3xl:px-6 py-1 3xl:py-2"}
-              label={item.label}
-              title={item.title}
-              textColor={"text-white"} 
-              animation={"transition-all duration-300 ease-in-out"}              
+              <StyledButton
+                key={index}
+                href={item.href}
+                text={item.text}
+                color={"bg-cyan-500 dark:bg-cyan-700"}
+                hovered={"hover:bg-cyan-600 dark:hover:bg-cyan-600"}
+                icon={null}
+                other={isActive(item.href) ? "border-b-[3px] border-white transform transition-all duration-300" : "border-b-[3px] border-transparent hover:bg-cyan-600 dark:hover:bg-cyan-600"}
+                textSize={"text-lg max-sm:text-sm max-lg:text-3xl 3xl:text-2xl 4k:text-4xl"}
+                padding={"px-6 max-sm:px-2 lg:px-4 3xl:px-6 py-1 3xl:py-2"}
+                label={item.label}
+                title={item.title}
+                textColor={isActive(item.href) ? "text-blue-200" : "text-white"} 
+                animation={"transition-all duration-300 ease-in-out"}              
               />
           ))}
           <DownloadButton
@@ -141,7 +222,9 @@ const NavBar = () => {
               text={"Résumé"}
               padding={"max-sm:px-4 max-sm:py-1 lg:px-4"}
               textSize={"max-sm:text-xl max-lg:text-3xl"}
-              view={false} hovered={""}            />
+              view={false} 
+              hovered={""}            
+              />
           </ul>
         </div>
       </nav>
