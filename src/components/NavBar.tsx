@@ -132,13 +132,6 @@ const NavBar = () => {
 
   return (
     <>
-      {/* Debug info - remove after fixing */}
-      <div style={{position: 'fixed', top: '60px', left: '10px', background: 'black', color: 'white', padding: '10px', zIndex: 1000, fontSize: '12px'}}>
-        <div>Active Section: {activeSection}</div>
-        <div>Pathname: {pathname}</div>
-        <div>Scroll Y: {typeof window !== 'undefined' ? window.scrollY : 'N/A'}</div>
-      </div>
-
       <nav className="flex w-full p-2 items-center justify-between bg-cyan-500 dark:bg-cyan-700 overflow-hidden fixed z-10">
         <div className="flex">
           <ItemBox
