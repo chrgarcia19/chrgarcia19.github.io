@@ -64,7 +64,7 @@ export default function DownloadButton(props: Props) {
           onMouseLeave={itemExited}
           aria-label="Download Résumé"
           title="Download Christian's Résumé"
-          className={`${props.textSize} max-lg:border-2 max-sm:text-center font-semibold shadow-sm rounded-full ease-in-out text-white ${props.padding} hover:text-gray-200 bg-cyan-500 dark:bg-cyan-700 transition-all duration-300 ${isHovered ? `${props.hovered}` : ""}`}
+          className={`${props.textSize} max-lg:border-2 max-sm:text-center font-semibold shadow-sm rounded-full border-b-[3px] border-transparent ease-in-out text-white ${props.padding} hover:text-gray-200 bg-cyan-500 dark:bg-cyan-700 transition-all duration-300 ${isHovered ? `${props.hovered}` : ""}`}
         >
           <div className="flex items-center justify-center">{props.text}</div>
         </button>

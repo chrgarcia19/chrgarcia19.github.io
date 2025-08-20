@@ -8,7 +8,7 @@ import portfolioImage from "@/../public/Portfolio.png";
 const Projects = () => {
   return (
     <>
-      <div
+      <section
         id="projects"
         className="flex flex-col flex-grow justify-center items-center p-10 pt-14 w-full gap-8 bg-zinc-300 dark:bg-zinc-800"
       >
@@ -109,7 +109,7 @@ const Projects = () => {
             status={false}
           />
         </div>
-      </div>
+      </section>
     </>
   );
 };

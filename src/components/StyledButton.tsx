@@ -36,7 +36,7 @@ const StyledButton = (props: Props) => {
         title={props.title}
         className={`${props.color} ${props.textSize} max-lg:border-2 text-center font-semibold shadow-sm rounded-full ${props.animation} ${props.textColor} ${props.padding} hover:text-gray-200 ${isHovered ? `${props.hovered}` : ""} ${props.other}`}
       >
-        <div className="flex flex-row items-center justify-center gap-x-2">
+        <div className={`flex items-center justify-center ${props.icon !== null ? "flex-row gap-x-2" : ""}`}>
           {props.icon} {props.text}
         </div>
       </Link>

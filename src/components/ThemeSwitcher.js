@@ -3,6 +3,7 @@
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { FaSun, FaMoon } from "react-icons/fa";
+import StyledButton from "./StyledButton";
 
 export default function ThemeSwitcher() {
   const [mounted, setMounted] = useState(false);
@@ -16,7 +17,7 @@ export default function ThemeSwitcher() {
 
   return (
     <>
-      <div className="flex items-center space-x-2">
+      <div className="flex items-center justify-center space-x-2">
         {(resolvedTheme === "light" && (
           <>
             <button

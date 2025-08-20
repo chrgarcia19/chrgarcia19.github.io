@@ -20,7 +20,7 @@ const NavBar = () => {
   const NAV_ITEMS: NavItems[] = [
     {
       text: "Home",
-      href: "/",
+      href: "#home",
       label: "Go to Homepage",
       title: "Go to Homepage",
     },
@@ -51,84 +51,57 @@ const NavBar = () => {
   ];
 
   const [menuOpen, setMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("/");
-
-  const pathname = usePathname();
+  const [activeSection, setActiveSection] = useState("home");
 
   const handleOpen = () => {
     setMenuOpen(!menuOpen);
   };
 
   useEffect(() => {
+    /* 
+     * Assigns the NavBar element to a variable to determine
+     * the height of the navbar since it changes based on 
+     * responsive design.
+     */
+    const navBar = document.querySelector("nav");
+    const navBarHeight = navBar ? navBar.offsetHeight : 80;
 
-    const getActiveSection = () => {
-      const scrollPosition = window.scrollY;
-      const windowHeight = window.innerHeight;
-
-      if (scrollPosition < 100){ return "/"; }
-
-      let currentSection = "/";
-      let closestDistance = Infinity;
-
-      for (const item of NAV_ITEMS){
-        if (item.href.startsWith("#")){
-          const sectionId = item.href.substring(1);
-          const section = document.getElementById(sectionId);
-
-          if (section){
-            const rect = section.getBoundingClientRect();
-            const sectionTop = rect.top + window.scrollY;
-            const sectionCenter = sectionTop + (rect.height / 2);
-            const viewportCenter = scrollPosition + (windowHeight / 2);
-
-            const distance = Math.abs(sectionCenter - viewportCenter);
-
-            if (distance < closestDistance) {
-              closestDistance = distance;
-              currentSection = item.href;
-            }
-          }
-        }
-      }
-      return currentSection;
-    };
+    const sections = NAV_ITEMS.filter(item => item.href.startsWith("#"))
+      .map(item => document.getElementById(item.href.substring(1)))
+      .filter(Boolean) as HTMLElement[];
 
     const handleScroll = () => {
-      const active = getActiveSection();
-      if (active !== activeSection){
-        setActiveSection(active);
+      const viewportTop = window.scrollY + navBarHeight;
+      const viewportBottom = viewportTop + window.innerHeight;
+
+      let maxVisibleRatio = 0;
+      let mostVisibleSection = activeSection;
+
+      for (const section of sections){
+        const sectionTop = section.offsetTop;
+        const sectionBottom = sectionTop + section.offsetHeight;
+
+        const visibleTop = Math.max(sectionTop, viewportTop);
+        const visibleBottom = Math.min(sectionBottom, viewportBottom);
+        const visibleHeight = Math.max(0, visibleBottom - visibleTop);
+
+        const visibleRatio = (visibleHeight / section.offsetHeight);
+
+        if (visibleRatio > maxVisibleRatio){
+          maxVisibleRatio = visibleRatio;
+          mostVisibleSection = `#${section.id}`;
+        }
+      }
+
+      if (mostVisibleSection !== activeSection){
+        setActiveSection(mostVisibleSection);
       }
     };
 
-    const timer = setTimeout(() => {
-      handleScroll();
-    }, 100);
-
-    let ticking = false;
-    const throttledHandleScroll = () => {
-      if (!ticking) {
-        requestAnimationFrame(() => {
-          handleScroll();
-          ticking = false;
-        });
-        ticking = true;
-      }
-    }
-
-    window.addEventListener("scroll", throttledHandleScroll, { passive: true });
-
-    return () => {
-      clearTimeout(timer);
-      window.removeEventListener("scroll", throttledHandleScroll);
-    }
-  }, [activeSection, NAV_ITEMS]);
-
-  const isActive = (href: string) => {
-    if (pathname !== "/" && href === "/"){
-      return false;
-    }
-    return (activeSection === href);
-  };
+    window.addEventListener("scroll", handleScroll, { passive: true});
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [NAV_ITEMS, activeSection]);
 
   return (
     <>
@@ -147,31 +120,37 @@ const NavBar = () => {
             </h1>
           </ItemBox>
         </div>
-        <div className="max-lg:hidden flex items-center xl:space-x-6 lg:space-x-2 mr-4 max-lg:mr-2 text-slate">
+        <div className="max-lg:hidden flex items-center xl:space-x-6 lg:space-x-2 mr-4 max-lg:mr-2">
           {NAV_ITEMS.map((item: any, index: number) => (
+            <div key={index} className="flex items-center">
               <StyledButton
-                key={index}
                 href={item.href}
                 text={item.text}
-                color={"bg-cyan-500 dark:bg-cyan-700"}
-                hovered={"hover:bg-cyan-600 dark:hover:bg-cyan-600"}
+                color={"bg-cyan-500 dark:bg-cyan-700 border-2 border-transparent"}
+                hovered={"hover:bg-cyan-600 dark:hover:bg-cyan-600 font-bold text-xl shadow-xl"}
                 icon={null}
-                other={isActive(item.href) ? "border-b-[3px] border-white transform transition-all duration-300" : "border-b-[3px] border-transparent hover:bg-cyan-600 dark:hover:bg-cyan-600"}
+                other={activeSection === item.href ? "border-b-[3px] border-b-white transform transition-all duration-300" : "border-b-[3px] border-transparent"}
                 textSize={"text-lg max-sm:text-sm max-lg:text-3xl 3xl:text-2xl 4k:text-4xl"}
                 padding={"px-6 max-sm:px-2 lg:px-4 3xl:px-6 py-1 3xl:py-2"}
                 label={item.label}
                 title={item.title}
-                textColor={isActive(item.href) ? "text-blue-200" : "text-white"} 
-                animation={"transition-all duration-300 ease-in-out"}              
+                textColor={activeSection === item.href ? "text-slate-600 dark:text-blue-200" : "text-white"}
+                animation={"transition-all duration-300 ease-in-out"}
               />
+            </div>
           ))}
-          <DownloadButton
-            text={"Résumé"}
-            padding={"px-6 max-sm:px-2 lg:px-4 3xl:px-6 py-1 3xl:py-2"}
-            textSize={"text-lg max-sm:text-sm max-lg:text-3xl 3xl:text-2xl 4k:text-4xl"}
-            view={false} 
-            hovered={"bg-cyan-600 dark:hover:bg-cyan-600 font-bold text-xl shadow-xl"} />
-          <ThemeSwitcher />
+          <div className="flex items-center">
+            <DownloadButton
+              text={"Résumé"}
+              padding={"px-6 max-sm:px-2 lg:px-4 3xl:px-6 py-1 3xl:py-2 border-2 border-transparent"}
+              textSize={"text-lg max-sm:text-sm max-lg:text-3xl 3xl:text-2xl 4k:text-4xl"}
+              view={false} 
+              hovered={"bg-cyan-600 dark:hover:bg-cyan-600 font-bold text-xl shadow-xl"} 
+            />
+          </div>
+          <div className="flex items-center">
+            <ThemeSwitcher />
+          </div>
         </div>
 
 

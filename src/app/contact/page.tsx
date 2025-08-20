@@ -5,7 +5,7 @@ import { SiIndeed } from "react-icons/si";
 const Contact = () => {
   return (
     <>
-      <div
+      <section
         id="contact"
         className="flex flex-col pt-10 w-full bg-zinc-300 dark:bg-zinc-800"
       >
@@ -91,7 +91,7 @@ const Contact = () => {
             </p>
           </span>
         </nav>
-      </div>
+      </section>
     </>
   );
 };
