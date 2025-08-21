@@ -21,7 +21,7 @@ export default function ThemeSwitcher() {
         {(resolvedTheme === "light" && (
           <>
             <button
-              className={`p-3 3xl:p-3 4k:p-4 rounded-full transition-colors duration-300 bg-blue-800 text-gray-200`}
+              className={`p-3 4k:p-4 rounded-full transition-colors duration-300 bg-blue-800 text-gray-200`}
               onClick={() => setTheme("dark")}
               aria-label="Switch to dark mode"
               title="Switch to dark mode"
@@ -33,7 +33,7 @@ export default function ThemeSwitcher() {
           (resolvedTheme === "dark" && (
             <>
               <button
-                className={`p-3 3xl:p-3 4k:p-4 rounded-full transition-colors duration-300 bg-orange-600 text-gray-200`}
+                className={`p-3 4k:p-4 rounded-full transition-colors duration-300 bg-orange-600 text-gray-200`}
                 onClick={() => setTheme("light")}
                 aria-label="Switch to light mode"
                 title="Switch to light mode"
