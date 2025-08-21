@@ -21,24 +21,24 @@ export default function ThemeSwitcher() {
         {(resolvedTheme === "light" && (
           <>
             <button
-              className={`p-2 3xl:p-3 4k:p-4 rounded-lg transition-colors duration-300 bg-blue-800 text-gray-200`}
+              className={`p-3 3xl:p-3 4k:p-4 rounded-full transition-colors duration-300 bg-blue-800 text-gray-200`}
               onClick={() => setTheme("dark")}
               aria-label="Switch to dark mode"
               title="Switch to dark mode"
             >
-              <FaMoon className="text-lg 3xl:text-2xl 4k:text-4xl" />
+              <FaMoon className="text-xl 3xl:text-2xl 4k:text-4xl" />
             </button>
           </>
         )) ||
           (resolvedTheme === "dark" && (
             <>
               <button
-                className={`p-2 3xl:p-3 4k:p-4 rounded-lg transition-colors duration-300 bg-orange-600 text-gray-200`}
+                className={`p-3 3xl:p-3 4k:p-4 rounded-full transition-colors duration-300 bg-orange-600 text-gray-200`}
                 onClick={() => setTheme("light")}
                 aria-label="Switch to light mode"
                 title="Switch to light mode"
               >
-                <FaSun className="text-lg 3xl:text-2xl 4k:text-4xl" />
+                <FaSun className="text-xl 3xl:text-2xl 4k:text-4xl" />
               </button>
             </>
           ))}
