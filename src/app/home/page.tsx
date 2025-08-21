@@ -12,10 +12,10 @@ const Homepage = () => {
         <div className="flex flex-col items-center justify-center">
           <div className="flex justify-center items-center gap-x-16 p-10 max-sm:p-6">
             <div className="flex flex-col justify-center space-y-2">
-              <p className="flex justify-center text-5xl max-sm:text-4xl 3xl:text-7xl 4k:text-8xl font-semibold">
+              <p className="flex justify-center text-5xl max-sm:text-4xl 3xl:text-7xl 4k:text-8xl font-semibold drop-shadow-md">
                 Hi! I am
               </p>
-              <h1 className="flex font-extrabold text-7xl max-sm:text-3xl 3xl:text-8xl 4k:text-9xl justify-center text-blue-950 dark:text-blue-300">
+              <h1 className="flex font-extrabold text-7xl max-sm:text-3xl 3xl:text-8xl 4k:text-9xl justify-center text-blue-950 dark:text-blue-300 drop-shadow-xl">
                 Christian Garcia
               </h1>
               <br />
