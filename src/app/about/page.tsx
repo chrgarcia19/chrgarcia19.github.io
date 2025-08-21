@@ -2,6 +2,8 @@
 import ItemBox from "@/components/ItemBox";
 import christianImage from "@/../public/ChristianGarciaPhoto.jpg";
 import Image from "next/image";
+import { FaGraduationCap, FaSchool } from "react-icons/fa6";
+import { SiAcm } from "react-icons/si";
 
 const AboutMe = () => {
   return (
@@ -10,7 +12,7 @@ const AboutMe = () => {
         id="about"
         className="p-5 w-full 3xl:h-screen 3xl:place-content-center pt-14 bg-zinc-300 dark:bg-zinc-800"
       >
-        <h2 className="flex justify-center items-center font-bold text-5xl max-sm:text-3xl 3xl:text-6xl 4k:text-8xl p-10 text-blue-950 dark:text-blue-300">
+        <h2 className="flex justify-center items-center font-bold underline text-5xl max-sm:text-3xl 3xl:text-6xl 4k:text-8xl p-10 text-blue-950 dark:text-blue-300 drop-shadow-2xl">
           About Me
         </h2>
         <div className="flex max-lg:flex-col items-center justify-center">
@@ -31,86 +33,80 @@ const AboutMe = () => {
                 Hello! I'm Christian,
               </p>
               <br />
-              <p className="pl-4 pr-4 max-md:pl-1 max-md:pr-1 max-sm:text-sm 3xl:text-xl 4k:text-3xl text-center">
-                An aspiring Software Engineer with a strong interest in Full
+              <div className="space-y-4 leading-relaxed text-center hover:font-semibold hover:text-slate-800 dark:text-slate-200 transition-all duration-150">
+                <p>
+                  An aspiring Software Engineer with a strong interest in Full
                 Stack Development, committed to building reliable and impactful
                 digital solutions. With a Bachelor of Science in Computer
                 Science, I bring a solid technical foundation and a passion for
-                creating user-centered applications. What began as a spark of
+                creating user-centered applications.
+                </p>
+                <p>
+                  What began as a spark of
                 curiosity has grown into a deep enthusiasm for learning,
                 designing, and collaborating on software that solves real
                 problems and improves user experiences. I'm eager to contribute
                 to projects that blend technical precision with meaningful
                 impact.
-              </p>
+                </p>
+              </div>
             </div>
           </div>
           <div className="flex flex-col w-1/2 max-lg:w-full items-center justify-center gap-y-12 max-lg:gap-y-4 4k:gap-y-16">
-            <div className="flex text-xl max-lg:text-lg 3xl:text-4xl 4k:text-6xl max-lg:font-bold font-semibold text-center">
+            <h3 className="flex text-2xl max-lg:text-lg 3xl:text-4xl 4k:text-6xl max-lg:font-bold font-semibold text-center underline">
               My Academic & Professional Journey
-            </div>
+            </h3>
             <ItemBox
               color={"bg-cyan-600 dark:bg-cyan-700"}
-              width={"w-4/6 max-sm:w-full 3xl:w-5/6"}
+              width={"w-3/5 max-sm:w-full 3xl:w-5/6"}
               boxType={"rounded-lg"}
               padding={"p-4 max-lg:p-2"}
-              other={"text-center"}
+              other={"relative text-center"}
               hoveredColor={"xl:shadow-slate-500"}
             >
-              <p className="font-bold text-2xl max-sm:text-xl 3xl:text-3xl 4k:text-5xl">
-                Valparaiso University
-              </p>
-              <p className="italic max-sm:text-sm 3xl:text-xl 4k:text-3xl">
-                Bachelor of Science in Computer Science
-              </p>
-              <p className="text-sm max-sm:text-xs 3xl:text-lg 4k:text-2xl">
-                August 2020 - May 2024
-              </p>
-              <p className="text-sm max-sm:text-xs 3xl:text-lg 4k:text-2xl">
-                Overall GPA: 3.854
-              </p>
+              <FaGraduationCap className="absolute top-3 left-3 w-7 h-7" />
+              <div className="flex flex-col items-center justify-center">
+                <p className="font-bold text-2xl max-sm:text-xl 3xl:text-3xl 4k:text-5xl">Valparaiso University</p>
+                <p className="italic max-sm:text-sm 3xl:text-xl 4k:text-3xl">Bachelor of Science in Computer Science</p>
+                <p className="text-sm max-sm:text-xs 3xl:text-lg 4k:text-2xl">August 2020 - May 2024</p>
+                <p className="text-sm max-sm:text-xs 3xl:text-lg 4k:text-2xl">Overall GPA: 3.854</p>
+              </div>
             </ItemBox>
             <ItemBox
               color={"bg-cyan-600 dark:bg-cyan-700"}
-              width={"w-4/6 max-sm:w-full 3xl:w-5/6"}
+              width={"w-5/6 max-sm:w-full 3xl:w-5/6"}
               boxType={"rounded-lg"}
               padding={"p-4 max-lg:p-2"}
-              other={"text-center"}
+              other={"relative text-center"}
               hoveredColor={"xl:shadow-slate-500"}
             >
-              <p className="font-bold text-2xl max-sm:text-xl 3xl:text-3xl 4k:text-5xl">
-                Association for Computing Machinery (ACM)
-              </p>
-              <p className="italic max-sm:text-sm 3xl:text-lg 4k:text-3xl">
-                President (August 2023 - May 2024)
-              </p>
-              <p className="text-sm max-sm:text-xs 3xl:text-base 4k:text-2xl">
-                Managed ACM’s website and coordinated diverse events, including
-                professional development workshops and campus activities.
-                Initiated and led a speaker series exploring computing’s role
-                across disciplines.
-              </p>
+              <SiAcm className="absolute top-3 left-3 w-7 h-7" />
+              <div className="flex flex-col items-center justify-center">
+                <p className="font-bold text-2xl max-sm:text-xl 3xl:text-3xl 4k:text-5xl">Association for Computing Machinery (ACM)</p>
+                <p className="italic max-sm:text-sm 3xl:text-lg 4k:text-3xl">President (August 2023 - May 2024)</p>
+                <p className="text-sm max-sm:text-xs 3xl:text-base 4k:text-2xl pt-2">
+                  Managed ACM’s website and coordinated diverse events, including
+                  professional development workshops and campus activities.
+                  Initiated and led a speaker series exploring computing’s role
+                  across disciplines.
+                </p>
+              </div>
             </ItemBox>
             <ItemBox
               color={"bg-cyan-600 dark:bg-cyan-700"}
-              width={"w-4/6 max-sm:w-full 3xl:w-5/6"}
+              width={"w-3/5 max-sm:w-full 3xl:w-5/6"}
               boxType={"rounded-lg"}
               padding={"p-4 max-lg:p-2"}
-              other={"text-center"}
+              other={"relative text-center"}
               hoveredColor={"xl:shadow-slate-500"}
             >
-              <p className="font-bold text-2xl max-sm:text-xl 3xl:text-3xl 4k:text-5xl">
-                New Prairie High School
-              </p>
-              <p className="italic max-sm:text-sm 3xl:text-xl 4k:text-3xl">
-                High School Diploma with Honors
-              </p>
-              <p className="text-sm max-sm:text-xs 3xl:text-lg 4k:text-2xl">
-                August 2016 - May 2020
-              </p>
-              <p className="text-sm max-sm:text-xs 3xl:text-lg 4k:text-2xl">
-                Overall GPA: 3.960
-              </p>
+              <FaSchool className="absolute top-3 left-3 w-7 h-7" />
+              <div className="flex flex-col items-center justify-center">
+                <p className="font-bold text-2xl max-sm:text-xl 3xl:text-3xl 4k:text-5xl">New Prairie High School</p>
+                <p className="italic max-sm:text-sm 3xl:text-xl 4k:text-3xl">High School Diploma with Honors</p>
+                <p className="text-sm max-sm:text-xs 3xl:text-lg 4k:text-2xl">August 2016 - May 2020</p>
+                <p className="text-sm max-sm:text-xs 3xl:text-lg 4k:text-2xl">Overall GPA: 3.960</p>
+              </div>
             </ItemBox>
           </div>
         </div>
