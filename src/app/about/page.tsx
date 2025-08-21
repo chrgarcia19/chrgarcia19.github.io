@@ -15,15 +15,17 @@ const AboutMe = () => {
         </h2>
         <div className="flex max-lg:flex-col items-center justify-center">
           <div className="flex flex-col items-center justify-normal w-1/2 max-lg:w-full p-10 max-sm:p-4">
-            <div className="w-[70vw] sm:w-[60vw] md:w-[350px] 3xl:w-[500px] 4k:w-[650px] border-2 border-slate-400 dark:border-slate-700 rounded-3xl overflow-hidden">
-              <Image
-                src={christianImage}
-                alt="An Image of Christian"
-                width={350}
-                className="w-full h-auto object-cover"
-                sizes="(max-width: 640px) 70vw, (max-width: 768px) 60vw, (max-width: 1921px) 80vw, (max-width: 2560px) 90vw, 650px"
-              />
+            <ItemBox color={""} hoveredColor={"xl:shadow-xl xl:shadow-slate-500"} width={""} boxType={"rounded-3xl"} padding={""} other={""}>
+            <div className="w-[70vw] sm:w-[60vw] md:w-[350px] 3xl:w-[500px] 4k:w-[650px] border-4 border-slate-400 dark:border-slate-700 rounded-3xl overflow-hidden">
+                <Image
+                  src={christianImage}
+                  alt="An Image of Christian"
+                  width={350}
+                  className="w-full h-auto object-cover"
+                  sizes="(max-width: 640px) 70vw, (max-width: 768px) 60vw, (max-width: 1921px) 80vw, (max-width: 2560px) 90vw, 650px"
+                />              
             </div>
+            </ItemBox>
             <div className="justify-center p-6 max-md:p-2">
               <p className="flex text-2xl max-sm:text-lg 3xl:text-3xl 4k:text-5xl font-semibold justify-center text-center">
                 Hello! I'm Christian,
