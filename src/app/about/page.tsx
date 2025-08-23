@@ -4,6 +4,8 @@ import christianImage from "@/../public/ChristianGarciaPhoto.jpg";
 import Image from "next/image";
 import { FaGraduationCap, FaSchool } from "react-icons/fa6";
 import { SiAcm } from "react-icons/si";
+import EventMarker from "@/components/EventMarker";
+import { FaArrowCircleDown } from "react-icons/fa";
 
 const AboutMe = () => {
   return (
@@ -52,38 +54,69 @@ const AboutMe = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col w-1/2 max-lg:w-full items-center justify-center gap-y-12 max-lg:gap-y-4 4k:gap-y-16">
+          <div className="flex flex-col w-1/2 max-lg:w-full items-center justify-center gap-4 4k:gap-y-10">
             <h3 className="flex text-2xl max-lg:text-lg 3xl:text-4xl 4k:text-6xl max-lg:font-bold font-semibold text-center underline">
               My Academic & Professional Journey
             </h3>
+            {/* High School Item Box */}
             <ItemBox
               color={"bg-cyan-600 dark:bg-cyan-700"}
-              width={"w-3/5 max-sm:w-full 3xl:w-5/6"}
+              width={"w-full max-w-lg max-sm:max-w-full 3xl:max-w-2xl mx-auto"}
               boxType={"rounded-lg"}
-              padding={"p-4 max-lg:p-2"}
-              other={"relative text-center"}
-              hoveredColor={"xl:shadow-slate-500"}
+              padding={"p-6 max-sm:p-3 max-sm:pl-6 max-lg:p-4"}
+              other={"relative text-left group hover:scale-[1.02] transition-transform duration-200"}
+              hoveredColor={"xl:dark:text-slate-200 xl:shadow-slate-500"}
             >
-              <FaGraduationCap className="absolute top-3 left-3 w-7 h-7" />
-              <div className="flex flex-col items-center justify-center">
-                <p className="font-bold text-2xl max-sm:text-xl 3xl:text-3xl 4k:text-5xl">Valparaiso University</p>
-                <p className="italic max-sm:text-sm 3xl:text-xl 4k:text-3xl">Bachelor of Science in Computer Science</p>
-                <p className="text-sm max-sm:text-xs 3xl:text-lg 4k:text-2xl">August 2020 - May 2024</p>
-                <p className="text-sm max-sm:text-xs 3xl:text-lg 4k:text-2xl">Overall GPA: 3.854</p>
+              <EventMarker 
+                eventNumber={1} 
+                color={"bg-cyan-500"} 
+                gradient={"bg-gradient-to-b from-cyan-400 to-cyan-600"} 
+                textSize={"text-sm"} 
+                textColor={"text-white"} 
+              />
+              <div className="flex flex-col items-start text-left w-full">
+                <div className="flex items-center justify-between w-full mb-2">
+                  <p className="font-bold text-xl max-sm:text-lg 3xl:text-2xl 4k:text-4xl">
+                    New Prairie High School
+                  </p>
+                  <FaSchool className="flex-shrink-0 w-8 h-8 max-sm:w-6 max-sm:h-6 ml-3" />
+                </div>
+                <p className="italic text-base max-sm:text-sm 3xl:text-lg 4k:text-2xl">High School Diploma with Honors</p>
+                <p className="text-sm max-sm:text-xs 3xl:text-lg 4k:text-2xl mt-2">August 2016 - May 2020</p>
+                <p className="text-sm max-sm:text-xs 3xl:text-lg 4k:text-2xl">Overall GPA: 3.960</p>
               </div>
             </ItemBox>
+
+            <div className="flex justify-center items-center">
+              <div className="animate-bounce">
+                <FaArrowCircleDown className="text-2xl text-cyan-400"/>
+              </div>
+            </div>
+
+            {/* ACM Item Box */}
             <ItemBox
               color={"bg-cyan-600 dark:bg-cyan-700"}
-              width={"w-5/6 max-sm:w-full 3xl:w-5/6"}
+              width={"w-full max-w-lg max-sm:max-w-full 3xl:max-w-2xl mx-auto"}
               boxType={"rounded-lg"}
-              padding={"p-4 max-lg:p-2"}
-              other={"relative text-center"}
-              hoveredColor={"xl:shadow-slate-500"}
+              padding={"p-6 max-sm:p-3 max-sm:pl-6 max-lg:p-4"}
+              other={"relative text-left group hover:scale-[1.02] transition-transform duration-200"}
+              hoveredColor={"xl:dark:text-slate-200 xl:shadow-slate-500"}
             >
-              <SiAcm className="absolute top-3 left-3 w-7 h-7" />
-              <div className="flex flex-col items-center justify-center">
-                <p className="font-bold text-2xl max-sm:text-xl 3xl:text-3xl 4k:text-5xl">Association for Computing Machinery (ACM)</p>
-                <p className="italic max-sm:text-sm 3xl:text-lg 4k:text-3xl">President (August 2023 - May 2024)</p>
+              <EventMarker 
+                eventNumber={2} 
+                color={"bg-cyan-500"} 
+                gradient={"bg-gradient-to-b from-cyan-400 to-cyan-600"} 
+                textSize={"text-sm"} 
+                textColor={"text-white"} 
+              />
+              <div className="flex flex-col items-start text-left w-full">
+                <div className="flex items-center justify-between w-full mb-2">
+                  <p className="font-bold text-xl max-sm:text-lg 3xl:text-2xl 4k:text-4xl">
+                    Association for Computing Machinery (ACM)
+                  </p>
+                  <SiAcm className="flex-shrink-0 w-8 h-8 max-sm:w-6 max-sm:h-6 ml-3" />
+                </div>
+                <p className="italic text-base max-sm:text-sm 3xl:text-lg 4k:text-2xl">President (August 2023 - May 2024)</p>
                 <p className="text-sm max-sm:text-xs 3xl:text-base 4k:text-2xl pt-2">
                   Managed ACM’s website and coordinated diverse events, including
                   professional development workshops and campus activities.
@@ -92,20 +125,39 @@ const AboutMe = () => {
                 </p>
               </div>
             </ItemBox>
+
+            <div className="flex justify-center items-center">
+              <div className="animate-bounce">
+                <FaArrowCircleDown className="text-2xl text-cyan-400"/>
+              </div>
+            </div>
+
+            {/* College Item Box */}
             <ItemBox
               color={"bg-cyan-600 dark:bg-cyan-700"}
-              width={"w-3/5 max-sm:w-full 3xl:w-5/6"}
+              width={"w-full max-w-lg max-sm:max-w-full 3xl:max-w-2xl mx-auto"}
               boxType={"rounded-lg"}
-              padding={"p-4 max-lg:p-2"}
-              other={"relative text-center"}
-              hoveredColor={"xl:shadow-slate-500"}
+              padding={"p-6 max-sm:p-3 max-sm:pl-6 max-lg:p-4"}
+              other={"relative text-left group hover:scale-[1.02] transition-transform duration-200"}
+              hoveredColor={"xl:dark:text-slate-200 xl:shadow-slate-500"}
             >
-              <FaSchool className="absolute top-3 left-3 w-7 h-7" />
-              <div className="flex flex-col items-center justify-center">
-                <p className="font-bold text-2xl max-sm:text-xl 3xl:text-3xl 4k:text-5xl">New Prairie High School</p>
-                <p className="italic max-sm:text-sm 3xl:text-xl 4k:text-3xl">High School Diploma with Honors</p>
-                <p className="text-sm max-sm:text-xs 3xl:text-lg 4k:text-2xl">August 2016 - May 2020</p>
-                <p className="text-sm max-sm:text-xs 3xl:text-lg 4k:text-2xl">Overall GPA: 3.960</p>
+              <EventMarker 
+                eventNumber={3} 
+                color={"bg-cyan-500"} 
+                gradient={"bg-gradient-to-b from-cyan-400 to-cyan-600"} 
+                textSize={"text-sm"} 
+                textColor={"text-white"} 
+              />
+              <div className="flex flex-col items-start text-left w-full">
+                  <div className="flex items-center justify-between w-full mb-2">
+                    <p className="font-bold text-xl max-sm:text-lg 3xl:text-2xl 4k:text-4xl">
+                      Valparaiso University
+                    </p>
+                    <FaGraduationCap className="flex-shrink-0 w-8 h-8 max-sm:w-6 max-sm:h-6 ml-3" />
+                  </div>
+                  <p className="italic text-base max-sm:text-sm 3xl:text-lg 4k:text-2xl">Bachelor of Science in Computer Science</p>
+                  <p className="text-sm max-sm:text-xs 3xl:text-base 4k:text-xl mt-2">August 2020 - May 2024</p>
+                  <p className="text-sm max-sm:text-xs 3xl:text-base 4k:text-xl">Overall GPA: 3.854</p>
               </div>
             </ItemBox>
           </div>
