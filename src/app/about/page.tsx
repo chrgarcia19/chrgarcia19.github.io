@@ -17,8 +17,8 @@ const AboutMe = () => {
         <h2 className="flex justify-center items-center font-bold underline text-5xl max-sm:text-3xl 3xl:text-6xl 4k:text-8xl p-10 text-blue-950 dark:text-blue-300 drop-shadow-2xl">
           About Me
         </h2>
-        <div className="flex max-lg:flex-col items-center justify-center">
-          <div className="flex flex-col items-center justify-normal w-1/2 max-lg:w-full p-10 max-sm:p-4">
+        <div className="flex max-lg:flex-col items-center justify-center ">
+          <div className="flex flex-col items-center justify-normal w-1/2 max-lg:w-full p-10 max-md:p-4 max-md:pb-12">
             <ItemBox color={""} hoveredColor={"xl:shadow-xl xl:shadow-slate-500"} width={""} boxType={"rounded-3xl"} padding={""} other={""}>
             <div className="w-[70vw] sm:w-[60vw] md:w-[350px] 3xl:w-[500px] 4k:w-[650px] border-4 border-slate-400 dark:border-slate-700 rounded-3xl overflow-hidden">
                 <Image
@@ -35,7 +35,7 @@ const AboutMe = () => {
                 Hello! I'm Christian,
               </p>
               <br />
-              <div className="space-y-4 leading-relaxed text-center hover:font-semibold hover:text-slate-800 dark:text-slate-200 transition-all duration-150">
+              <div className="space-y-4 leading-relaxed text-center xl:hover:font-semibold xl:hover:text-slate-800 dark:text-slate-200 transition-all duration-150">
                 <p>
                   An aspiring Software Engineer with a strong interest in Full
                 Stack Development, committed to building reliable and impactful
