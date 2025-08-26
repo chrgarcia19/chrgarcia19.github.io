@@ -35,7 +35,7 @@ const AboutMe = () => {
                 Hello! I'm Christian,
               </p>
               <br />
-              <div className="space-y-4 leading-relaxed text-center xl:hover:font-semibold xl:hover:text-slate-800 dark:text-slate-200 transition-all duration-150">
+              <div className="space-y-4 leading-relaxed text-center lg:hover:font-semibold lg:hover:text-slate-800 lg:dark:text-slate-200 transition-all duration-150">
                 <p>
                   An aspiring Software Engineer with a strong interest in Full
                 Stack Development, committed to building reliable and impactful

@@ -105,7 +105,7 @@ const NavBar = () => {
 
   return (
     <>
-      <nav className="flex w-full p-2 items-center justify-between bg-cyan-500 dark:bg-cyan-700 overflow-hidden fixed z-10">
+      <nav className="flex w-full p-2 items-center justify-between bg-cyan-500 dark:bg-cyan-700 overflow-hidden fixed z-20">
         <div className="flex">
           <ItemBox
             color={"bg-cyan-500 dark:bg-cyan-700"}
