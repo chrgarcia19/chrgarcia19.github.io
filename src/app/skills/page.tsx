@@ -14,36 +14,64 @@ const Skills = () => {
         className="flex flex-col pt-10 pl-14 pr-14 pb-10 max-md:pl-4 max-md:pr-4 4k:pt-14 w-full bg-zinc-300 dark:bg-zinc-800"
       >
         <h2 className="flex justify-center items-center font-bold underline text-5xl max-sm:text-3xl 3xl:text-6xl 4k:text-8xl p-10 pb-16 text-blue-950 dark:text-blue-300 drop-shadow-2xl">
-          My Techical Skills
+          My Technical Skills
         </h2>
-        <h3 className="flex justify-start max-md:justify-center text-2xl max-md:text-xl 3xl:text-4xl 4k:text-6xl font-bold">
+
+        {/* Programming Languages */}
+        <div className="bg-gradient-to-r from-zinc-300 via-zinc-200 to-zinc-300 dark:from-zinc-800 dark:via-zinc-700 dark:to-zinc-800 rounded-lg">
+          <h3 className="flex justify-start max-md:justify-center text-3xl max-md:text-xl 3xl:text-5xl 4k:text-7xl font-bold italic underline p-2">
           Programming Languages
-        </h3>
-        <ProgrammingLanguages />
-        <h3 className="flex justify-start max-md:justify-center text-2xl max-md:text-xl 3xl:text-4xl 4k:text-6xl font-bold">
-          Frameworks & Libraries
-        </h3>
-        <FrameworksLibraries />
-        <h3 className="flex justify-start max-md:justify-center text-2xl max-md:text-xl 3xl:text-4xl 4k:text-6xl font-bold">
-          Databases
-        </h3>
-        <Databases />
-        <h3 className="flex justify-start max-md:justify-center text-2xl max-md:text-xl 3xl:text-4xl 4k:text-6xl font-bold">
-          Developer Tools
-        </h3>
-        <DeveloperTools />
-        <h3 className="flex justify-start max-md:justify-center text-2xl max-md:text-xl 3xl:text-4xl 4k:text-6xl font-bold">
-          Operating Systems
-        </h3>
-        <OperatingSystems />
-        <h3 className="flex justify-start max-md:justify-center text-2xl max-md:text-xl 3xl:text-4xl 4k:text-6xl font-bold">
-          Additional Tools
-        </h3>
-        <AdditionalTools />
-        <h3 className="flex justify-start max-md:justify-center text-2xl max-md:text-xl 3xl:text-4xl 4k:text-6xl font-bold">
-          Concepts
-        </h3>
-        <Concepts />
+          </h3>
+          <ProgrammingLanguages />
+        </div>
+
+        {/* Frameworks & Libraries */}
+        <div className="bg-gradient-to-l from-zinc-300 via-cyan-50 to-zinc-300 dark:from-zinc-800 dark:via-cyan-900 dark:to-zinc-800 rounded-lg">
+          <h3 className="flex justify-start max-md:justify-center text-3xl max-md:text-xl 3xl:text-5xl 4k:text-7xl font-bold italic underline p-2">
+            Frameworks & Libraries
+          </h3>
+          <FrameworksLibraries />
+        </div>
+
+        {/* Databases */}
+        <div className="bg-gradient-to-r from-zinc-300 via-zinc-200 to-zinc-300 dark:from-zinc-800 dark:via-zinc-700 dark:to-zinc-800 rounded-lg">
+          <h3 className="flex justify-start max-md:justify-center text-3xl max-md:text-xl 3xl:text-5xl 4k:text-7xl font-bold italic underline p-2">
+            Databases
+          </h3>
+          <Databases />
+        </div>
+
+        {/* Developer Tools */}
+        <div className="bg-gradient-to-l from-zinc-300 via-cyan-50 to-zinc-300 dark:from-zinc-800 dark:via-cyan-900 dark:to-zinc-800 rounded-lg">
+          <h3 className="flex justify-start max-md:justify-center text-3xl max-md:text-xl 3xl:text-5xl 4k:text-7xl font-bold italic underline p-2">
+            Developer Tools
+          </h3>
+          <DeveloperTools />
+        </div>
+
+        {/* Operating Systems */}
+        <div className="bg-gradient-to-r from-zinc-300 via-zinc-200 to-zinc-300 dark:from-zinc-800 dark:via-zinc-700 dark:to-zinc-800 rounded-lg">
+          <h3 className="flex justify-start max-md:justify-center text-3xl max-md:text-xl 3xl:text-5xl 4k:text-7xl font-bold italic underline p-2">
+            Operating Systems
+          </h3>
+          <OperatingSystems />
+        </div>
+
+        {/* Specialized Technologies */}
+        <div className="bg-gradient-to-l from-zinc-300 via-cyan-50 to-zinc-300 dark:from-zinc-800 dark:via-cyan-900 dark:to-zinc-800 rounded-lg">
+          <h3 className="flex justify-start max-md:justify-center text-3xl max-md:text-xl 3xl:text-5xl 4k:text-7xl font-bold italic underline p-2">
+            Specialized Technologies
+          </h3>
+          <AdditionalTools />
+        </div>
+
+        {/* Concepts */}
+        <div className="bg-gradient-to-r from-zinc-300 via-zinc-200 to-zinc-300 dark:from-zinc-800 dark:via-zinc-700 dark:to-zinc-800 rounded-lg">
+          <h3 className="flex justify-start max-md:justify-center text-3xl max-md:text-xl 3xl:text-5xl 4k:text-7xl font-bold italic underline p-2">
+            Concepts
+          </h3>
+          <Concepts />
+        </div>
       </section>
     </>
   );
