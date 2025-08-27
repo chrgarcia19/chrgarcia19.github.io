@@ -10,8 +10,8 @@ const Concepts = () => {
             width={"w-fit"}
             boxType={"rounded-lg"}
             padding={"p-3 4k:p-4"}
-            other={"place-items-center dark:hover:text-black"}
-            hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}
+            other={"place-items-center duration-150 transition-all"}
+            hoveredColor={"text-white dark:text-black bg-cyan-500 dark:hover:bg-cyan-500"}
           >
             <p className="font-bold max-md:text-sm 3xl:text-xl 4k:text-3xl">
               Software Development Life Cycle (SDLC)
@@ -22,8 +22,8 @@ const Concepts = () => {
             width={"w-fit"}
             boxType={"rounded-lg"}
             padding={"p-3 4k:p-4"}
-            other={"place-items-center dark:hover:text-black"}
-            hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}
+            other={"place-items-center duration-150 transition-all"}
+            hoveredColor={"text-white dark:text-black bg-cyan-500 dark:hover:bg-cyan-500"}
           >
             <p className="font-bold max-md:text-sm 3xl:text-xl 4k:text-3xl">
               Agile Methodologies
@@ -34,8 +34,8 @@ const Concepts = () => {
             width={"w-fit"}
             boxType={"rounded-lg"}
             padding={"p-3 4k:p-4"}
-            other={"place-items-center dark:hover:text-black"}
-            hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}
+            other={"place-items-center duration-150 transition-all"}
+            hoveredColor={"text-white dark:text-black bg-cyan-500 dark:hover:bg-cyan-500"}
           >
             <p className="font-bold max-md:text-sm 3xl:text-xl 4k:text-3xl">
               Model-View-Controller (MVC)
@@ -46,8 +46,8 @@ const Concepts = () => {
             width={"w-fit"}
             boxType={"rounded-lg"}
             padding={"p-3 4k:p-4"}
-            other={"place-items-center dark:hover:text-black"}
-            hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}
+            other={"place-items-center duration-150 transition-all"}
+            hoveredColor={"text-white dark:text-black bg-cyan-500 dark:hover:bg-cyan-500"}
           >
             <p className="font-bold max-md:text-sm 3xl:text-xl 4k:text-3xl">
               Model-View-ViewModel (MVVM)
@@ -58,8 +58,8 @@ const Concepts = () => {
             width={"w-fit"}
             boxType={"rounded-lg"}
             padding={"p-3 4k:p-4"}
-            other={"place-items-center dark:hover:text-black"}
-            hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}
+            other={"place-items-center duration-150 transition-all"}
+            hoveredColor={"text-white dark:text-black bg-cyan-500 dark:hover:bg-cyan-500"}
           >
             <p className="font-bold max-md:text-sm 3xl:text-xl 4k:text-3xl">
               Unified Modeling Language (UML)
@@ -70,8 +70,8 @@ const Concepts = () => {
             width={"w-fit"}
             boxType={"rounded-lg"}
             padding={"p-3 4k:p-4"}
-            other={"place-items-center dark:hover:text-black"}
-            hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}
+            other={"place-items-center duration-150 transition-all"}
+            hoveredColor={"text-white dark:text-black bg-cyan-500 dark:hover:bg-cyan-500"}
           >
             <p className="font-bold max-md:text-sm 3xl:text-xl 4k:text-3xl">
               TCP/IP

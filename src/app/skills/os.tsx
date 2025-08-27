@@ -12,8 +12,8 @@ const OperatingSystems = () => {
             width={"w-fit"}
             boxType={"rounded-lg"}
             padding={"p-3 max-md:p-2 4k:p-4"}
-            other={"place-items-center dark:hover:text-black"}
-            hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}
+            other={"place-items-center duration-150 transition-all"}
+            hoveredColor={"text-white dark:text-black bg-cyan-500 dark:hover:bg-cyan-500"}
           >
             <span className="flex items-center justify-center space-x-2">
               <SiManjaro className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />
@@ -27,8 +27,8 @@ const OperatingSystems = () => {
             width={"w-fit"}
             boxType={"rounded-lg"}
             padding={"p-3 max-md:p-2 4k:p-4"}
-            other={"place-items-center dark:hover:text-black"}
-            hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}
+            other={"place-items-center duration-150 transition-all"}
+            hoveredColor={"text-white dark:text-black bg-cyan-500 dark:hover:bg-cyan-500"}
           >
             <span className="flex items-center justify-center space-x-2">
               <SiUbuntu className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />
@@ -42,8 +42,8 @@ const OperatingSystems = () => {
             width={"w-fit"}
             boxType={"rounded-lg"}
             padding={"p-3 max-md:p-2 4k:p-4"}
-            other={"place-items-center dark:hover:text-black"}
-            hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}
+            other={"place-items-center duration-150 transition-all"}
+            hoveredColor={"text-white dark:text-black bg-cyan-500 dark:hover:bg-cyan-500"}
           >
             <span className="flex items-center justify-center space-x-2">
               <FaWindows className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />
@@ -57,8 +57,8 @@ const OperatingSystems = () => {
             width={"w-fit"}
             boxType={"rounded-lg"}
             padding={"p-3 max-md:p-2 4k:p-4"}
-            other={"place-items-center dark:hover:text-black"}
-            hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}
+            other={"place-items-center duration-150 transition-all"}
+            hoveredColor={"text-white dark:text-black bg-cyan-500 dark:hover:bg-cyan-500"}
           >
             <span className="flex items-center justify-center space-x-2">
               <SiFedora className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />
@@ -72,8 +72,8 @@ const OperatingSystems = () => {
             width={"w-fit"}
             boxType={"rounded-lg"}
             padding={"p-3 max-md:p-2 4k:p-4"}
-            other={"place-items-center dark:hover:text-black"}
-            hoveredColor={"bg-cyan-500 dark:hover:bg-cyan-500"}
+            other={"place-items-center duration-150 transition-all"}
+            hoveredColor={"text-white dark:text-black bg-cyan-500 dark:hover:bg-cyan-500"}
           >
             <span className="flex items-center justify-center space-x-2">
               <SiApple className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />

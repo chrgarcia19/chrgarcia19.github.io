@@ -65,7 +65,7 @@ const AboutMe = () => {
               boxType={"rounded-lg"}
               padding={"p-6 max-sm:p-3 max-sm:pl-6 max-lg:p-4"}
               other={"relative text-left group hover:scale-[1.02] transition-transform duration-200"}
-              hoveredColor={"xl:dark:text-slate-200 xl:shadow-slate-500"}
+              hoveredColor={"text-slate-100 xl:dark:text-slate-200 xl:shadow-slate-500"}
             >
               <EventMarker 
                 eventNumber={1} 
@@ -100,7 +100,7 @@ const AboutMe = () => {
               boxType={"rounded-lg"}
               padding={"p-6 max-sm:p-3 max-sm:pl-6 max-lg:p-4"}
               other={"relative text-left group hover:scale-[1.02] transition-transform duration-200"}
-              hoveredColor={"xl:dark:text-slate-200 xl:shadow-slate-500"}
+              hoveredColor={"text-slate-100 xl:dark:text-slate-200 xl:shadow-slate-500"}
             >
               <EventMarker 
                 eventNumber={2} 
@@ -139,7 +139,7 @@ const AboutMe = () => {
               boxType={"rounded-lg"}
               padding={"p-6 max-sm:p-3 max-sm:pl-6 max-lg:p-4"}
               other={"relative text-left group hover:scale-[1.02] transition-transform duration-200"}
-              hoveredColor={"xl:dark:text-slate-200 xl:shadow-slate-500"}
+              hoveredColor={"text-slate-100 xl:dark:text-slate-200 xl:shadow-slate-500"}
             >
               <EventMarker 
                 eventNumber={3} 

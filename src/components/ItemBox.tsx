@@ -22,7 +22,7 @@ const ItemBox = (props: Props) => {
       <div
         onMouseEnter={itemEntered}
         onMouseLeave={itemExited}
-        className={`${props.color} ${props.padding} ${props.boxType} ${props.width} h-fit ${props.other} hover:text-gray-200 ${isHovered ? `${props.hoveredColor} xl:font-bold xl:shadow-xl` : ""}`}
+        className={`${props.color} ${props.padding} ${props.boxType} ${props.width} h-fit ${props.other} ${isHovered ? `${props.hoveredColor} xl:font-bold xl:shadow-xl` : ""}`}
       >
         {props.children}
       </div>
