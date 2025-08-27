@@ -62,7 +62,7 @@ const AboutMe = () => {
             <ItemBox
               color={"bg-cyan-600 dark:bg-cyan-700"}
               width={"w-full max-w-lg max-sm:max-w-full 3xl:max-w-2xl mx-auto"}
-              boxType={"rounded-lg"}
+              boxType={"rounded-r-lg"}
               padding={"p-6 max-sm:p-3 max-sm:pl-6 max-lg:p-4"}
               other={"relative text-left group hover:scale-[1.02] transition-transform duration-200"}
               hoveredColor={"text-slate-100 xl:dark:text-slate-200 xl:shadow-slate-500"}
@@ -97,7 +97,7 @@ const AboutMe = () => {
             <ItemBox
               color={"bg-cyan-600 dark:bg-cyan-700"}
               width={"w-full max-w-lg max-sm:max-w-full 3xl:max-w-2xl mx-auto"}
-              boxType={"rounded-lg"}
+              boxType={"rounded-r-lg"}
               padding={"p-6 max-sm:p-3 max-sm:pl-6 max-lg:p-4"}
               other={"relative text-left group hover:scale-[1.02] transition-transform duration-200"}
               hoveredColor={"text-slate-100 xl:dark:text-slate-200 xl:shadow-slate-500"}
@@ -136,7 +136,7 @@ const AboutMe = () => {
             <ItemBox
               color={"bg-cyan-600 dark:bg-cyan-700"}
               width={"w-full max-w-lg max-sm:max-w-full 3xl:max-w-2xl mx-auto"}
-              boxType={"rounded-lg"}
+              boxType={"rounded-r-lg"}
               padding={"p-6 max-sm:p-3 max-sm:pl-6 max-lg:p-4"}
               other={"relative text-left group hover:scale-[1.02] transition-transform duration-200"}
               hoveredColor={"text-slate-100 xl:dark:text-slate-200 xl:shadow-slate-500"}
