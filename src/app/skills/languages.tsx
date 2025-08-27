@@ -1,6 +1,6 @@
 import C from "@/components/CLogo";
-import ItemBox from "@/components/ItemBox";
 import CommonLisp from "@/components/LispLogo";
+import SkillDisplay from "@/components/SkillDisplay";
 import { DiProlog } from "react-icons/di";
 import { FaJava } from "react-icons/fa6";
 import {
@@ -25,276 +25,113 @@ const ProgrammingLanguages = () => {
     <>
       <div className="flex flex-col">
         <div className="flex flex-wrap justify-start max-md:justify-center p-2 pt-2 4k:pt-6 pb-16 max-md:pb-10 gap-10 max-md:gap-5 4k:gap-16 text-center">
-          <ItemBox
-            color={"bg-cyan-400 dark:bg-cyan-800"}
-            width={"w-fit"}
-            boxType={"rounded-lg"}
-            padding={"p-3 max-md:p-2 4k:p-4"}
-            other={"place-items-center duration-150 transition-all"}
-            hoveredColor={"text-white dark:text-black bg-cyan-500 dark:hover:bg-cyan-500"}
-          >
-            <span className="flex items-center justify-center space-x-2">
-              <SiTypescript className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />
-              <p className="font-bold max-md:text-sm 3xl:text-xl 4k:text-3xl">
-                TypeScript
-              </p>
-            </span>
-          </ItemBox>
-          <ItemBox
-            color={"bg-cyan-400 dark:bg-cyan-800"}
-            width={"w-fit"}
-            boxType={"rounded-lg"}
-            padding={"p-3 max-md:p-2 4k:p-4"}
-            other={"place-items-center duration-150 transition-all"}
-            hoveredColor={"text-white dark:text-black bg-cyan-500 dark:hover:bg-cyan-500"}
-          >
-            <span className="flex items-center justify-center space-x-2">
-              <SiJavascript className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />
-              <p className="font-bold max-md:text-sm 3xl:text-xl 4k:text-3xl">
-                JavaScript
-              </p>
-            </span>
-          </ItemBox>
-          <ItemBox
-            color={"bg-cyan-400 dark:bg-cyan-800"}
-            width={"w-fit"}
-            boxType={"rounded-lg"}
-            padding={"p-3 max-md:p-2 4k:p-4"}
-            other={"place-items-center duration-150 transition-all"}
-            hoveredColor={"text-white dark:text-black bg-cyan-500 dark:hover:bg-cyan-500"}
-          >
-            <span className="flex items-center justify-center space-x-2">
-              <SiHtml5 className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />
-              <p className="font-bold max-md:text-sm 3xl:text-xl 4k:text-3xl">
-                HTML5
-              </p>
-            </span>
-          </ItemBox>
-          <ItemBox
-            color={"bg-cyan-400 dark:bg-cyan-800"}
-            width={"w-fit"}
-            boxType={"rounded-lg"}
-            padding={"p-3 max-md:p-2 4k:p-4"}
-            other={"place-items-center duration-150 transition-all"}
-            hoveredColor={"text-white dark:text-black bg-cyan-500 dark:hover:bg-cyan-500"}
-          >
-            <span className="flex items-center justify-center space-x-2">
-              <SiCss3 className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />
-              <p className="font-bold max-md:text-sm 3xl:text-xl 4k:text-3xl">
-                CSS3
-              </p>
-            </span>
-          </ItemBox>
-          <ItemBox
-            color={"bg-cyan-400 dark:bg-cyan-800"}
-            width={"w-fit"}
-            boxType={"rounded-lg"}
-            padding={"p-3 max-md:p-2 4k:p-4"}
-            other={"place-items-center duration-150 transition-all"}
-            hoveredColor={"text-white dark:text-black bg-cyan-500 dark:hover:bg-cyan-500"}
-          >
-            <span className="flex items-center justify-center space-x-2">
-              <FaJava className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />
-              <p className="font-bold max-md:text-sm 3xl:text-xl 4k:text-3xl">
-                Java
-              </p>
-            </span>
-          </ItemBox>
-          <ItemBox
-            color={"bg-cyan-400 dark:bg-cyan-800"}
-            width={"w-fit"}
-            boxType={"rounded-lg"}
-            padding={"p-3 max-md:p-2 4k:p-4"}
-            other={"place-items-center duration-150 transition-all"}
-            hoveredColor={"text-white dark:text-black bg-cyan-500 dark:hover:bg-cyan-500"}
-          >
-            <span className="flex items-center justify-center space-x-2">
-              <SiPython className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />
-              <p className="font-bold max-md:text-sm 3xl:text-xl 4k:text-3xl">
-                Python 3
-              </p>
-            </span>
-          </ItemBox>
-          <ItemBox
-            color={"bg-cyan-400 dark:bg-cyan-800"}
-            width={"w-fit"}
-            boxType={"rounded-lg"}
-            padding={"p-3 max-md:p-2 4k:p-4"}
-            other={"place-items-center duration-150 transition-all"}
-            hoveredColor={"text-white dark:text-black bg-cyan-500 dark:hover:bg-cyan-500"}
-          >
-            <span className="flex items-center justify-center space-x-2">
-              <C />
-              <p className="font-bold max-md:text-sm 3xl:text-xl 4k:text-3xl">
-                C
-              </p>
-            </span>
-          </ItemBox>
-          <ItemBox
-            color={"bg-cyan-400 dark:bg-cyan-800"}
-            width={"w-fit"}
-            boxType={"rounded-lg"}
-            padding={"p-3 max-md:p-2 4k:p-4"}
-            other={"place-items-center duration-150 transition-all"}
-            hoveredColor={"text-white dark:text-black bg-cyan-500 dark:hover:bg-cyan-500"}
-          >
-            <span className="flex items-center justify-center space-x-2">
-              <SiCplusplus className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />
-              <p className="font-bold max-md:text-sm 3xl:text-xl 4k:text-3xl">
-                C++
-              </p>
-            </span>
-          </ItemBox>
-          <ItemBox
-            color={"bg-cyan-400 dark:bg-cyan-800"}
-            width={"w-fit"}
-            boxType={"rounded-lg"}
-            padding={"p-3 max-md:p-2 4k:p-4"}
-            other={"place-items-center duration-150 transition-all"}
-            hoveredColor={"text-white dark:text-black bg-cyan-500 dark:hover:bg-cyan-500"}
-          >
-            <span className="flex items-center justify-center space-x-2">
-              <SiGo className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />
-              <p className="font-bold max-md:text-sm 3xl:text-xl 4k:text-3xl">
-                Go/Golang
-              </p>
-            </span>
-          </ItemBox>
-          <ItemBox
-            color={"bg-cyan-400 dark:bg-cyan-800"}
-            width={"w-fit"}
-            boxType={"rounded-lg"}
-            padding={"p-3 max-md:p-2 4k:p-4"}
-            other={"place-items-center duration-150 transition-all"}
-            hoveredColor={"text-white dark:text-black bg-cyan-500 dark:hover:bg-cyan-500"}
-          >
-            <span className="flex items-center justify-center space-x-2">
-              <SiRuby className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />
-              <p className="font-bold max-md:text-sm 3xl:text-xl 4k:text-3xl">
-                Ruby
-              </p>
-            </span>
-          </ItemBox>
-          <ItemBox
-            color={"bg-cyan-400 dark:bg-cyan-800"}
-            width={"w-fit"}
-            boxType={"rounded-lg"}
-            padding={"p-3 max-md:p-2 4k:p-4"}
-            other={"place-items-center duration-150 transition-all"}
-            hoveredColor={"text-white dark:text-black bg-cyan-500 dark:hover:bg-cyan-500"}
-          >
-            <span className="flex items-center justify-center space-x-2">
-              <SiSwift className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />
-              <p className="font-bold max-md:text-sm 3xl:text-xl 4k:text-3xl">
-                Swift
-              </p>
-            </span>
-          </ItemBox>
-          <ItemBox
-            color={"bg-cyan-400 dark:bg-cyan-800"}
-            width={"w-fit"}
-            boxType={"rounded-lg"}
-            padding={"p-3 max-md:p-2 4k:p-4"}
-            other={"place-items-center duration-150 transition-all"}
-            hoveredColor={"text-white dark:text-black bg-cyan-500 dark:hover:bg-cyan-500"}
-          >
-            <span className="flex items-center justify-center space-x-2">
-              <SiPhp className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />
-              <p className="font-bold max-md:text-sm 3xl:text-xl 4k:text-3xl">
-                PHP
-              </p>
-            </span>
-          </ItemBox>
-          <ItemBox
-            color={"bg-cyan-400 dark:bg-cyan-800"}
-            width={"w-fit"}
-            boxType={"rounded-lg"}
-            padding={"p-3 max-md:p-2 4k:p-4"}
-            other={"place-items-center duration-150 transition-all"}
-            hoveredColor={"text-white dark:text-black bg-cyan-500 dark:hover:bg-cyan-500"}
-          >
-            <span className="flex items-center justify-center space-x-2">
-              <SiScala className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />
-              <p className="font-bold max-md:text-sm 3xl:text-xl 4k:text-3xl">
-                Scala
-              </p>
-            </span>
-          </ItemBox>
-          <ItemBox
-            color={"bg-cyan-400 dark:bg-cyan-800"}
-            width={"w-fit"}
-            boxType={"rounded-lg"}
-            padding={"p-3 max-md:p-2 4k:p-4"}
-            other={"place-items-center duration-150 transition-all"}
-            hoveredColor={"text-white dark:text-black bg-cyan-500 dark:hover:bg-cyan-500"}
-          >
-            <span className="flex items-center justify-center space-x-2">
-              <SiR className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />
-              <p className="font-bold max-md:text-sm 3xl:text-xl 4k:text-3xl">
-                R
-              </p>
-            </span>
-          </ItemBox>
-          <ItemBox
-            color={"bg-cyan-400 dark:bg-cyan-800"}
-            width={"w-fit"}
-            boxType={"rounded-lg"}
-            padding={"p-3 max-md:p-2 4k:p-4"}
-            other={"place-items-center duration-150 transition-all"}
-            hoveredColor={"text-white dark:text-black bg-cyan-500 dark:hover:bg-cyan-500"}
-          >
-            <span className="flex items-center justify-center space-x-2">
-              <SiRust className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />
-              <p className="font-bold max-md:text-sm 3xl:text-xl 4k:text-3xl">
-                Rust
-              </p>
-            </span>
-          </ItemBox>
-          <ItemBox
-            color={"bg-cyan-400 dark:bg-cyan-800"}
-            width={"w-fit"}
-            boxType={"rounded-lg"}
-            padding={"p-3 max-md:p-2 4k:p-4"}
-            other={"place-items-center duration-150 transition-all"}
-            hoveredColor={"text-white dark:text-black bg-cyan-500 dark:hover:bg-cyan-500"}
-          >
-            <span className="flex items-center justify-center space-x-2">
-              <SiClojure className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />
-              <p className="font-bold max-md:text-sm 3xl:text-xl 4k:text-3xl">
-                Clojure
-              </p>
-            </span>
-          </ItemBox>
-          <ItemBox
-            color={"bg-cyan-400 dark:bg-cyan-800"}
-            width={"w-fit"}
-            boxType={"rounded-lg"}
-            padding={"p-3 max-md:p-2 4k:p-4"}
-            other={"place-items-center duration-150 transition-all"}
-            hoveredColor={"text-white dark:text-black bg-cyan-500 dark:hover:bg-cyan-500"}
-          >
-            <span className="flex items-center justify-center space-x-2">
-              <CommonLisp />
-              <p className="font-bold max-md:text-sm 3xl:text-xl 4k:text-3xl">
-                Lisp
-              </p>
-            </span>
-          </ItemBox>
-          <ItemBox
-            color={"bg-cyan-400 dark:bg-cyan-800"}
-            width={"w-fit"}
-            boxType={"rounded-lg"}
-            padding={"p-3 max-md:p-2 4k:p-4"}
-            other={"place-items-center duration-150 transition-all"}
-            hoveredColor={"text-white dark:text-black bg-cyan-500 dark:hover:bg-cyan-500"}
-          >
-            <span className="flex items-center justify-center space-x-2">
-              <DiProlog className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />
-              <p className="font-bold max-md:text-sm 3xl:text-xl 4k:text-3xl">
-                Prolog
-              </p>
-            </span>
-          </ItemBox>
+          {/* TypeScript */}
+          <SkillDisplay 
+            skillName={"TypeScript"} 
+            logo={<SiTypescript className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+          />
+
+          {/* JavaScript */}
+          <SkillDisplay 
+            skillName={"JavaScript"} 
+            logo={<SiJavascript className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+          />
+          
+          {/* HTML */}
+          <SkillDisplay 
+            skillName={"HTML5"} 
+            logo={<SiHtml5 className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+          />
+          
+          {/* CSS */}
+          <SkillDisplay 
+            skillName={"CSS3"} 
+            logo={<SiCss3 className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+          />
+
+          {/* Java */}
+          <SkillDisplay 
+            skillName={"Java"} 
+            logo={<FaJava className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+          />
+
+          {/* Python */}
+          <SkillDisplay 
+            skillName={"Python 3"} 
+            logo={<SiPython className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+          />
+
+          {/* C */}
+          <SkillDisplay 
+            skillName={"C"} 
+            logo={<C />} 
+          />
+
+          {/* C++ */}
+          <SkillDisplay 
+            skillName={"C++"} 
+            logo={<SiCplusplus className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+          />
+
+          {/* Go */}
+          <SkillDisplay 
+            skillName={"Go/Golang"} 
+            logo={<SiGo className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+          />
+
+          {/* Ruby */}
+          <SkillDisplay 
+            skillName={"Ruby"} 
+            logo={<SiRuby className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+          />
+
+          {/* Swift */}
+          <SkillDisplay 
+            skillName={"Swift"} 
+            logo={<SiSwift className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+          />
+          
+          {/* PHP */}
+          <SkillDisplay 
+            skillName={"PHP"} 
+            logo={<SiPhp className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+          />
+          
+          {/* Scala */}
+          <SkillDisplay 
+            skillName={"Scala"} 
+            logo={<SiScala className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+          />
+
+          {/* R */}
+          <SkillDisplay 
+            skillName={"R"} 
+            logo={<SiR className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+          />
+
+          {/* Rust */}
+          <SkillDisplay 
+            skillName={"Rust"} 
+            logo={<SiRust className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+          />
+          
+          {/* Clojure */}
+          <SkillDisplay 
+            skillName={"Clojure"} 
+            logo={<SiClojure className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+          />
+
+          {/* Lisp */}
+          <SkillDisplay 
+            skillName={"Common Lisp"} 
+            logo={<CommonLisp />} 
+          />
+
+          {/* Prolog */}
+          <SkillDisplay 
+            skillName={"Prolog"} 
+            logo={<DiProlog className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+          />
         </div>
       </div>
     </>

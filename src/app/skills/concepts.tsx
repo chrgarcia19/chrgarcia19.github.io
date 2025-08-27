@@ -1,82 +1,46 @@
-import ItemBox from "@/components/ItemBox";
+import SkillDisplay from "@/components/SkillDisplay";
 
 const Concepts = () => {
   return (
     <>
       <div className="flex flex-col">
         <div className="flex flex-wrap justify-start max-md:justify-center p-2 pt-2 4k:pt-6 pb-16 max-md:pb-10 gap-10 max-md:gap-5 4k:gap-16 text-center">
-          <ItemBox
-            color={"bg-cyan-400 dark:bg-cyan-800"}
-            width={"w-fit"}
-            boxType={"rounded-lg"}
-            padding={"p-3 4k:p-4"}
-            other={"place-items-center duration-150 transition-all"}
-            hoveredColor={"text-white dark:text-black bg-cyan-500 dark:hover:bg-cyan-500"}
-          >
-            <p className="font-bold max-md:text-sm 3xl:text-xl 4k:text-3xl">
-              Software Development Life Cycle (SDLC)
-            </p>
-          </ItemBox>
-          <ItemBox
-            color={"bg-cyan-400 dark:bg-cyan-800"}
-            width={"w-fit"}
-            boxType={"rounded-lg"}
-            padding={"p-3 4k:p-4"}
-            other={"place-items-center duration-150 transition-all"}
-            hoveredColor={"text-white dark:text-black bg-cyan-500 dark:hover:bg-cyan-500"}
-          >
-            <p className="font-bold max-md:text-sm 3xl:text-xl 4k:text-3xl">
-              Agile Methodologies
-            </p>
-          </ItemBox>
-          <ItemBox
-            color={"bg-cyan-400 dark:bg-cyan-800"}
-            width={"w-fit"}
-            boxType={"rounded-lg"}
-            padding={"p-3 4k:p-4"}
-            other={"place-items-center duration-150 transition-all"}
-            hoveredColor={"text-white dark:text-black bg-cyan-500 dark:hover:bg-cyan-500"}
-          >
-            <p className="font-bold max-md:text-sm 3xl:text-xl 4k:text-3xl">
-              Model-View-Controller (MVC)
-            </p>
-          </ItemBox>
-          <ItemBox
-            color={"bg-cyan-400 dark:bg-cyan-800"}
-            width={"w-fit"}
-            boxType={"rounded-lg"}
-            padding={"p-3 4k:p-4"}
-            other={"place-items-center duration-150 transition-all"}
-            hoveredColor={"text-white dark:text-black bg-cyan-500 dark:hover:bg-cyan-500"}
-          >
-            <p className="font-bold max-md:text-sm 3xl:text-xl 4k:text-3xl">
-              Model-View-ViewModel (MVVM)
-            </p>
-          </ItemBox>
-          <ItemBox
-            color={"bg-cyan-400 dark:bg-cyan-800"}
-            width={"w-fit"}
-            boxType={"rounded-lg"}
-            padding={"p-3 4k:p-4"}
-            other={"place-items-center duration-150 transition-all"}
-            hoveredColor={"text-white dark:text-black bg-cyan-500 dark:hover:bg-cyan-500"}
-          >
-            <p className="font-bold max-md:text-sm 3xl:text-xl 4k:text-3xl">
-              Unified Modeling Language (UML)
-            </p>
-          </ItemBox>
-          <ItemBox
-            color={"bg-cyan-400 dark:bg-cyan-800"}
-            width={"w-fit"}
-            boxType={"rounded-lg"}
-            padding={"p-3 4k:p-4"}
-            other={"place-items-center duration-150 transition-all"}
-            hoveredColor={"text-white dark:text-black bg-cyan-500 dark:hover:bg-cyan-500"}
-          >
-            <p className="font-bold max-md:text-sm 3xl:text-xl 4k:text-3xl">
-              TCP/IP
-            </p>
-          </ItemBox>
+
+          {/* Software Development Life Cycle (SDLC) */}
+          <SkillDisplay 
+            skillName={"Software Development Life Cycle (SDLC)"} 
+            logo={undefined} 
+          />
+
+          {/* Agile Methodologies */}
+          <SkillDisplay 
+            skillName={"Agile Methodologies"} 
+            logo={undefined} 
+          />
+          
+          {/* Model-View-Controller (MVC) */}
+          <SkillDisplay 
+            skillName={"Model-View-Controller (MVC)"} 
+            logo={undefined} 
+          />
+          
+          {/* Model-View-ViewModel (MVVM) */}
+          <SkillDisplay 
+            skillName={"Model-View-ViewModel (MVVM)"} 
+            logo={undefined} 
+          />
+
+          {/* Unified Modeling Language (UML) */}
+          <SkillDisplay 
+            skillName={"Unified Modeling Language (UML)"} 
+            logo={undefined} 
+          />
+
+          {/* TCP/IP */}
+          <SkillDisplay 
+            skillName={"TCP/IP"} 
+            logo={undefined} 
+          />
         </div>
       </div>
     </>
