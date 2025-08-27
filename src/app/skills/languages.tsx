@@ -24,7 +24,7 @@ const ProgrammingLanguages = () => {
   return (
     <>
       <div className="flex flex-col">
-        <div className="flex flex-wrap justify-start max-md:justify-center p-2 pt-2 4k:pt-6 pb-8 max-md:pb-5 gap-5 4k:gap-8 max-md:gap-2 text-center">
+        <div className="flex flex-wrap justify-start max-md:justify-center p-2 pt-2 4k:pt-6 pb-16 max-md:pb-10 gap-5 gap-y-7 max-md:gap-4 4k:gap-8  text-center">
           <ItemBox
             color={"bg-cyan-400 dark:bg-cyan-800"}
             width={"w-fit"}
