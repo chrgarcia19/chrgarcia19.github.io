@@ -5,8 +5,7 @@ import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { IoIosSend } from "react-icons/io";
 
 interface FormFields {
-    firstName: string,
-    lastName: string,
+    name: string,
     email: string,
     subject: string,
     message: string,
@@ -19,24 +18,114 @@ const ContactForm = () => {
         "General Message",
     ];
 
+    const MAX_MESSAGE_LENGTH = 500;
+    const SUBMISSION_COOLDOWN = 30000; // 30 seconds
+
     const [form, setForm] = useState<FormFields>({
-        firstName: "",
-        lastName: "",
+        name: "",
         email: "",
         subject: "",
         message: "",
     });
 
+    const [errors, setErrors] = useState<Partial<FormFields>>({});
+    const [lastSubmission, setLastSubmission] = useState<number>(0);
+
     const { executeRecaptcha } = useGoogleReCaptcha();
+
+    const getCharacterCounterColor = () => {
+        const remainingCharacters = MAX_MESSAGE_LENGTH - form.message.length;
+        const percentage = remainingCharacters/MAX_MESSAGE_LENGTH;
+
+        if (remainingCharacters === 0){ return ("bg-red-600"); }
+        else if (percentage <= 0.1){ return ("bg-red-500"); }
+        else if (percentage <= 0.2){ return ("bg-orange-500"); }
+        else { return ("bg-green-500"); }
+    };
+    
+    const validateFormFields = (name: keyof FormFields, value: string) => {
+        let error = "";
+        let sanitized = value.trim();
+
+        switch (name){
+            case "name":
+                const nameRegex = /^[a-zA-ZÀ-ÖØ-öø-ÿ'-\s]+$/;
+
+                if (!sanitized){
+                    error = `A name is required!`;
+                } else if (sanitized.length < 2){
+                    error = `Name must be at least 2 characters.`;
+                } else if (sanitized.length > 50){
+                    error = `Name must be less than 50 characters.`;
+                } else if (!nameRegex.test(sanitized)){
+                    error = `This name contains invalid characters`;
+                }
+                break;
+            case "email":
+                const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                
+                if (!sanitized){
+                    error = `An email is required!`;
+                } else if (sanitized.length < 5) {
+                    error = "Email must greater than 5 characters.";
+                } else if (sanitized.length > 254) {
+                    error = "Email must be less than 254 characters.";
+                } else if (!sanitized.includes("@")){
+                    error = "Email must include an @ symbol."
+                } else if (!emailRegex.test(sanitized)){
+                    error = "Enter a valid email. (e.g., jdoe@email.com)";
+                }
+                break;
+            case "subject":
+                if (!sanitized){
+                    error = `A subject is required!`;
+                }
+                break;
+            case "message":
+                if (!sanitized){
+                    error = `A message is required!`;
+                } else if (sanitized.length < 5){
+                    error = "Message must be at least 5 characters.";
+                } else if (sanitized.length > 500){
+                    error = "Message must be less than 500 characters.";
+                } 
+
+                sanitized = sanitized.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#x27;");
+
+        }
+
+        return error;
+    };
+
 
     const handleChange = (newData: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
         const value = newData.target.value;
         const name = newData.target.name;
         setForm({...form, [name]: value});
+
+        const errorMessage = validateFormFields(name as keyof FormFields, value);
+        setErrors((prev) => ({ ...prev, [name]: errorMessage }));
     };
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+
+        if (Date.now() - lastSubmission < SUBMISSION_COOLDOWN){
+            alert("Please wait at least 30 seconds before submitting another response.");
+            return;
+        }
+
+        const newErrors: Partial<FormFields> = {};
+        (Object.keys(form) as (keyof FormFields)[]).forEach((key) => {
+            const errorMessage = validateFormFields(key, form[key]);
+            if (errorMessage) newErrors[key] = errorMessage;
+        });
+
+        setErrors(newErrors);
+
+        if (Object.keys(newErrors).length > 0){
+            return;
+        }
 
         if (!executeRecaptcha) {
             alert("reCAPTCHA not ready yet.");
@@ -57,21 +146,21 @@ const ContactForm = () => {
             });
 
             if (res.ok) {
+                setLastSubmission(Date.now());
                 setForm({
-                    firstName: "",
-                    lastName: "",
+                    name: "",
                     email: "",
                     subject: "",
                     message: "",
                 });
+                alert("Message sent successfully!");
             } else {
-                console.log("AN ERROR OCCURRED!");
+                alert("Failed to send message. Please try again.");
             }
         } catch (error) {
             console.log(error);
         } 
     };
-
 
     return (
         <>
@@ -81,50 +170,31 @@ const ContactForm = () => {
                     id="emailForm" 
                     name="emailForm" 
                     onSubmit={handleSubmit}>
-                        <div className="flex flex-col gap-y-2">
-                            <div className="flex max-sm:flex-col lg:flex-row max-sm:gap-y-2 lg:gap-x-6">
-                                {/* First Name */}
+                        <div className="flex flex-col gap-y-3">
+                                {/* Name */}
                                 <span>
                                     <label 
-                                        htmlFor="firstName" 
+                                        htmlFor="name" 
                                         className="font-semibold dark:text-zinc-800"
                                     >
-                                        <span>Your First Name</span>
+                                        <span>Full Name</span>
                                         <span className="text-red-500 ml-1">*</span>
                                     </label>
                                     <input 
                                         required 
-                                        id="firstName" 
-                                        name="firstName" 
+                                        id="name" 
+                                        name="name" 
                                         type="text" 
-                                        placeholder="Your First Name"
-                                        value={form.firstName}
+                                        placeholder="John Doe"
+                                        value={form.name}
                                         onChange={handleChange} 
-                                        className="rounded-full w-full px-2 lg:px-4 lg:py-1"
+                                        className={`rounded-full w-full px-2 lg:px-4 lg:py-1 shadow-sm focus:ring-2 ${errors.name ? "focus:ring-red-500 border-2  border-red-500" : "focus:outline-none focus:ring-cyan-500"}`}                                    
                                     />
+                                    {errors.name && 
+                                        <p className="text-red-500 text-sm font-semibold mt-1 ml-2">{errors.name}</p>
+                                    }
                                 </span>
 
-                                {/* Last Name */}
-                                <span>
-                                    <label 
-                                        htmlFor="lastName" 
-                                        className="font-semibold dark:text-zinc-800"
-                                    >
-                                        <span>Your Last Name</span>
-                                        <span className="text-red-500 ml-1">*</span>
-                                    </label>
-                                    <input 
-                                        required 
-                                        id="lastName" 
-                                        name="lastName" 
-                                        type="text" 
-                                        placeholder="Your Last Name"
-                                        value={form.lastName}
-                                        onChange={handleChange} 
-                                        className="rounded-full w-full px-2 lg:px-4 lg:py-1"
-                                    />
-                                </span>
-                            </div>
                                     
                             {/* Email Address */}
                             <span>
@@ -140,11 +210,14 @@ const ContactForm = () => {
                                     id="email" 
                                     name="email" 
                                     type="email" 
-                                    placeholder="Your Email Address"
+                                    placeholder="jdoe@email.com"
                                     value={form.email}
                                     onChange={handleChange} 
-                                    className="rounded-full w-full px-2 lg:px-4 lg:py-1"
+                                    className={`rounded-full w-full px-2 lg:px-4 lg:py-1 shadow-sm focus:ring-2 ${errors.email ? "focus:ring-red-500 border-2  border-red-500" : "focus:outline-none focus:ring-cyan-500"}`}
                                 />
+                                {errors.email && 
+                                    <p className="text-red-500 text-sm font-semibold mt-1 ml-2">{errors.email}</p>
+                                }
                             </span>
                         
 
@@ -174,8 +247,8 @@ const ContactForm = () => {
                                                     {option}
                                                 </option>
                                         ))}
-                                    
                                 </select>
+                                {errors.subject && <p className="text-red-500 text-sm mt-1">{errors.subject}</p>}
                             </span>
                         
                             {/* Message */}
@@ -187,26 +260,41 @@ const ContactForm = () => {
                                     <span>Message</span>
                                     <span className="text-red-500 ml-1">*</span>
                                 </label>
-                                <textarea
-                                    required
-                                    id="message"
-                                    name="message"
-                                    placeholder="Enter Your Brief Message..."
-                                    value={form.message}
-                                    onChange={handleChange} 
-                                    className="w-full px-2 py-2 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-500 min-h-[200px] h-[250px] max-lg:h-[350px] lg:max-h-[300px]"
-                                />
+                                <div className="relative">
+                                    <textarea
+                                        required
+                                        id="message"
+                                        name="message"
+                                        placeholder="Enter Your Brief Message..."
+                                        value={form.message}
+                                        onChange={handleChange} 
+                                        className={`rounded-lg w-full px-2 py-2 placeholder-gray-400 min-h-[200px] h-[250px] max-lg:h-[350px] lg:max-h-[300px] shadow-sm focus:ring-2 ${errors.message ? "focus:ring-red-500 border-2  border-red-500" : "focus:outline-none focus:ring-cyan-500"}`}
+                                    />
+                                    <div className={`absolute bottom-2 right-4 text-xs pointer-events-none ${getCharacterCounterColor()} rounded-full px-1 py-0.5`}>
+                                        <p className="text-black font-semibold">
+                                            ({form.message.length}/{MAX_MESSAGE_LENGTH})
+                                        </p>
+                                    </div>
+                                </div>
+                                <span className="flex items-center justify-between">
+                                    <div className="flex justify-start">
+                                        {errors.message && 
+                                            <p className="text-red-500 text-sm font-semibold mt-1 ml-2">{errors.message}</p>
+                                        }
+                                    </div>
+                                </span>
+                                
                             </span>
                         </div>
-                    <div className="flex items-center justify-center pt-6">
+                    <div className="flex items-center justify-center w-full pt-6">
                         <button
                             type="submit"
                             onSubmit={handleSubmit}
-                            className="bg-green-500 rounded-full px-3 py-1"
+                            className="bg-green-500 rounded-full w-full px-3 py-1"
                             >
                             <span className="flex flex-row justify-center items-center space-x-2">
                                 <IoIosSend className="w-5 h-5"/>
-                                <p>Send Message!</p>
+                                <p>Send Message</p>
                             </span>
                         </button>
                     </div>
