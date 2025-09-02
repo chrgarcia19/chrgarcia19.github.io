@@ -22,6 +22,7 @@ const AboutMe = () => {
             <ItemBox color={""} hoveredColor={"xl:shadow-xl xl:shadow-slate-500"} width={""} boxType={"rounded-3xl"} padding={""} other={""}>
             <div className="w-[70vw] sm:w-[60vw] md:w-[350px] 3xl:w-[500px] 4k:w-[650px] border-4 border-slate-400 dark:border-slate-700 rounded-3xl overflow-hidden">
                 <Image
+                  priority={false}
                   src={christianImage}
                   alt="An Image of Christian"
                   width={350}
