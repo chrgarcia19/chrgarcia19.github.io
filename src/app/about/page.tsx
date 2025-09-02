@@ -89,7 +89,7 @@ const AboutMe = () => {
 
             <div className="flex justify-center items-center">
               <div className="animate-bounce">
-                <FaArrowCircleDown className="text-2xl text-cyan-400"/>
+                <FaArrowCircleDown className="text-2xl text-cyan-500 dark:text-cyan-400"/>
               </div>
             </div>
 
@@ -128,7 +128,7 @@ const AboutMe = () => {
 
             <div className="flex justify-center items-center">
               <div className="animate-bounce">
-                <FaArrowCircleDown className="text-2xl text-cyan-400"/>
+                <FaArrowCircleDown className="text-2xl text-cyan-500 dark:text-cyan-400"/>
               </div>
             </div>
 
