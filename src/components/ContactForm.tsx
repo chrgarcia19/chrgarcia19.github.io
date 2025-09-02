@@ -1,7 +1,7 @@
 "use client"
 
-import { useState } from "react";
-import StyledButton from "./StyledButton";
+import { SetStateAction, useState } from "react";
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { IoIosSend } from "react-icons/io";
 
 interface FormFields {
@@ -27,6 +27,8 @@ const ContactForm = () => {
         message: "",
     });
 
+    const { executeRecaptcha } = useGoogleReCaptcha();
+
     const handleChange = (newData: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
         const value = newData.target.value;
         const name = newData.target.name;
@@ -36,9 +38,35 @@ const ContactForm = () => {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
 
+        if (!executeRecaptcha) {
+            alert("reCAPTCHA not ready yet.");
+            return;
+        }
+
         try {
-            console.log(form);
-            setForm({firstName: "", lastName: "", email: "", subject: "", message: ""});
+            const token = await executeRecaptcha('Contact_Form');
+
+            const res = await fetch("https://formspree.io/f/meolzygb", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    ...form,
+                    "g-recaptcha-response": token,
+
+                }),
+            });
+
+            if (res.ok) {
+                setForm({
+                    firstName: "",
+                    lastName: "",
+                    email: "",
+                    subject: "",
+                    message: "",
+                });
+            } else {
+                console.log("AN ERROR OCCURRED!");
+            }
         } catch (error) {
             console.log(error);
         } 
