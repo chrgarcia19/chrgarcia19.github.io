@@ -16,7 +16,7 @@ const Contact = () => {
           </h3>
 
           {/* For Desktop*/}
-          <div className="max-lg:hidden flex max-lg:flex-col items-center justify-center w-3/4">
+          <div className="max-lg:hidden flex max-lg:flex-col items-center justify-center max-xl:w-full xl:w-3/4">
             <div className="flex justify-center items-center w-1/2 max-lg:w-full">
               <ContactForm />
             </div>
