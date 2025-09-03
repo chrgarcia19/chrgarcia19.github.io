@@ -180,7 +180,7 @@ const NavBar = () => {
                 color={"bg-cyan-500 dark:bg-cyan-700"}
                 hovered={"bg-cyan-600 dark:hover:bg-cyan-600"}
                 icon={null}
-                other={""}
+                other={"max-lg:border-2"}
                 textSize={"max-sm:text-xl max-lg:text-3xl"}
                 padding={"max-sm:px-4 max-sm:py-1 md:px-5 lg:px-4"}
                 label={item.label}
