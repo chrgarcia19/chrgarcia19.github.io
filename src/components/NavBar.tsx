@@ -5,8 +5,7 @@ import DownloadButton from "./DownloadButton";
 import ItemBox from "./ItemBox";
 import StyledButton from "./StyledButton";
 import ThemeSwitcher from "@/components/ThemeSwitcher";
-import { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
+import { useEffect, useRef, useState } from "react";
 
 interface NavItems {
   text: string,
@@ -155,21 +154,21 @@ const NavBar = () => {
 
 
         {/*For Mobile*/}
-        <div className="lg:hidden flex items-center gap-4 z-10 mr-1">
+        <div className="lg:hidden flex items-center gap-5 z-10 mr-1">
           <ThemeSwitcher />
           <div onClick={handleOpen}>
             {menuOpen ? (
-              <AiOutlineClose size={25} className="text-white" />
+              <AiOutlineClose size={28} className="text-white" />
             ) : (
-              <AiOutlineMenu size={25} className="text-white" />
+              <AiOutlineMenu size={28} className="text-white" />
             )}
           </div>
         </div>
         <div
           className={
             menuOpen
-              ? "lg:hidden fixed z-10 top-12 left-0 right-0 bottom-0 flex justify-center items-center w-full h-fit border-t-2 border-white bg-cyan-500 dark:bg-cyan-700 text-center opacity-95 ease-in duration-500 p-4"
-              : "lg:hidden fixed z-10 top-12 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-fit bg-cyan-500 dark:bg-cyan-700 text-center opacity-95 ease-in duration-500 p-4"
+              ? "lg:hidden fixed z-10 top-14 left-0 right-0 bottom-0 flex justify-center items-center w-full h-fit border-t-2 border-white bg-cyan-500 dark:bg-cyan-700 text-center opacity-95 ease-in duration-500 p-4"
+              : "lg:hidden fixed z-10 top-14 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-fit bg-cyan-500 dark:bg-cyan-700 text-center opacity-95 ease-in duration-500 p-4"
           }
         >
           <ul className="flex flex-col gap-4">
