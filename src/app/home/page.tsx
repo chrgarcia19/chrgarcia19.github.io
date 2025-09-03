@@ -45,7 +45,7 @@ const Homepage = () => {
               icon={null}
               other={"shadow-xl"}
               textSize={"text-2xl max-sm:text-sm 3xl:text-3xl 4k:text-5xl"}
-              padding={"max-md:px-2 sm:px-3 lg:px-8 3xl:px-6 4k:px-10 py-3 max-sm:py-1 4k:py-5"}
+              padding={"max-md:px-3 sm:px-3 lg:px-8 3xl:px-6 4k:px-12 py-3 max-sm:py-2 4k:py-8"}
               label={"View Projects Section"}
               title={"View Projects Section"}
               textColor={"text-white"} 

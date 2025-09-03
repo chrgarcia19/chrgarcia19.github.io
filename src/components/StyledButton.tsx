@@ -34,7 +34,7 @@ const StyledButton = (props: Props) => {
         href={props.href}
         aria-label={props.label}
         title={props.title}
-        className={`${props.color} ${props.textSize} max-lg:border-2 text-center font-semibold shadow-sm rounded-full ${props.animation} ${props.textColor} ${props.padding} hover:text-gray-200 ${isHovered ? `${props.hovered}` : ""} ${props.other}`}
+        className={`${props.color} ${props.textSize} text-center font-semibold shadow-sm rounded-full ${props.animation} ${props.textColor} ${props.padding} hover:text-gray-200 ${isHovered ? `${props.hovered}` : ""} ${props.other}`}
       >
         <div className={`flex items-center justify-center ${props.icon !== null ? "flex-row gap-x-2" : ""}`}>
           {props.icon} {props.text}
