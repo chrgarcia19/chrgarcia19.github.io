@@ -1,5 +1,5 @@
 const C = () => (
-  <div className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12">
+  <div className="w-6 h-6 max-md:w-5 max-md:h-5">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
       <path
         fill="currentColor"

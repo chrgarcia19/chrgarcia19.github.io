@@ -14,59 +14,59 @@ const FrameworksLibraries = () => {
   return (
     <>
       <div className="flex flex-col">
-        <div className="flex flex-wrap justify-start max-md:justify-center p-2 pt-2 4k:pt-6 pb-16 max-md:pb-10 gap-10 max-md:gap-5 4k:gap-16 text-center">
+        <div className="flex flex-wrap justify-start max-md:justify-center p-2 pt-2 pb-16 max-md:pb-10 gap-10 max-md:gap-5 text-center">
           {/* Next.js */}
           <SkillDisplay 
             skillName={"Next.js"} 
-            logo={<SiNextdotjs className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+            logo={<SiNextdotjs className="w-6 h-6 max-md:w-5 max-md:h-5" />} 
           />
 
           {/* React */}
           <SkillDisplay 
             skillName={"React"} 
-            logo={<SiReact className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+            logo={<SiReact className="w-6 h-6 max-md:w-5 max-md:h-5" />} 
           />
 
           {/* TailwindCSS */}
           <SkillDisplay 
             skillName={"TailwindCSS"} 
-            logo={<SiTailwindcss className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+            logo={<SiTailwindcss className="w-6 h-6 max-md:w-5 max-md:h-5" />} 
           />
 
           {/* Ruby on Rails */}
           <SkillDisplay 
             skillName={"Ruby on Rails"} 
-            logo={<SiRubyonrails className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+            logo={<SiRubyonrails className="w-6 h-6 max-md:w-5 max-md:h-5" />} 
           />
 
           {/* SwiftUI */}
           <SkillDisplay 
             skillName={"SwiftUI"} 
-            logo={<SiSwift className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+            logo={<SiSwift className="w-6 h-6 max-md:w-5 max-md:h-5" />} 
           />
 
           {/* HeroUI */}
           <SkillDisplay 
             skillName={"HeroUI"} 
-            logo={<SiNextui className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+            logo={<SiNextui className="w-6 h-6 max-md:w-5 max-md:h-5" />} 
           />
 
           {/* JavaFX */}
           <SkillDisplay 
             skillName={"JavaFX"} 
-            logo={<FaJava className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+            logo={<FaJava className="w-6 h-6 max-md:w-5 max-md:h-5" />} 
           />
 
           {/* Java Swing */}
           <SkillDisplay 
             skillName={"Java Swing"} 
-            logo={<FaJava className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+            logo={<FaJava className="w-6 h-6 max-md:w-5 max-md:h-5" />} 
           />
 
           {/* JUnit */}
           <SkillDisplay 
             skillName={"JUnit"} 
-            logo={<SiJunit5 className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+            logo={<SiJunit5 className="w-6 h-6 max-md:w-5 max-md:h-5" />} 
           />
         </div>
       </div>

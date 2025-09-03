@@ -24,41 +24,41 @@ const ProgrammingLanguages = () => {
   return (
     <>
       <div className="flex flex-col">
-        <div className="flex flex-wrap justify-start max-md:justify-center p-2 pt-2 4k:pt-6 pb-16 max-md:pb-10 gap-10 max-md:gap-5 4k:gap-16 text-center">
+        <div className="flex flex-wrap justify-start max-md:justify-center p-2 pt-2 pb-16 max-md:pb-10 gap-10 max-md:gap-5 text-center">
           {/* TypeScript */}
           <SkillDisplay 
             skillName={"TypeScript"} 
-            logo={<SiTypescript className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+            logo={<SiTypescript className="w-6 h-6 max-md:w-5 max-md:h-5" />} 
           />
 
           {/* JavaScript */}
           <SkillDisplay 
             skillName={"JavaScript"} 
-            logo={<SiJavascript className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+            logo={<SiJavascript className="w-6 h-6 max-md:w-5 max-md:h-5" />} 
           />
           
           {/* HTML */}
           <SkillDisplay 
             skillName={"HTML5"} 
-            logo={<SiHtml5 className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+            logo={<SiHtml5 className="w-6 h-6 max-md:w-5 max-md:h-5" />} 
           />
           
           {/* CSS */}
           <SkillDisplay 
             skillName={"CSS3"} 
-            logo={<SiCss3 className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+            logo={<SiCss3 className="w-6 h-6 max-md:w-5 max-md:h-5" />} 
           />
 
           {/* Java */}
           <SkillDisplay 
             skillName={"Java"} 
-            logo={<FaJava className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+            logo={<FaJava className="w-6 h-6 max-md:w-5 max-md:h-5" />} 
           />
 
           {/* Python */}
           <SkillDisplay 
             skillName={"Python 3"} 
-            logo={<SiPython className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+            logo={<SiPython className="w-6 h-6 max-md:w-5 max-md:h-5" />} 
           />
 
           {/* C */}
@@ -70,55 +70,55 @@ const ProgrammingLanguages = () => {
           {/* C++ */}
           <SkillDisplay 
             skillName={"C++"} 
-            logo={<SiCplusplus className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+            logo={<SiCplusplus className="w-6 h-6 max-md:w-5 max-md:h-5" />} 
           />
 
           {/* Go */}
           <SkillDisplay 
             skillName={"Go/Golang"} 
-            logo={<SiGo className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+            logo={<SiGo className="w-6 h-6 max-md:w-5 max-md:h-5" />} 
           />
 
           {/* Ruby */}
           <SkillDisplay 
             skillName={"Ruby"} 
-            logo={<SiRuby className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+            logo={<SiRuby className="w-6 h-6 max-md:w-5 max-md:h-5" />} 
           />
 
           {/* Swift */}
           <SkillDisplay 
             skillName={"Swift"} 
-            logo={<SiSwift className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+            logo={<SiSwift className="w-6 h-6 max-md:w-5 max-md:h-5" />} 
           />
           
           {/* PHP */}
           <SkillDisplay 
             skillName={"PHP"} 
-            logo={<SiPhp className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+            logo={<SiPhp className="w-6 h-6 max-md:w-5 max-md:h-5" />} 
           />
           
           {/* Scala */}
           <SkillDisplay 
             skillName={"Scala"} 
-            logo={<SiScala className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+            logo={<SiScala className="w-6 h-6 max-md:w-5 max-md:h-5" />} 
           />
 
           {/* R */}
           <SkillDisplay 
             skillName={"R"} 
-            logo={<SiR className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+            logo={<SiR className="w-6 h-6 max-md:w-5 max-md:h-5" />} 
           />
 
           {/* Rust */}
           <SkillDisplay 
             skillName={"Rust"} 
-            logo={<SiRust className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+            logo={<SiRust className="w-6 h-6 max-md:w-5 max-md:h-5" />} 
           />
           
           {/* Clojure */}
           <SkillDisplay 
             skillName={"Clojure"} 
-            logo={<SiClojure className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+            logo={<SiClojure className="w-6 h-6 max-md:w-5 max-md:h-5" />} 
           />
 
           {/* Lisp */}
@@ -130,7 +130,7 @@ const ProgrammingLanguages = () => {
           {/* Prolog */}
           <SkillDisplay 
             skillName={"Prolog"} 
-            logo={<DiProlog className="w-6 h-6 max-md:w-5 max-md:h-5 3xl:w-8 3xl:h-8 4k:w-12 4k:h-12" />} 
+            logo={<DiProlog className="w-6 h-6 max-md:w-5 max-md:h-5" />} 
           />
         </div>
       </div>

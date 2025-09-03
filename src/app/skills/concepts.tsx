@@ -4,7 +4,7 @@ const Concepts = () => {
   return (
     <>
       <div className="flex flex-col">
-        <div className="flex flex-wrap justify-start max-md:justify-center p-2 pt-2 4k:pt-6 pb-16 max-md:pb-10 gap-10 max-md:gap-5 4k:gap-16 text-center">
+        <div className="flex flex-wrap justify-start max-md:justify-center p-2 pt-2 pb-16 max-md:pb-10 gap-10 max-md:gap-5 text-center">
 
           {/* Software Development Life Cycle (SDLC) */}
           <SkillDisplay 

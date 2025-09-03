@@ -111,10 +111,10 @@ const NavBar = () => {
             hoveredColor={"bg-cyan-600 dark:hover:bg-cyan-600"}
             width={""}
             boxType={"rounded-full"}
-            padding={"px-4 max-sm:px-2 3xl:px-6 3xl:py-1"}
+            padding={"px-4 max-sm:px-2"}
             other={"transition-all duration-300"}
           >
-            <h1 className="text-xl sm:text-3xl 3xl:text-5xl 4k:text-7xl text-white font-bold">
+            <h1 className="text-xl sm:text-3xl text-white font-bold">
               Christian Garcia
             </h1>
           </ItemBox>
@@ -129,8 +129,8 @@ const NavBar = () => {
                 hovered={"hover:bg-cyan-600 dark:hover:bg-cyan-600 font-bold text-xl shadow-xl"}
                 icon={null}
                 other={activeSection === item.href ? "border-b-[3px] border-b-white transform transition-all duration-300" : "border-b-[3px] border-transparent"}
-                textSize={"text-lg max-sm:text-sm max-lg:text-3xl 3xl:text-2xl 4k:text-4xl"}
-                padding={"px-6 max-sm:px-2 lg:px-4 3xl:px-6 py-1 3xl:py-2"}
+                textSize={"text-lg max-sm:text-sm max-lg:text-3xl"}
+                padding={"px-6 max-sm:px-2 lg:px-4"}
                 label={item.label}
                 title={item.title}
                 textColor={activeSection === item.href ? "text-slate-600 dark:text-blue-200" : "text-white"}
@@ -141,8 +141,8 @@ const NavBar = () => {
           <div className="flex items-center">
             <DownloadButton
               text={"Résumé"}
-              padding={"px-6 max-sm:px-2 lg:px-4 3xl:px-6 py-1 3xl:py-2 border-2 border-transparent"}
-              textSize={"text-lg max-sm:text-sm max-lg:text-3xl 3xl:text-2xl 4k:text-4xl"}
+              padding={"px-6 max-sm:px-2 lg:px-4 border-2 border-transparent"}
+              textSize={"text-lg max-sm:text-sm max-lg:text-3xl"}
               view={false} 
               hovered={"bg-cyan-600 dark:hover:bg-cyan-600 font-bold text-xl shadow-xl"} 
             />

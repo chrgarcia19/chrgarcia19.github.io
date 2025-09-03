@@ -12,9 +12,9 @@ const Skills = () => {
     <>
       <section
         id="skills"
-        className="flex flex-col pt-10 pl-14 pr-14 pb-10 max-md:pl-4 max-md:pr-4 4k:pt-14 w-full bg-zinc-300 dark:bg-zinc-800"
+        className="flex flex-col pt-10 pl-14 pr-14 pb-10 max-md:pl-4 max-md:pr-4 w-full bg-zinc-300 dark:bg-zinc-800"
       >
-        <h2 className="flex justify-center items-center text-center font-bold underline text-5xl max-sm:text-3xl 3xl:text-6xl 4k:text-8xl p-10 pb-16 text-blue-950 dark:text-blue-300 drop-shadow-2xl">
+        <h2 className="flex justify-center items-center text-center font-bold underline text-5xl max-sm:text-3xl p-10 pb-16 text-blue-950 dark:text-blue-300 drop-shadow-2xl">
           My Technical Skills
         </h2>
 

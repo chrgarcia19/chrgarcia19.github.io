@@ -26,7 +26,7 @@ export default function ThemeSwitcher() {
               aria-label="Switch to dark mode"
               title="Switch to dark mode"
             >
-              <FaMoon className="text-xl 3xl:text-2xl 4k:text-4xl" />
+              <FaMoon className="text-xl" />
             </button>
           </>
         )) ||
@@ -38,7 +38,7 @@ export default function ThemeSwitcher() {
                 aria-label="Switch to light mode"
                 title="Switch to light mode"
               >
-                <FaSun className="text-xl 3xl:text-2xl 4k:text-4xl" />
+                <FaSun className="text-xl" />
               </button>
             </>
           ))}
