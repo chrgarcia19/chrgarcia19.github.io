@@ -61,19 +61,19 @@ const AboutMe = () => {
             </h3>
             {/* High School Item Box */}
             <ItemBox
-              color={"bg-cyan-600 dark:bg-cyan-700"}
+              color={"bg-cyan-500 dark:bg-cyan-700"}
               width={"w-full max-w-lg max-sm:max-w-full mx-auto"}
               boxType={"rounded-r-lg"}
               padding={"p-6 max-sm:p-3 max-sm:pl-6 max-lg:p-4"}
-              other={"relative text-left group hover:scale-[1.02] transition-transform duration-200"}
+              other={"relative text-left group will-change-transform hover:scale-[1.02] transition-transform duration-200"}
               hoveredColor={"text-slate-100 xl:dark:text-slate-200 xl:shadow-slate-500"}
             >
               <EventMarker 
                 eventNumber={1} 
-                color={"bg-cyan-500"} 
+                color={"bg-cyan-400 dark:bg-cyan-500"} 
                 gradient={"bg-gradient-to-b from-cyan-400 to-cyan-600"} 
                 textSize={"text-sm"} 
-                textColor={"text-white"} 
+                textColor={"text-black dark:text-white"} 
               />
               <div className="flex flex-col items-start text-left w-full">
                 <div className="flex items-center justify-between w-full mb-2">
@@ -96,19 +96,19 @@ const AboutMe = () => {
 
             {/* ACM Item Box */}
             <ItemBox
-              color={"bg-cyan-600 dark:bg-cyan-700"}
+              color={"bg-cyan-500 dark:bg-cyan-700"}
               width={"w-full max-w-lg max-sm:max-w-full mx-auto"}
               boxType={"rounded-r-lg"}
               padding={"p-6 max-sm:p-3 max-sm:pl-6 max-lg:p-4"}
-              other={"relative text-left group hover:scale-[1.02] transition-transform duration-200"}
+              other={"relative text-left group will-change-transform hover:scale-[1.02] transition-transform duration-200"}
               hoveredColor={"text-slate-100 xl:dark:text-slate-200 xl:shadow-slate-500"}
             >
               <EventMarker 
                 eventNumber={2} 
-                color={"bg-cyan-500"} 
+                color={"bg-cyan-400 dark:bg-cyan-500"} 
                 gradient={"bg-gradient-to-b from-cyan-400 to-cyan-600"} 
                 textSize={"text-sm"} 
-                textColor={"text-white"} 
+                textColor={"text-black dark:text-white"} 
               />
               <div className="flex flex-col items-start text-left w-full">
                 <div className="flex items-center justify-between w-full mb-2">
@@ -135,19 +135,19 @@ const AboutMe = () => {
 
             {/* College Item Box */}
             <ItemBox
-              color={"bg-cyan-600 dark:bg-cyan-700"}
+              color={"bg-cyan-500 dark:bg-cyan-700"}
               width={"w-full max-w-lg max-sm:max-w-full mx-auto"}
               boxType={"rounded-r-lg"}
               padding={"p-6 max-sm:p-3 max-sm:pl-6 max-lg:p-4"}
-              other={"relative text-left group hover:scale-[1.02] transition-transform duration-200"}
+              other={"relative text-left group will-change-transform hover:scale-[1.02] transition-transform duration-200"}
               hoveredColor={"text-slate-100 xl:dark:text-slate-200 xl:shadow-slate-500"}
             >
               <EventMarker 
                 eventNumber={3} 
-                color={"bg-cyan-500"} 
+                color={"bg-cyan-400 dark:bg-cyan-500"} 
                 gradient={"bg-gradient-to-b from-cyan-400 to-cyan-600"} 
                 textSize={"text-sm"} 
-                textColor={"text-white"} 
+                textColor={"text-black dark:text-white"} 
               />
               <div className="flex flex-col items-start text-left w-full">
                   <div className="flex items-center justify-between w-full mb-2">
