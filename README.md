@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio Website
 
-## Getting Started
+This project is a professional portfolio website created using Next.js and TailwindCSS.
 
-First, run the development server:
+## What's the purpose?
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This portfolio website is meant to display my academic and professional journey, my technical skills, and projects I have worked on previously. Here are some features:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- reCAPTCHA v3 integration.
+- Responsive design to account for mobile devices and different screen sizes.
+- Light and Dark modes.
+- Interactive elements to provide a smooth user experience.
+- [Desktop Only] A navigation bar that tracks which section of the page the user is on.
+- Neatly organized sections to view Christian's technical skills.
+- Project cards to display Christian's projects.
+- A contact form to contact Christian from the website.
+- Validation for the contact form in the contact section.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Live Demo
 
-## Learn More
+For a live demo, please view my website at [INSERT LINK HERE]
 
-To learn more about Next.js, take a look at the following resources:
+## Tools & Technologies Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Next.js
+- TypeScript
+- JavaScript
+- TailwindCSS
+- react-hot-toast [https://react-hot-toast.com/]
+- react-icons [https://react-icons.github.io/react-icons/]
+- Google's reCAPTCHA [https://developers.google.com/recaptcha]
+- Formspree [https://formspree.io/]
+- GitHub Pages [https://docs.github.com/en/pages]
