@@ -20,7 +20,7 @@ const AboutMe = () => {
         <div className="flex max-lg:flex-col items-center justify-center ">
           <div className="flex flex-col items-center justify-normal w-1/2 max-lg:w-full p-10 max-md:p-4 max-md:pb-12">
             <ItemBox color={""} hoveredColor={"xl:shadow-xl xl:shadow-slate-500"} width={""} boxType={"rounded-3xl"} padding={""} other={""}>
-            <div className="w-[70vw] sm:w-[60vw] md:w-[350px] border-4 border-cyan-600 dark:border-cyan-700 rounded-3xl overflow-hidden">
+            <div className="w-[70vw] sm:w-[60vw] md:w-[350px] border-4 border-cyan-500 dark:border-cyan-700 rounded-3xl overflow-hidden">
                 <Image
                   priority={false}
                   src={christianImage}
