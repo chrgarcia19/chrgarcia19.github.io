@@ -28,6 +28,7 @@ For a live demo, please view my website at [INSERT LINK HERE]
 - TypeScript
 - JavaScript
 - TailwindCSS
+- Shell Scripting
 - react-hot-toast [https://react-hot-toast.com/]
 - react-icons [https://react-icons.github.io/react-icons/]
 - Google's reCAPTCHA [https://developers.google.com/recaptcha]
