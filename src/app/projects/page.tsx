@@ -94,8 +94,8 @@ const Projects = () => {
             ]}
             image={portfolioImage}
             imageAlt={"A Screenshot from Christian's Portfolio Website"}
-            link={"https://github.com/chrgarcia19/christian-garcia.github.io"}
-            status={false}
+            link={"https://github.com/chrgarcia19/christiangarcia.tech"}
+            status={true}
           />
           <ProjectCard
             name={"Wordle Assistant (Command Line)"}
