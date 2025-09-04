@@ -52,7 +52,7 @@ const Projects = () => {
             ]}
             image={dttImage}
             imageAlt={"A Screenshot from the Driving Time Tracker"}
-            link={"https://github.com/chrgarcia19/Paint-n-Suffering"}
+            link={"https://github.com/chrgarcia19/DrivingLog"}
             status={true}
           />
           <ProjectCard
@@ -76,7 +76,7 @@ const Projects = () => {
             ]}
             image={cmcImage}
             imageAlt={"A Screenshot from Cash Money Citations"}
-            link={"https://github.com/chrgarcia19/Paint-n-Suffering"}
+            link={"https://github.com/chrgarcia19/cashmoneycitations"}
             status={true}
           />
           <ProjectCard
@@ -105,7 +105,7 @@ const Projects = () => {
             skills={["Python", "Git", "GitHub"]}
             image={waImage}
             imageAlt={"A Screenshot from the Wordle Assistant project"}
-            link={"https://github.com/chrgarcia19/Paint-n-Suffering"}
+            link={"https://github.com/chrgarcia19/Wordle_Assistant"}
             status={false}
           />
         </div>

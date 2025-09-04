@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import StyledButton from "@/components/StyledButton";
 import DownloadButton from "@/components/DownloadButton";
 import HomeText from "@/components/HomeText";

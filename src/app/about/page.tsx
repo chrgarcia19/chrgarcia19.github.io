@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import ItemBox from "@/components/ItemBox";
 import christianImage from "@/../public/ChristianGarciaPhoto.jpg";
 import Image from "next/image";
@@ -33,7 +32,7 @@ const AboutMe = () => {
             </ItemBox>
             <div className="justify-center p-6 max-md:p-2">
               <p className="flex text-2xl max-sm:text-lg font-semibold justify-center text-center">
-                Hello! I'm Christian,
+                Hello! I&apos;m Christian,
               </p>
               <br />
               <div className="space-y-4 leading-relaxed text-center lg:hover:font-bold lg:hover:scale-[1.02] lg:hover:text-slate-800 lg:dark:text-slate-200 transition-all duration-150">
@@ -48,7 +47,7 @@ const AboutMe = () => {
                   What began as a spark of
                 curiosity has grown into a deep enthusiasm for learning,
                 designing, and collaborating on software that solves real
-                problems and improves user experiences. I'm eager to contribute
+                problems and improves user experiences. I&apos;m eager to contribute
                 to projects that blend technical precision with meaningful
                 impact.
                 </p>
@@ -119,9 +118,9 @@ const AboutMe = () => {
                 </div>
                 <p className="italic text-base max-sm:text-sm">President (August 2023 - May 2024)</p>
                 <p className="text-sm max-sm:text-xs pt-2">
-                  Managed ACM’s website and coordinated diverse events, including
+                  Managed ACM&apos;s website and coordinated diverse events, including
                   professional development workshops and campus activities.
-                  Initiated and led a speaker series exploring computing’s role
+                  Initiated and led a speaker series exploring computing&apos;s role
                   across disciplines.
                 </p>
               </div>
