@@ -3,7 +3,6 @@
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { FaSun, FaMoon } from "react-icons/fa";
-import StyledButton from "./StyledButton";
 
 export default function ThemeSwitcher() {
   const [mounted, setMounted] = useState(false);

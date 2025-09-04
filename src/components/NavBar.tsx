@@ -5,7 +5,7 @@ import DownloadButton from "./DownloadButton";
 import ItemBox from "./ItemBox";
 import StyledButton from "./StyledButton";
 import ThemeSwitcher from "@/components/ThemeSwitcher";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 interface NavItems {
   text: string,
@@ -15,8 +15,7 @@ interface NavItems {
 };
 
 const NavBar = () => {
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  const NAV_ITEMS: NavItems[] = [
+  const NAV_ITEMS: NavItems[] = useMemo(() => [
     {
       text: "Home",
       href: "#home",
@@ -47,7 +46,7 @@ const NavBar = () => {
       label: "Go to Contact Section",
       title: "Go to Contact Section",
     },
-  ];
+  ], []);
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");

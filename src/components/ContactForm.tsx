@@ -1,6 +1,6 @@
 "use client"
 
-import { SetStateAction, useState } from "react";
+import { useState } from "react";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { IoIosSend } from "react-icons/io";
 

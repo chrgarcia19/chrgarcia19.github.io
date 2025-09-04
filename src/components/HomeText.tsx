@@ -3,14 +3,6 @@
 import { useEffect, useState } from "react";
 
 const HomeText = () => {
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  const phrases = [
-    "A passionate creator of digital solutions.",
-    "Coding is both my craft and my curiosity.",
-    "Enthusiastic about learning new tools and frameworks.",
-    "Eager to support and enhance projects.",
-  ];
-
   const [index, setIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");
   const [charIndex, setCharIndex] = useState(0);
@@ -18,6 +10,13 @@ const HomeText = () => {
   const [phraseComplete, setPhraseComplete] = useState(false);
 
   useEffect(() => {
+    const phrases = [
+      "A passionate creator of digital solutions.",
+      "Coding is both my craft and my curiosity.",
+      "Enthusiastic about learning new tools and frameworks.",
+      "Eager to support and enhance projects.",
+    ];
+
     const currentPhrase = phrases[index];
     
     if (charIndex < currentPhrase.length) {
@@ -42,7 +41,7 @@ const HomeText = () => {
       
       return () => clearTimeout(timeout);
     }
-  }, [index, charIndex, phrases]);
+  }, [index, charIndex]);
 
   return (
     <>
