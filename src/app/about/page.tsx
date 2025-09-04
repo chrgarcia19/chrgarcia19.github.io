@@ -12,7 +12,7 @@ const AboutMe = () => {
     <>
       <section
         id="about"
-        className="p-5 w-full pt-14 bg-zinc-300 dark:bg-zinc-800"
+        className="p-5 w-full pt-14 pb-14 bg-stone-300/85 dark:bg-neutral-800/80"
       >
         <h2 className="flex justify-center items-center font-bold underline text-5xl max-sm:text-3xl p-10 text-blue-950 dark:text-blue-300 drop-shadow-2xl">
           About Me
@@ -20,7 +20,7 @@ const AboutMe = () => {
         <div className="flex max-lg:flex-col items-center justify-center ">
           <div className="flex flex-col items-center justify-normal w-1/2 max-lg:w-full p-10 max-md:p-4 max-md:pb-12">
             <ItemBox color={""} hoveredColor={"xl:shadow-xl xl:shadow-slate-500"} width={""} boxType={"rounded-3xl"} padding={""} other={""}>
-            <div className="w-[70vw] sm:w-[60vw] md:w-[350px] border-4 border-slate-400 dark:border-slate-700 rounded-3xl overflow-hidden">
+            <div className="w-[70vw] sm:w-[60vw] md:w-[350px] border-4 border-cyan-600 dark:border-cyan-700 rounded-3xl overflow-hidden">
                 <Image
                   priority={false}
                   src={christianImage}
@@ -36,7 +36,7 @@ const AboutMe = () => {
                 Hello! I'm Christian,
               </p>
               <br />
-              <div className="space-y-4 leading-relaxed text-center lg:hover:font-semibold lg:hover:text-slate-800 lg:dark:text-slate-200 transition-all duration-150">
+              <div className="space-y-4 leading-relaxed text-center lg:hover:font-bold lg:hover:scale-[1.02] lg:hover:text-slate-800 lg:dark:text-slate-200 transition-all duration-150">
                 <p>
                   An aspiring Software Engineer with a strong interest in Full
                 Stack Development, committed to building reliable and impactful

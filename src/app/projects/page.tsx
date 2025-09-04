@@ -10,7 +10,7 @@ const Projects = () => {
     <>
       <section
         id="projects"
-        className="flex flex-col flex-grow justify-center items-center p-10 pt-14 w-full gap-8 bg-zinc-300 dark:bg-zinc-800"
+        className="flex flex-col flex-grow justify-center items-center p-10 pt-14 pb-14 w-full gap-8 bg-stone-300/85 dark:bg-neutral-800/80"
       >
         <h2 className="flex justify-center items-center font-bold underline text-5xl max-sm:text-3xl p-10 text-blue-950 dark:text-blue-300 drop-shadow-2xl">
           Projects

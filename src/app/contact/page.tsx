@@ -8,9 +8,9 @@ const Contact = () => {
     <>
       <section
         id="contact"
-        className="flex flex-col pt-10 w-full bg-zinc-300 dark:bg-zinc-800"
+        className="flex flex-col w-full bg-blue-950"
       >
-        <div className="flex flex-col items-center justify-center bg-blue-950 dark:bg-blue-950 gap-6 max-lg:gap-2 p-12 max-md:p-2 max-md:pt-8">
+        <div className="flex flex-col items-center justify-center gap-6 max-lg:gap-2 p-12 max-md:p-2 max-md:pt-8">
           <h3 className="flex justify-center items-center font-bold underline text-5xl max-sm:text-3xl 3xl:text-6xl 4k:text-8xl p-10 text-blue-300 drop-shadow-2xl">
             Get In Touch
           </h3>

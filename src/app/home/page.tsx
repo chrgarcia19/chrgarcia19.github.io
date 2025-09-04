@@ -8,7 +8,7 @@ const Homepage = () => {
     <>
       <section
         id="home" 
-        className="flex justify-center items-center max-sm:pt-0 w-full h-screen bg-zinc-300 dark:bg-zinc-800 dark:bg-gradient-to-br from-zinc-700 to-zinc-800">
+        className="relative flex justify-center items-center max-sm:pt-0 w-full h-screen bg-[length:300%_300%] animate-gradient bg-gradient-to-br from-slate-200 via-zinc-300 to-stone-400 dark:from-slate-700 dark:via-zinc-800 dark:to-blue-950">
         <div className="flex flex-col items-center justify-center">
           <div className="flex justify-center items-center gap-x-16 p-10 max-sm:p-6">
             <div className="flex flex-col justify-center space-y-2">
