@@ -4,8 +4,8 @@ const nextConfig = {
     images: {
         unoptimized: true,
     },
-    basePath: process.env.NODE_ENV === "production" ? "/chrgarcia19.github.io" : "",
-    assetPrefix: process.env.NODE_ENV === "production" ? "/chrgarcia19.github.io" : "",
+    basePath: process.env.NODE_ENV === "production" ? "chrgarcia19.github.io" : "",
+    assetPrefix: process.env.NODE_ENV === "production" ? "chrgarcia19.github.io" : "",
 };
 
 export default nextConfig;
