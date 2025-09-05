@@ -20,7 +20,7 @@ This portfolio website is meant to display my academic and professional journey,
 
 ## Live Demo
 
-For a live demo, please view my website at [INSERT LINK HERE]
+For a live demo, please view my website at [https://chrgarcia19.github.io/]
 
 ## Tools & Technologies Used
 
