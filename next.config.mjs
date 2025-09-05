@@ -1,11 +1,16 @@
 /** @type {import('next').NextConfig} */
+
+import process from 'process';
+
+const isProd = process.env.NODE_ENV === "production";
+
 const nextConfig = {
     output: "export",
     images: {
         unoptimized: true,
     },
-    basePath: process.env.NODE_ENV === "production" ? "chrgarcia19.github.io" : "",
-    assetPrefix: process.env.NODE_ENV === "production" ? "chrgarcia19.github.io" : "",
+    basePath: isProd ? "/chrgarcia19.github.io" : "",
+    assetPrefix: isProd ? "chrgarcia19.github.io" : "",
 };
 
 export default nextConfig;
