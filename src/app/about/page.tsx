@@ -58,7 +58,8 @@ const AboutMe = () => {
             <h3 className="flex text-2xl max-md:text-xl max-lg:font-bold font-semibold text-center underline">
               My Academic & Professional Journey
             </h3>
-            {/* High School Item Box */}
+
+            {/* College Item Box */}
             <ItemBox
               color={"bg-cyan-500 dark:bg-cyan-700"}
               width={"w-full max-w-lg max-sm:max-w-full mx-auto"}
@@ -75,15 +76,15 @@ const AboutMe = () => {
                 textColor={"text-black dark:text-white"} 
               />
               <div className="flex flex-col items-start text-left w-full">
-                <div className="flex items-center justify-between w-full mb-2">
-                  <p className="font-bold text-xl max-sm:text-lg">
-                    New Prairie High School
-                  </p>
-                  <FaSchool className="flex-shrink-0 w-8 h-8 max-sm:w-6 max-sm:h-6 ml-3" />
-                </div>
-                <p className="italic text-base max-sm:text-sm">High School Diploma with Honors</p>
-                <p className="text-sm max-sm:text-xs mt-2">August 2016 - May 2020</p>
-                <p className="text-sm max-sm:text-xs">Overall GPA: 3.960</p>
+                  <div className="flex items-center justify-between w-full mb-2">
+                    <p className="font-bold text-xl max-sm:text-lg">
+                      Valparaiso University
+                    </p>
+                    <FaGraduationCap className="flex-shrink-0 w-8 h-8 max-sm:w-6 max-sm:h-6 ml-3" />
+                  </div>
+                  <p className="italic text-base max-sm:text-sm">Bachelor of Science in Computer Science</p>
+                  <p className="text-sm max-sm:text-xs mt-2">August 2020 - May 2024</p>
+                  <p className="text-sm max-sm:text-xs">Overall GPA: 3.854</p>
               </div>
             </ItemBox>
 
@@ -132,7 +133,7 @@ const AboutMe = () => {
               </div>
             </div>
 
-            {/* College Item Box */}
+            {/* High School Item Box */}
             <ItemBox
               color={"bg-cyan-500 dark:bg-cyan-700"}
               width={"w-full max-w-lg max-sm:max-w-full mx-auto"}
@@ -149,17 +150,18 @@ const AboutMe = () => {
                 textColor={"text-black dark:text-white"} 
               />
               <div className="flex flex-col items-start text-left w-full">
-                  <div className="flex items-center justify-between w-full mb-2">
-                    <p className="font-bold text-xl max-sm:text-lg">
-                      Valparaiso University
-                    </p>
-                    <FaGraduationCap className="flex-shrink-0 w-8 h-8 max-sm:w-6 max-sm:h-6 ml-3" />
-                  </div>
-                  <p className="italic text-base max-sm:text-sm">Bachelor of Science in Computer Science</p>
-                  <p className="text-sm max-sm:text-xs mt-2">August 2020 - May 2024</p>
-                  <p className="text-sm max-sm:text-xs">Overall GPA: 3.854</p>
+                <div className="flex items-center justify-between w-full mb-2">
+                  <p className="font-bold text-xl max-sm:text-lg">
+                    New Prairie High School
+                  </p>
+                  <FaSchool className="flex-shrink-0 w-8 h-8 max-sm:w-6 max-sm:h-6 ml-3" />
+                </div>
+                <p className="italic text-base max-sm:text-sm">High School Diploma with Honors</p>
+                <p className="text-sm max-sm:text-xs mt-2">August 2016 - May 2020</p>
+                <p className="text-sm max-sm:text-xs">Overall GPA: 3.960</p>
               </div>
             </ItemBox>
+
           </div>
         </div>
       </section>
