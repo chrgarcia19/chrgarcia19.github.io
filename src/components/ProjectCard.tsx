@@ -3,17 +3,21 @@
 import Image, { StaticImageData } from "next/image";
 import StyledButton from "./StyledButton";
 import { SiGithub } from "react-icons/si";
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 import ItemBox from "./ItemBox";
 
 type Props = {
-  link: string; // The url for the project page
+  link: string[]; // The url(s) for the project page
   image: StaticImageData; // The path/address to the image
   imageAlt: string; // The alternative words if the image cannot be accessed
   name: String; // The name of the project
   description: String; // The description of the project
   skills: String[]; //The skills used on the project
   status: Boolean; //If the project is in progress (False) or completed (True)
+  text: string[]; // The text displayed on the button
+  icon: ReactNode[];
+  color: string[]; // Color of the buttons on the project card
+  hovered: string[]; // The hovered color of the button
 };
 
 const ProjectCard = (props: Props) => {
@@ -92,20 +96,24 @@ const ProjectCard = (props: Props) => {
 
         {/* Button(s) Section */}
         <div className="flex justify-center p-4">
-          <StyledButton
-            href={props.link}
-            text={"GitHub"}
-            color={"bg-green-500"}
-            hovered={"bg-green-600"}
-            icon={<SiGithub className="w-5 h-5 sm:w-6 sm:h-6" />}
-            other={" text-center"}
-            textSize={"text-lg"}
-            padding={"px-3 py-1"}
-            label={"View This Project's GitHub Page"}
-            title={"View on GitHub"}
-            textColor={"text-white"} 
-            animation={"transition-all duration-300 ease-in-out"}            
-            />
+          {props.link.map((site: string, index: number) => (
+            <div className="flex px-5" key={index}>
+              <StyledButton
+                href={site}
+                text={props.text.at(index) || ""}
+                color={props.color.at(index) || "bg-blue-600"}
+                hovered={props.hovered.at(index) || "bg-blue-700"}
+                icon={props.icon.at(index)}
+                other={" text-center"}
+                textSize={"text-lg"}
+                padding={"px-3 py-1"}
+                label={"View This Project's GitHub Page"}
+                title={"View on GitHub"}
+                textColor={"text-white"} 
+                animation={"transition-all duration-300 ease-in-out"}            
+                />
+            </div>
+          ))}
         </div>
       </div>
     </>
