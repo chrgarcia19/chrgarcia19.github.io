@@ -1,0 +1,67 @@
+@theme {
+    /* Colors for the homepage gradient (Light Mode) */
+    --color-home-gradient-from: 226 232 240; /* slate-200 */
+    --color-home-gradient-via: 212 212 216; /* zinc-300 */
+    --color-home-gradient-to: 214 211 209; /* stone-400 */
+
+    /* Color for main headings throughout the website (Light Mode) */
+    --color-heading-text: 23 37 84; /* blue-950 */
+
+    /* Primary Color of the website (Light Mode) */
+    --color-primary: 6 182 212; /* cyan-500 */
+
+    /* Primary Hovered Color of the website (Light Mode) */
+    --color-hovered-primary: 8 145 178; /* cyan-600 */
+
+    /* Border Button Color (Light Mode)*/
+    --color-border-button-text: 51 65 85; /* slate-700 */
+
+    /* Border Button Hovered Color (Light Mode)*/
+    --color-border-button-hover-text: 229 231 235; /* gray-200 */
+}
+
+.dark {
+    /* Colors for the homepage gradient in (Dark Mode) */
+    --color-home-gradient-from: 51 65 85; /* slate-700 */
+    --color-home-gradient-via: 39 39 42; /* zinc-800 */
+    --color-home-gradient-to: 23 37 84; /* blue-950 */
+
+    /* Color for main headings throughout the website (Dark Mode) */
+    --color-heading-text: 147 197 253; /* blue-300 */
+
+    /* Primary Color of the website  */
+    --color-primary: 14 116 144; /* cyan-700 */
+
+    /* Primary Hovered Color of the website (Dark Mode) */
+    --color-hovered-primary: 8, 145, 178; /* cyan-600 */
+
+    /* Border Button Color (Dark Mode)*/
+    --color-border-button-text: 255 255 255; /* white */
+}
+
+.text-heading {
+    color: rgb(var(--color-heading-text));
+}
+
+.background-primary {
+    background-color: rgb(var(--color-primary));
+}
+
+.button-primary {
+    background-color: rgb(var(--color-primary));
+}
+
+.button-primary:hover {
+    background-color: rgb(var(--color-hovered-primary));
+}
+
+.border-button-primary {
+    border-color: rgb(var(--color-primary));
+    color: rgb(var(--color-border-button-text));
+    transition: background-color 0.3s ease-in-out;
+}
+
+.border-button-primary:hover {
+    background-color: rgb(var(--color-hovered-primary));
+    color: rgb(var(--color-border-button-hover-text));
+}

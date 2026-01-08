@@ -1,12 +1,19 @@
 @import "tailwindcss";
 
-@theme {
+@import "./tokens/colors.css";
+
+@theme {     
+    /* Setting the gradient for the homepage */
     --background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
     --background-image-gradient-conic: conic-gradient(
         from 180deg at 50% 50%;
         var(--tw-gradient-stops)
     );
+
+    /* Animating the gradient */ 
     --animate-gradient: gradient 8s ease infinite;
+
+    /* Sizing the gradient */ 
     --background-size-gradient: 400% 400%;
 }
 
@@ -17,5 +24,17 @@
     50% {
         background-position: 100% 50%;
     }
+}
+
+.home-gradient {
+    /* Setting the gradient direction */
+    background-image: linear-gradient(
+        to bottom right,
+        rgb(var(--color-home-gradient-from)),
+        rgb(var(--color-home-gradient-via)),
+        rgb(var(--color-home-gradient-to))
+    );
+    background-size: var(--background-size-gradient);
+    animation: var(--animate-gradient);
 }
 
