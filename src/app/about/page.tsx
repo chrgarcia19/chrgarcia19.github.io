@@ -19,7 +19,7 @@ const AboutMe = () => {
         <div className="flex max-lg:flex-col items-center justify-center ">
           <div className="flex flex-col items-center justify-normal w-1/2 max-lg:w-full p-10 max-md:p-4 max-md:pb-12">
             <ItemBox color={""} hoveredColor={"xl:shadow-xl xl:shadow-slate-500"} width={""} boxType={"rounded-3xl"} padding={""} other={""}>
-            <div className="w-[70vw] sm:w-[60vw] md:w-[350px] border-4 border-cyan-500 dark:border-cyan-700 rounded-3xl overflow-hidden">
+            <div className="w-[70vw] sm:w-[60vw] md:w-87.5 border-4 border-cyan-500 dark:border-cyan-700 rounded-3xl overflow-hidden">
                 <Image
                   priority={false}
                   src={christianImage}
@@ -80,7 +80,7 @@ const AboutMe = () => {
                     <p className="font-bold text-xl max-sm:text-lg">
                       Valparaiso University
                     </p>
-                    <FaGraduationCap className="flex-shrink-0 w-8 h-8 max-sm:w-6 max-sm:h-6 ml-3" />
+                    <FaGraduationCap className="shrink-0 w-8 h-8 max-sm:w-6 max-sm:h-6 ml-3" />
                   </div>
                   <p className="italic text-base max-sm:text-sm">Bachelor of Science in Computer Science</p>
                   <p className="text-sm max-sm:text-xs mt-2">August 2020 - May 2024</p>
@@ -115,7 +115,7 @@ const AboutMe = () => {
                   <p className="font-bold text-xl max-sm:text-lg">
                     Association for Computing Machinery (ACM)
                   </p>
-                  <SiAcm className="flex-shrink-0 w-8 h-8 max-sm:w-6 max-sm:h-6 ml-3" />
+                  <SiAcm className="shrink-0 w-8 h-8 max-sm:w-6 max-sm:h-6 ml-3" />
                 </div>
                 <p className="italic text-base max-sm:text-sm">President (August 2023 - May 2024)</p>
                 <p className="text-sm max-sm:text-xs pt-2">
@@ -154,7 +154,7 @@ const AboutMe = () => {
                   <p className="font-bold text-xl max-sm:text-lg">
                     New Prairie High School
                   </p>
-                  <FaSchool className="flex-shrink-0 w-8 h-8 max-sm:w-6 max-sm:h-6 ml-3" />
+                  <FaSchool className="shrink-0 w-8 h-8 max-sm:w-6 max-sm:h-6 ml-3" />
                 </div>
                 <p className="italic text-base max-sm:text-sm">High School Diploma with Honors</p>
                 <p className="text-sm max-sm:text-xs mt-2">August 2016 - May 2020</p>

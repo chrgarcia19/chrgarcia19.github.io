@@ -10,14 +10,14 @@ const SkillSection = (props: Props) => {
     return(
         <>
             <div className="flex mb-8">
-                <div className={`w-[6px] rounded-l-2xl bg-gradient-to-b ${props.gradientColors}`} />
+                <div className={`w-1.5 rounded-l-2xl bg-linear-to-b ${props.gradientColors}`} />
                 <div className="flex-1 bg-zinc-100/70 dark:bg-zinc-600/70 shadow-md p-6">
                     <h3 className="flex justify-start max-md:justify-center text-center text-3xl max-md:text-xl font-bold italic underline p-2">
                         {props.sectionTitle}
                     </h3>
                     {props.skills}
                 </div>
-                <div className={`w-[6px] rounded-r-2xl bg-gradient-to-t ${props.gradientColors}`} />
+                <div className={`w-1.5 rounded-r-2xl bg-linear-to-t ${props.gradientColors}`} />
             </div>
         </>
     );

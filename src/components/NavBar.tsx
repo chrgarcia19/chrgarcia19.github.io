@@ -167,7 +167,7 @@ const NavBar = () => {
           className={
             menuOpen
               ? "lg:hidden fixed z-10 top-14 left-0 right-0 bottom-0 flex justify-center items-center w-full h-fit border-t-2 border-white bg-cyan-500 dark:bg-cyan-700 text-center opacity-95 ease-in duration-500 p-4"
-              : "lg:hidden fixed z-10 top-14 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-fit bg-cyan-500 dark:bg-cyan-700 text-center opacity-95 ease-in duration-500 p-4"
+              : "lg:hidden fixed z-10 top-14 -left-full right-0 bottom-0 flex justify-center items-center w-full h-fit bg-cyan-500 dark:bg-cyan-700 text-center opacity-95 ease-in duration-500 p-4"
           }
         >
           <ul className="flex flex-col gap-4">

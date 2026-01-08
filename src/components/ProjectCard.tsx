@@ -44,7 +44,7 @@ const ProjectCard = (props: Props) => {
         </div>
 
         {/* Content container for project details */}
-        <div className="flex flex-col flex-grow justify-start p-4 w-full gap-1">
+        <div className="flex flex-col grow justify-start p-4 w-full gap-1">
           {/* Title section */}
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-4 pb-2">
             <h3 className="font-bold text-2xl max-md:text-xl underline text-center">

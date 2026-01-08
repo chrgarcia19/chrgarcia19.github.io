@@ -268,7 +268,7 @@ const ContactForm = () => {
                                         placeholder="Enter Your Brief Message..."
                                         value={form.message}
                                         onChange={handleChange} 
-                                        className={`rounded-lg w-full px-2 py-2 placeholder-gray-400 min-h-[200px] h-[250px] max-lg:h-[350px] lg:max-h-[300px] shadow-sm focus:ring-2 ${errors.message ? "focus:ring-red-500 border-2  border-red-500" : "focus:outline-none focus:ring-cyan-500"}`}
+                                        className={`rounded-lg w-full px-2 py-2 placeholder-gray-400 min-h-50 h-62.5 max-lg:h-87.5 lg:max-h-75 shadow-sm focus:ring-2 ${errors.message ? "focus:ring-red-500 border-2  border-red-500" : "focus:outline-none focus:ring-cyan-500"}`}
                                     />
                                     <div className={`absolute bottom-2 right-4 text-xs pointer-events-none ${getCharacterCounterColor()} rounded-full px-1 py-0.5`}>
                                         <p className="text-black font-semibold">
