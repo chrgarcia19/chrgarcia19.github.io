@@ -6,7 +6,8 @@ import { FaSun, FaMoon } from "react-icons/fa";
 
 export default function ThemeSwitcher() {
   const [mounted, setMounted] = useState(false);
-  const { resolvedTheme, setTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
+  //const { resolvedTheme, setTheme } = useTheme();
 
   useEffect(() => setMounted(true), []);
 
@@ -17,7 +18,7 @@ export default function ThemeSwitcher() {
   return (
     <>
       <div className="flex items-center justify-center space-x-2">
-        {(resolvedTheme === "light" && (
+        {(theme === "light" && (
           <>
             <button
               className={`p-2.5 4k:p-4 rounded-full transition-colors duration-300 bg-blue-800 text-gray-200`}
@@ -29,7 +30,7 @@ export default function ThemeSwitcher() {
             </button>
           </>
         )) ||
-          (resolvedTheme === "dark" && (
+          (theme === "dark" && (
             <>
               <button
                 className={`p-2.5 4k:p-4 rounded-full transition-colors duration-300 bg-orange-600 text-gray-200`}
