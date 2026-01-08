@@ -1,8 +1,8 @@
 @theme {
     /* Colors for the homepage gradient (Light Mode) */
-    --color-home-gradient-from: 226 232 240; /* slate-200 */
-    --color-home-gradient-via: 212 212 216; /* zinc-300 */
-    --color-home-gradient-to: 214 211 209; /* stone-400 */
+    --color-home-gradient-from: 209, 213, 219; /* gray-300 */
+    --color-home-gradient-via: 212 212 212; /* neutral-300 */
+    --color-home-gradient-to: 120 113 108; /* stone-500 */
 
     /* Color for main headings throughout the website (Light Mode) */
     --color-heading-text: 23 37 84; /* blue-950 */
