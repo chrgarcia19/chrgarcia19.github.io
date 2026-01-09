@@ -34,8 +34,8 @@ const Contact = () => {
                 <StyledButton
                   href={"https://www.linkedin.com/in/chrgarcia19/"}
                   text={"LinkedIn"}
-                  color={"bg-cyan-500  dark:bg-cyan-700"}
-                  hovered={"bg-cyan-600 dark:hover:bg-cyan-600"}
+                  color={"background-primary"}
+                  hovered={""}
                   icon={<FaLinkedin className="w-8 h-8 max-md:w-7 max-md:h-7 3xl:w-12 3xl:h-12 4k:w-16 4k:h-16" />}
                   other={""}
                   textSize={"text-lg max-sm:text-sm max-lg:text-3xl"}
@@ -48,8 +48,8 @@ const Contact = () => {
                 <StyledButton
                   href={"https://profile.indeed.com/p/christiang-mg6ntmr"}
                   text={"Indeed"}
-                  color={"bg-cyan-500  dark:bg-cyan-700"}
-                  hovered={"bg-cyan-600 dark:hover:bg-cyan-600"}
+                  color={"background-primary"}
+                  hovered={""}
                   icon={<SiIndeed className="w-8 h-8 max-md:w-7 max-md:h-7 3xl:w-12 3xl:h-12 4k:w-16 4k:h-16" />}
                   other={"py-1"}
                   textSize={"text-lg max-sm:text-sm max-lg:text-3xl"}
@@ -62,8 +62,8 @@ const Contact = () => {
                 <StyledButton
                   href={"https://github.com/chrgarcia19"}
                   text={"GitHub"}
-                  color={"bg-cyan-500 dark:bg-cyan-700"}
-                  hovered={"bg-cyan-600 dark:hover:bg-cyan-600"}
+                  color={"background-primary"}
+                  hovered={""}
                   icon={<FaGithubSquare className="w-8 h-8 max-md:w-7 max-md:h-7 3xl:w-12 3xl:h-12 4k:w-16 4k:h-16" />}
                   other={"py-1"}
                   textSize={"text-lg max-sm:text-sm max-lg:text-3xl"}
@@ -94,8 +94,8 @@ const Contact = () => {
               <StyledButton
                 href={"https://www.linkedin.com/in/chrgarcia19/"}
                 text={""}
-                color={"bg-cyan-500  dark:bg-cyan-700"}
-                hovered={"bg-cyan-600 dark:hover:bg-cyan-600"}
+                color={"background-primary"}
+                hovered={""}
                 icon={<FaLinkedin className="w-8 h-8" />}
                 other={""}
                 textSize={"text-lg max-sm:text-sm max-lg:text-3xl"}
@@ -108,8 +108,8 @@ const Contact = () => {
               <StyledButton
                 href={"https://profile.indeed.com/p/christiang-mg6ntmr"}
                 text={""}
-                color={"bg-cyan-500  dark:bg-cyan-700"}
-                hovered={"bg-cyan-600 dark:hover:bg-cyan-600"}
+                color={"background-primary"}
+                hovered={""}
                 icon={<SiIndeed className="w-8 h-8" />}
                 other={"py-1"}
                 textSize={"text-lg max-sm:text-sm max-lg:text-3xl"}
@@ -122,8 +122,8 @@ const Contact = () => {
               <StyledButton
                 href={"https://github.com/chrgarcia19"}
                 text={""}
-                color={"bg-cyan-500 dark:bg-cyan-700"}
-                hovered={"bg-cyan-600 dark:hover:bg-cyan-600"}
+                color={"background-primary"}
+                hovered={""}
                 icon={<FaGithubSquare className="w-8 h-8" />}
                 other={"py-1"}
                 textSize={"text-lg max-sm:text-sm max-lg:text-3xl"}
@@ -136,7 +136,7 @@ const Contact = () => {
               </div>
             </div>
         </div>
-        <nav className="flex flex-col w-full p-2 items-center justify-center bg-cyan-500 dark:bg-cyan-700 bottom-0">
+        <nav className="flex flex-col w-full p-2 items-center justify-center background-navbar bottom-0">
           <span className="flex flex-col items-center text-center">
             <p className="text-white max-md:text-sm 3xl:text-lg 4k:text-2xl">
               Christian Garcia ©2025

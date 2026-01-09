@@ -175,7 +175,7 @@ const ContactForm = () => {
                                 <span>
                                     <label 
                                         htmlFor="name" 
-                                        className="font-semibold dark:text-zinc-800"
+                                        className="font-semibold text-zinc-800"
                                     >
                                         <span>Full Name</span>
                                         <span className="text-red-500 ml-1">*</span>
@@ -188,7 +188,7 @@ const ContactForm = () => {
                                         placeholder="John Doe"
                                         value={form.name}
                                         onChange={handleChange} 
-                                        className={`rounded-full w-full px-2 lg:px-4 lg:py-1 shadow-sm focus:ring-2 ${errors.name ? "focus:ring-red-500 border-2  border-red-500" : "focus:outline-none focus:ring-cyan-500"}`}                                    
+                                        className={`bg-contact-input rounded-full w-full px-2 lg:px-4 lg:py-1 shadow-sm focus:ring-2 ${errors.name ? "focus:ring-red-500 border-2  border-red-500" : "focus:outline-none focus:ring-cyan-500"}`}                                    
                                     />
                                     {errors.name && 
                                         <p className="text-red-500 text-sm font-semibold mt-1 ml-2">{errors.name}</p>
@@ -213,7 +213,7 @@ const ContactForm = () => {
                                     placeholder="jdoe@email.com"
                                     value={form.email}
                                     onChange={handleChange} 
-                                    className={`rounded-full w-full px-2 lg:px-4 lg:py-1 shadow-sm focus:ring-2 ${errors.email ? "focus:ring-red-500 border-2  border-red-500" : "focus:outline-none focus:ring-cyan-500"}`}
+                                    className={`bg-contact-input rounded-full w-full px-2 lg:px-4 lg:py-1 shadow-sm focus:ring-2 ${errors.email ? "focus:ring-red-500 border-2  border-red-500" : "focus:outline-none focus:ring-cyan-500"}`}
                                 />
                                 {errors.email && 
                                     <p className="text-red-500 text-sm font-semibold mt-1 ml-2">{errors.email}</p>
@@ -236,7 +236,7 @@ const ContactForm = () => {
                                     name="subject" 
                                     value={form.subject}
                                     onChange={handleChange} 
-                                    className="rounded-full px-2 lg:px-4 lg:py-1"
+                                    className="bg-contact-input rounded-full px-2 lg:px-4 lg:py-1"
                                     >
                                         <option disabled value="">Select a Subject</option>
                                         {SELECT_OPTIONS.map((option: string, index: number) => (
@@ -268,7 +268,7 @@ const ContactForm = () => {
                                         placeholder="Enter Your Brief Message..."
                                         value={form.message}
                                         onChange={handleChange} 
-                                        className={`rounded-lg w-full px-2 py-2 placeholder-gray-400 min-h-50 h-62.5 max-lg:h-87.5 lg:max-h-75 shadow-sm focus:ring-2 ${errors.message ? "focus:ring-red-500 border-2  border-red-500" : "focus:outline-none focus:ring-cyan-500"}`}
+                                        className={`bg-contact-input rounded-lg w-full px-2 py-2 placeholder-gray-400 min-h-50 h-62.5 max-lg:h-87.5 lg:max-h-75 shadow-sm focus:ring-2 ${errors.message ? "focus:ring-red-500 border-2  border-red-500" : "focus:outline-none focus:ring-cyan-500"}`}
                                     />
                                     <div className={`absolute bottom-2 right-4 text-xs pointer-events-none ${getCharacterCounterColor()} rounded-full px-1 py-0.5`}>
                                         <p className="text-black font-semibold">

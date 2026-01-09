@@ -91,6 +91,9 @@
 
     /* Project Skill Badge Text Color (Light Mode) */
     --text-project-skill-badge-color: 255 255 255; /* white */
+
+    /* Contact Form Input Color (Light Mode) */
+    --background-input: 255 255 255; /* white */
 }
 
 .dark {
@@ -176,6 +179,9 @@
 
     /* Project Skill Badge Text Color (Dark Mode) */
     --text-project-skill-badge-color: 0 0 0; /* black */
+
+    /* Contact Form Input Color (Dark Mode) */
+    --background-input: 59 59 59; /* gray */
 }
 
 .text-heading {
@@ -306,4 +312,8 @@
 
 .text-project-skill-badge {
     color: rgb(var(--text-project-skill-badge-color));
+}
+
+.bg-contact-input {
+    background-color: rgb(var(--background-input));
 }
