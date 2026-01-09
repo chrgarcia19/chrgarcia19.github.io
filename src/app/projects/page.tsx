@@ -4,6 +4,7 @@ import dttImage from "@/../public/DrivingTimeTrackerCollage.png";
 import cmcImage from "@/../public/CashMoneyCitationsImage.png";
 import waImage from "@/../public/WordleAssistantCMD.png";
 import portfolioImage from "@/../public/Portfolio.png";
+import valpoacmImage from "@/../public/ValpoACMWebsite.png";
 import placeholderImage from "@/../public/Placeholder.png"
 import { SiGithub } from "react-icons/si";
 import { RiFolderDownloadFill } from "react-icons/ri";
@@ -119,11 +120,11 @@ const Projects = () => {
           <ProjectCard
             name={"Valparaiso University Association for Computing Machinery (ACM) Website Redesign"}
             description={"A reimagining of the ACM website focused on improving visual appeal and usability. The new design aims to better promote events and serve as a centralized hub for organizational updates."}
-            skills={["HTML", "CSS", "Hugo", "Git", "GitHub"]}
-            image={placeholderImage}
+            skills={["HTML", "CSS", "JavaScript", "JSON", "Hugo", "Git", "GitHub", "LaTeX"]}
+            image={valpoacmImage}
             imageAlt={"A Placeholder Image"}
             link={["https://github.com/chrgarcia19/valpo-acm.github.io-redesign"]}
-            status={false}
+            status={true}
             icon={[<SiGithub className="w-5 h-5 sm:w-6 sm:h-6" key={0} />]} 
             text={["GitHub"]} 
             color={["bg-green-500"]} 
