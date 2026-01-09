@@ -67,6 +67,30 @@
 
     /* Color for a Separator between a Skill Logo and Text (Light Mode) */
     --color-separator: 226 232 240; /* slate-200 */
+
+    /* Project Card Border Color (Light Mode) */
+    --border-project-card: 29 78 216; /* blue-700*/
+
+    /* Project Card Background Color (Light Mode) */
+    --background-project-card: 228 228 231; /* zinc-200 */ 
+
+    /* Project Status Badge Complete Background Color (Light Mode) */ 
+    --background-complete-badge: 34 197 94; /* green-500 */
+
+    /* Project Status Badge In Progress Background Color (Light Mode) */ 
+    --background-in-progress-badge: 252 202 21; /* yellow-400 */
+
+    /* Project Description Text Color (Light Mode) */ 
+    --text-project-desc-color: 0 0 0; /* black */
+
+    /* Project Skills Badge Color (Light Mode) */
+    --background-project-skills-badge: 30 64 175; /* blue-800 */
+
+    /* Project Skills Badge Hovered Color (Light Mode) */
+    --hovered-background-project-skills-badge: 22 36 86; /* blue-950 */
+
+    /* Project Skill Badge Text Color (Light Mode) */
+    --text-project-skill-badge-color: 255 255 255; /* white */
 }
 
 .dark {
@@ -128,6 +152,30 @@
 
     /* Color for a Separator between a Skill Logo and Text (Dark Mode) */
     --color-separator: 15 23 42; /* slate-900 */
+
+    /* Project Card Border Color (Dark Mode) */
+    --border-project-card: 59 130 246; /* blue-500*/
+
+    /* Project Card Background Color (Dark Mode) */
+    --background-project-card: 68 64 59; /* stone-700 */
+
+    /* Project Status Badge Complete Background Color (Dark Mode) */ 
+    --background-complete-badge: 22 163 74; /* green-600 */
+
+    /* Project Status Badge In Progress Background Color (Dark Mode) */ 
+    --background-in-progress-badge: 234 179 8; /* yellow-500 */
+
+    /* Project Description Text Color (Dark Mode) */ 
+    --text-project-desc-color: 243 244 246; /* gray-100 */
+
+    /* Project Skills Badge Color (Dark Mode) */
+    --background-project-skills-badge: 147 197 253; /* blue-300 */
+
+    /* Project Skills Badge Hovered Color (Dark Mode) */
+    --hovered-background-project-skills-badge: 37 99 235; /* blue-600 */
+
+    /* Project Skill Badge Text Color (Dark Mode) */
+    --text-project-skill-badge-color: 0 0 0; /* black */
 }
 
 .text-heading {
@@ -229,4 +277,33 @@
 
 .bg-separator {
     background-color: rgb(var(--color-separator));
+}
+
+.bg-border-project-card {
+    background-color: rgb(var(--background-project-card));
+    border-color: rgb(var(--border-project-card));
+}
+
+.bg-complete-badge {
+    background-color: rgb(var(--background-complete-badge));
+}
+
+.bg-in-progress-badge {
+    background-color: rgb(var(--background-in-progress-badge));
+}
+
+.text-project-desc {
+    color: rgb(var(--text-project-desc-color));
+}
+
+.bg-project-skill-badge {
+    background-color: rgb(var(--background-project-skills-badge));
+}
+
+.bg-project-skill-badge:hover {
+    background-color: rgb(var(--hovered-background-project-skills-badge));
+}
+
+.text-project-skill-badge {
+    color: rgb(var(--text-project-skill-badge-color));
 }
