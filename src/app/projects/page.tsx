@@ -5,7 +5,6 @@ import cmcImage from "@/../public/CashMoneyCitationsImage.png";
 import waImage from "@/../public/WordleAssistantCMD.png";
 import portfolioImage from "@/../public/Portfolio.png";
 import valpoacmImage from "@/../public/ValpoACMWebsite.png";
-import placeholderImage from "@/../public/Placeholder.png"
 import { SiGithub } from "react-icons/si";
 import { RiFolderDownloadFill } from "react-icons/ri";
 import { TbWorld } from "react-icons/tb";
@@ -129,7 +128,7 @@ const Projects = () => {
             icon={[<SiGithub className="w-5 h-5 sm:w-6 sm:h-6" key={0} />, <TbWorld className="w-5 h-5 sm:w-6 sm:h-6" key={1} />]} 
             text={["GitHub", "Visit"]} 
             color={["bg-green-500", "bg-orange-400"]} 
-            hovered={["bg-green-600", "bg-orange-500"]}          />
+            hovered={["bg-green-600", "bg-orange-500"]}         />
         </div>
       </section>
     </>
