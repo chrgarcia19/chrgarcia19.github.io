@@ -20,7 +20,35 @@
     --color-border-button-hover-text: 229 231 235; /* gray-200 */
 
     /* Text Color for NavBar Buttons (Light Mode)*/
-    --color-navbar-button: 71 85 105;
+    --color-navbar-button: 71 85 105; /*slate-600*/
+
+    /* Background Color for About Section (Light Mode)*/
+    --color-background-about: 214 211 209; /* stone-300*/
+
+    /* Opacity for About Section (Light Mode)*/
+    --opacity-background-about: 0.85; /* 85 opacity*/
+
+    /* Text Color for About Me Description (Light Mode) */
+    --color-text-about: 0 0 0; /* black */
+
+    /* Hovered Text Color for About Me Description (Light Mode) */
+    --color-hover-text-about: 30 41 59; /* slate-800 */
+
+    /* Colors for the Event Marker Gradients on the About Page (Light Mode) */
+    --color-event-marker-from: 34 211 238; /* cyan-400 */
+    --color-event-marker-to: 8 145 178; /* cyan-600 */
+
+    /* Color for the Event Marker Number Circle on the About Page (Light Mode) */
+    --color-event-number: 34 211 238; /* cyan-400 */
+
+    /* Text Color for the Number in the Event Marker (Light Mode)*/
+    --color-event-text: 0 0 0; /* black */
+
+    /* Hovered Text Color for the Number in the Event Marker (Light Mode)*/
+    --color-event-text-hovered: 241 245 249; /* slate-100 */
+
+    /* Color for the Arrow Icons on the About Page (Light Mode) */
+    --color-arrow: 6 182 212; /* cyan-500 */
 }
 
 .dark {
@@ -42,7 +70,31 @@
     --color-border-button-text: 255 255 255; /* white */
 
     /* Text Color for NavBar Buttons (Dark Mode)*/
-    --color-navbar-button: 191 219 254;
+    --color-navbar-button: 191 219 254; /* blue-200 */
+
+    /* Background Color for About Section (Dark Mode)*/
+    --color-background-about: 38 38 38; /* neutral-800 */
+
+    /* Opacity for About Section (Dark Mode)*/
+    --opacity-background-about: 0.80; /* 80 opacity*/
+
+    /* Text Color for About Me Description (Dark Mode) */
+    --color-text-about: 255 255 255; /* white */
+
+    /* Hovered Text Color for About Me Description (Dark Mode) */
+    --color-hover-text-about: 226 232 240; /* slate-200 */
+
+    /* Color for the Event Marker Number Circle on the About Page (Dark Mode) */
+    --color-event-number: 6 182 212; /* cyan-500 */
+
+    /* Text Color for the Number in the Event Marker (Dark Mode)*/
+    --color-event-text: 255 255 255; /* white */
+
+    /* Hovered Text Color for the Number in the Event Marker (Light Mode)*/
+    --color-event-text-hovered: 226 232 240; /* slate-200 */
+
+    /* Color for the Arrow Icons on the About Page (Light Mode) */
+    --color-arrow: 34 211 238; /* cyan-400 */
 }
 
 .text-heading {
@@ -65,6 +117,10 @@
     background-color: rgb(var(--color-hovered-primary));
 }
 
+.border-primary {
+    border-color: rgb(var(--color-primary));
+}
+
 .button-primary {
     background-color: rgb(var(--color-primary));
 }
@@ -82,4 +138,38 @@
 .border-button-primary:hover {
     background-color: rgb(var(--color-hovered-primary));
     color: rgb(var(--color-border-button-hover-text));
+}
+
+.about-background {
+    background-color: rgb(
+        var(--color-background-about) / var(--opacity-background-about)
+    );
+}
+
+.about-text-desc {
+    color: rgb(var(--color-text-about));
+}
+
+.about-text-desc:hover {
+    color: rgb(var(--color-hover-text-about));
+}
+
+.about-box {
+    background-color: rgb(var(--color-primary));
+}
+
+.event-num {
+    background-color: rgb(var(--color-event-number));
+}
+
+.event-text {
+    color: rgb(var(--color-event-text));
+}
+
+.event-text:hover {
+    color: rgb(var(--color-event-text-hovered));
+}
+
+.arrow-color {
+    color: rgb(var(--color-arrow));
 }

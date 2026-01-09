@@ -11,15 +11,15 @@ const AboutMe = () => {
     <>
       <section
         id="about"
-        className="p-5 w-full pt-14 pb-14 bg-stone-300/85 dark:bg-neutral-800/80"
+        className="p-5 w-full pt-14 pb-14 about-background"
       >
-        <h2 className="flex justify-center items-center font-bold underline text-5xl max-sm:text-3xl p-10 text-blue-950 dark:text-blue-300 drop-shadow-2xl">
+        <h2 className="flex justify-center items-center font-bold underline text-5xl max-sm:text-3xl p-10 text-heading drop-shadow-2xl">
           About Me
         </h2>
         <div className="flex max-lg:flex-col items-center justify-center ">
           <div className="flex flex-col items-center justify-normal w-1/2 max-lg:w-full p-10 max-md:p-4 max-md:pb-12">
             <ItemBox color={""} hoveredColor={"xl:shadow-xl xl:shadow-slate-500"} width={""} boxType={"rounded-3xl"} padding={""} other={""}>
-            <div className="w-[70vw] sm:w-[60vw] md:w-87.5 border-4 border-cyan-500 dark:border-cyan-700 rounded-3xl overflow-hidden">
+            <div className="w-[70vw] sm:w-[60vw] md:w-87.5 border-4 border-primary rounded-3xl overflow-hidden">
                 <Image
                   priority={false}
                   src={christianImage}
@@ -35,7 +35,7 @@ const AboutMe = () => {
                 Hello! I&apos;m Christian,
               </p>
               <br />
-              <div className="space-y-4 leading-relaxed text-center lg:hover:font-bold lg:hover:scale-[1.02] lg:hover:text-slate-800 lg:dark:text-slate-200 transition-all duration-150">
+              <div className="space-y-4 leading-relaxed text-center lg:hover:font-bold lg:hover:scale-[1.02] lg:about-text-desc transition-all duration-150">
                 <p>
                   An aspiring Software Engineer with a strong interest in Full
                 Stack Development, committed to building reliable and impactful
@@ -61,19 +61,19 @@ const AboutMe = () => {
 
             {/* College Item Box */}
             <ItemBox
-              color={"bg-cyan-500 dark:bg-cyan-700"}
+              color={"about-box"}
               width={"w-full max-w-lg max-sm:max-w-full mx-auto"}
               boxType={"rounded-r-lg"}
               padding={"p-6 max-sm:p-3 max-sm:pl-6 max-lg:p-4"}
               other={"relative text-left group will-change-transform hover:scale-[1.02] transition-transform duration-200"}
-              hoveredColor={"text-slate-100 xl:dark:text-slate-200 xl:shadow-slate-500"}
+              hoveredColor={"event-text xl:shadow-slate-500"}
             >
               <EventMarker 
                 eventNumber={1} 
-                color={"bg-cyan-400 dark:bg-cyan-500"} 
-                gradient={"bg-gradient-to-b from-cyan-400 to-cyan-600"} 
+                color={"event-num"} 
+                gradient={"about-marker-gradient"} 
                 textSize={"text-sm"} 
-                textColor={"text-black dark:text-white"} 
+                textColor={""} 
               />
               <div className="flex flex-col items-start text-left w-full">
                   <div className="flex items-center justify-between w-full mb-2">
@@ -90,25 +90,25 @@ const AboutMe = () => {
 
             <div className="flex justify-center items-center">
               <div className="animate-bounce">
-                <FaArrowCircleDown className="text-2xl text-cyan-500 dark:text-cyan-400"/>
+                <FaArrowCircleDown className="text-2xl arrow-color"/>
               </div>
             </div>
 
             {/* ACM Item Box */}
             <ItemBox
-              color={"bg-cyan-500 dark:bg-cyan-700"}
+              color={"about-box"}
               width={"w-full max-w-lg max-sm:max-w-full mx-auto"}
               boxType={"rounded-r-lg"}
               padding={"p-6 max-sm:p-3 max-sm:pl-6 max-lg:p-4"}
               other={"relative text-left group will-change-transform hover:scale-[1.02] transition-transform duration-200"}
-              hoveredColor={"text-slate-100 xl:dark:text-slate-200 xl:shadow-slate-500"}
+              hoveredColor={"event-text xl:shadow-slate-500"}
             >
               <EventMarker 
                 eventNumber={2} 
-                color={"bg-cyan-400 dark:bg-cyan-500"} 
-                gradient={"bg-gradient-to-b from-cyan-400 to-cyan-600"} 
+                color={"event-num"} 
+                gradient={"about-marker-gradient"} 
                 textSize={"text-sm"} 
-                textColor={"text-black dark:text-white"} 
+                textColor={""} 
               />
               <div className="flex flex-col items-start text-left w-full">
                 <div className="flex items-center justify-between w-full mb-2">
@@ -129,25 +129,25 @@ const AboutMe = () => {
 
             <div className="flex justify-center items-center">
               <div className="animate-bounce">
-                <FaArrowCircleDown className="text-2xl text-cyan-500 dark:text-cyan-400"/>
+                <FaArrowCircleDown className="text-2xl arrow-color"/>
               </div>
             </div>
 
             {/* High School Item Box */}
             <ItemBox
-              color={"bg-cyan-500 dark:bg-cyan-700"}
+              color={"about-box"}
               width={"w-full max-w-lg max-sm:max-w-full mx-auto"}
               boxType={"rounded-r-lg"}
               padding={"p-6 max-sm:p-3 max-sm:pl-6 max-lg:p-4"}
               other={"relative text-left group will-change-transform hover:scale-[1.02] transition-transform duration-200"}
-              hoveredColor={"text-slate-100 xl:dark:text-slate-200 xl:shadow-slate-500"}
+              hoveredColor={"event-text xl:shadow-slate-500"}
             >
               <EventMarker 
                 eventNumber={3} 
-                color={"bg-cyan-400 dark:bg-cyan-500"} 
-                gradient={"bg-gradient-to-b from-cyan-400 to-cyan-600"} 
+                color={"event-num"} 
+                gradient={"about-marker-gradient"} 
                 textSize={"text-sm"} 
-                textColor={"text-black dark:text-white"} 
+                textColor={""} 
               />
               <div className="flex flex-col items-start text-left w-full">
                 <div className="flex items-center justify-between w-full mb-2">

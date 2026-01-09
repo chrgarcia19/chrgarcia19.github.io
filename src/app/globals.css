@@ -2,7 +2,7 @@
 
 @import "./tokens/colors.css";
 
-@theme {     
+:root {     
     /* Setting the gradient for the homepage */
     --background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
     --background-image-gradient-conic: conic-gradient(
@@ -36,5 +36,13 @@
     );
     background-size: var(--background-size-gradient);
     animation: var(--animate-gradient);
+}
+
+.about-marker-gradient {
+    background-image: linear-gradient(
+        to bottom,
+        rgb(var(--color-event-marker-from)),
+        rgb(var(--color-event-marker-to))
+    );
 }
 
