@@ -1,4 +1,4 @@
-@theme {
+:root {
     /* Colors for the homepage gradient (Light Mode) */
     --color-home-gradient-from: 209, 213, 219; /* gray-300 */
     --color-home-gradient-via: 212 212 212; /* neutral-300 */
@@ -18,6 +18,9 @@
 
     /* Border Button Hovered Color (Light Mode)*/
     --color-border-button-hover-text: 229 231 235; /* gray-200 */
+
+    /* Text Color for NavBar Buttons (Light Mode)*/
+    --color-navbar-button: 71 85 105;
 }
 
 .dark {
@@ -37,14 +40,29 @@
 
     /* Border Button Color (Dark Mode)*/
     --color-border-button-text: 255 255 255; /* white */
+
+    /* Text Color for NavBar Buttons (Dark Mode)*/
+    --color-navbar-button: 191 219 254;
 }
 
 .text-heading {
     color: rgb(var(--color-heading-text));
 }
 
+.navbar-text {
+    color: rgb(var(--color-navbar-button));
+}
+
+.background-navbar {
+    background-color: rgb(var(--color-primary));
+}
+
 .background-primary {
     background-color: rgb(var(--color-primary));
+}
+
+.background-primary:hover {
+    background-color: rgb(var(--color-hovered-primary));
 }
 
 .button-primary {
