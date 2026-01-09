@@ -53,7 +53,7 @@ export default function DownloadButton(props: Props) {
           href={"ChristianGarciaResume.pdf"}
           aria-label="View Résumé"
           title="View Christian's Résumé"
-          className={`${props.textSize} max-lg:border-2 max-sm:text-center font-semibold shadow-sm rounded-full ease-in-out text-slate-700 dark:text-white ${props.padding} hover:text-gray-200 border-2 border-cyan-500 dark:border-cyan-700 ${isHovered ? `${props.hovered}`: ""}`}
+          className={`${props.textSize} max-lg:border-2 max-sm:text-center font-semibold shadow-sm rounded-full ease-in-out text-slate-700 dark:text-white ${props.padding} hover:text-gray-200 border-2 border-button-primary ${isHovered ? `${props.hovered}`: ""}`}
         >
           <div className="flex items-center justify-center">{props.text}</div>
         </Link>
@@ -64,7 +64,7 @@ export default function DownloadButton(props: Props) {
           onMouseLeave={itemExited}
           aria-label="Download Résumé"
           title="Download Christian's Résumé"
-          className={`${props.textSize} max-lg:border-2 max-lg:border-white max-sm:text-center font-semibold shadow-sm rounded-full border-b-[3px] border-transparent ease-in-out text-white ${props.padding} hover:text-gray-200 bg-cyan-500 dark:bg-cyan-700 transition-all duration-300 ${isHovered ? `${props.hovered}` : ""}`}
+          className={`${props.textSize} max-lg:border-2 max-lg:border-white max-sm:text-center font-semibold shadow-sm rounded-full border-b-[3px] border-transparent ease-in-out text-white ${props.padding} hover:text-gray-200 background-primary transition-all duration-300 ${isHovered ? `${props.hovered}` : ""}`}
         >
           <div className="flex items-center justify-center">{props.text}</div>
         </button>

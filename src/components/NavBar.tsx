@@ -103,11 +103,11 @@ const NavBar = () => {
 
   return (
     <>
-      <nav className="flex w-full p-2 items-center justify-between bg-cyan-500 dark:bg-cyan-700 overflow-hidden fixed z-20">
+      <nav className="flex w-full p-2 items-center justify-between background-navbar overflow-hidden fixed z-20">
         <div className="flex">
           <ItemBox
-            color={"bg-cyan-500 dark:bg-cyan-700"}
-            hoveredColor={"bg-cyan-600 dark:hover:bg-cyan-600"}
+            color={"background-primary"}
+            hoveredColor={""}
             width={""}
             boxType={"rounded-full"}
             padding={"px-4 max-sm:px-2"}
@@ -124,15 +124,15 @@ const NavBar = () => {
               <StyledButton
                 href={item.href}
                 text={item.text}
-                color={"bg-cyan-500 dark:bg-cyan-700 border-2 border-transparent"}
-                hovered={"hover:bg-cyan-600 dark:hover:bg-cyan-600 font-bold text-xl shadow-xl"}
+                color={"background-primary border-2 border-transparent"}
+                hovered={"font-bold text-xl shadow-xl"}
                 icon={null}
                 other={activeSection === item.href ? "border-b-[3px] border-b-white transform transition-all duration-300" : "border-b-[3px] border-transparent"}
                 textSize={"text-lg max-sm:text-sm max-lg:text-3xl"}
                 padding={"px-6 max-sm:px-2 lg:px-4"}
                 label={item.label}
                 title={item.title}
-                textColor={activeSection === item.href ? "text-slate-600 dark:text-blue-200" : "text-white"}
+                textColor={activeSection === item.href ? "navbar-text" : "text-white"}
                 animation={"transition-all duration-300 ease-in-out"}
               />
             </div>
@@ -143,7 +143,7 @@ const NavBar = () => {
               padding={"px-6 max-sm:px-2 lg:px-4 border-2 border-transparent"}
               textSize={"text-lg max-sm:text-sm max-lg:text-3xl"}
               view={false} 
-              hovered={"bg-cyan-600 dark:hover:bg-cyan-600 font-bold text-xl shadow-xl"} 
+              hovered={"font-bold text-xl shadow-xl"} 
             />
           </div>
           <div className="flex items-center">
@@ -166,8 +166,8 @@ const NavBar = () => {
         <div
           className={
             menuOpen
-              ? "lg:hidden fixed z-10 top-14 left-0 right-0 bottom-0 flex justify-center items-center w-full h-fit border-t-2 border-white bg-cyan-500 dark:bg-cyan-700 text-center opacity-95 ease-in duration-500 p-4"
-              : "lg:hidden fixed z-10 top-14 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-fit bg-cyan-500 dark:bg-cyan-700 text-center opacity-95 ease-in duration-500 p-4"
+              ? "lg:hidden fixed z-10 top-14 left-0 right-0 bottom-0 flex justify-center items-center w-full h-fit border-t-2 border-white background-primary text-center opacity-95 ease-in duration-500 p-4"
+              : "lg:hidden fixed z-10 top-14 -left-full right-0 bottom-0 flex justify-center items-center w-full h-fit background-primary text-center opacity-95 ease-in duration-500 p-4"
           }
         >
           <ul className="flex flex-col gap-4">
@@ -176,8 +176,8 @@ const NavBar = () => {
                 key={index}
                 href={item.href}
                 text={item.text}
-                color={"bg-cyan-500 dark:bg-cyan-700"}
-                hovered={"bg-cyan-600 dark:hover:bg-cyan-600"}
+                color={"background-primary"}
+                hovered={""}
                 icon={null}
                 other={"max-lg:border-2"}
                 textSize={"max-sm:text-xl max-lg:text-3xl"}

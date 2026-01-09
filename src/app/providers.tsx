@@ -6,7 +6,7 @@ import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <ThemeProvider attribute={"class"} defaultTheme="system" enableSystem>
+      <ThemeProvider attribute={"class"} defaultTheme="system" enableSystem disableTransitionOnChange>
         <GoogleReCaptchaProvider
           reCaptchaKey="6LdZCLsrAAAAAJ1NTzf9mBesYx0WqCY2Y0rVWGyW"
           scriptProps={{

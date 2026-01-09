@@ -30,7 +30,7 @@ const ProjectCard = (props: Props) => {
       <div
         onMouseEnter={itemEntered}
         onMouseLeave={itemExited}
-        className={`flex flex-col rounded-2xl border-4 border-blue-700 dark:border-blue-500 bg-zinc-200 dark:bg-stone-700 w-1/3 max-xl:w-5/12 max-md:w-full min-h-full overflow-hidden ${isHovered ? `xl:shadow-xl xl:shadow-slate-500` : ""}`}
+        className={`flex flex-col rounded-2xl border-4 bg-border-project-card w-1/3 max-xl:w-5/12 max-md:w-full min-h-full overflow-hidden ${isHovered ? `xl:shadow-xl xl:shadow-slate-500` : ""}`}
       >
         {/* Image containter for project image */}
         <div className="relative w-full h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80">
@@ -44,7 +44,7 @@ const ProjectCard = (props: Props) => {
         </div>
 
         {/* Content container for project details */}
-        <div className="flex flex-col flex-grow justify-start p-4 w-full gap-1">
+        <div className="flex flex-col grow justify-start p-4 w-full gap-1">
           {/* Title section */}
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-4 pb-2">
             <h3 className="font-bold text-2xl max-md:text-xl underline text-center">
@@ -52,11 +52,11 @@ const ProjectCard = (props: Props) => {
             </h3>
             <div className="flex justify-center sm:justify-end">
               {(props.status && (
-                <span className="bg-green-500 dark:bg-green-600 font-semibold rounded-full px-3 py-1 sm:px-4 sm:py-1 text-xs sm:text-sm text-white whitespace-nowrap">
+                <span className="bg-complete-badge font-semibold rounded-full px-3 py-1 sm:px-4 sm:py-1 text-xs sm:text-sm text-white whitespace-nowrap">
                   Completed
                 </span>
               )) || (
-                <p className="bg-yellow-300 dark:bg-yellow-500 font-semibold rounded-full px-3 py-1 sm:px-4 sm:py-1 text-xs sm:text-sm text-white whitespace-nowrap">
+                <p className="bg-in-progress-badge font-semibold rounded-full px-3 py-1 sm:px-4 sm:py-1 text-xs sm:text-sm text-white whitespace-nowrap">
                   In Progress
                 </p>
               )}
@@ -64,7 +64,7 @@ const ProjectCard = (props: Props) => {
           </div>
 
           {/* Description section */}
-          <p className="text-sm sm:text-base md:text-base dark:text-gray-100 leading-relaxed">
+          <p className="text-sm sm:text-base md:text-base text-project-desc leading-relaxed">
             {props.description}
           </p>
 
@@ -77,13 +77,13 @@ const ProjectCard = (props: Props) => {
               {props.skills.map((skill: String, index: number) => (
                 <div key={index}>
                   <ItemBox
-                    color={"bg-blue-800 dark:bg-blue-300"}
-                    hoveredColor={"xl:bg-blue-950 xl:dark:bg-blue-600"}
+                    color={"bg-project-skill-badge"}
+                    hoveredColor={""}
                     width={""}
                     boxType={"rounded-full"}
                     padding={"px-2"}
                     other={
-                      "text-white dark:text-black max-md:text-sm"
+                      "text-project-skill-badge max-md:text-sm"
                     }
                   >
                     {skill}
