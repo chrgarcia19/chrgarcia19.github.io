@@ -1,6 +1,7 @@
 import SkillDisplay from "@/components/SkillDisplay";
 import { FaJava } from "react-icons/fa";
 import {
+  SiHugo,
   SiJunit5,
   SiNextdotjs,
   SiNextui,
@@ -67,6 +68,12 @@ const FrameworksLibraries = () => {
           <SkillDisplay 
             skillName={"JUnit"} 
             logo={<SiJunit5 className="w-6 h-6 max-md:w-5 max-md:h-5" />} 
+          />
+
+          {/* Hugo */}
+          <SkillDisplay
+            skillName={"Hugo"}
+            logo={<SiHugo className="w-6 h-6 max-md:w-5 max-md:h-5" />}
           />
         </div>
       </div>

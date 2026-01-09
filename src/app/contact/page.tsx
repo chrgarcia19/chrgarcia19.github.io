@@ -24,10 +24,7 @@ const Contact = () => {
               <h4 className="flex justify-center items-center text-center text-3xl font-semibold text-white underline px-4 pt-2">Let&apos;s Connect!</h4>
               <div className="flex justify-center space-y-4 leading-relaxed text-center lg:hover:font-semibold lg:hover:text-slate-800 lg:dark:text-slate-200 transition-all duration-150">
                 <p className="text-2xl max-md:text-base 3xl:text-xl 4k:text-3xl text-center w-3/4 max-md:w-full max-md:p-2 text-white">
-                  I am actively seeking new opportunities in Software Engineering or Full Stack Development. If
-                  you have a role or project that aligns with my skills and
-                  experience, I would welcome the chance to connect. Please feel free
-                  to reach out!
+                  With a new full-time role, my availability is a bit more limited, but I&apos;m still open to select projects and meaningful collaborations. If you think I might be a good fit for your project, feel free to reach out using the form below. I enjoy applying what I&apos;ve learned, picking up new skills, and connecting with others.
                 </p>
               </div>
               <div className="flex flex-row justify-center gap-10 p-4">
@@ -81,10 +78,7 @@ const Contact = () => {
           <div className="lg:hidden flex flex-col items-center justify-center gap-10">
             <div className="flex justify-center space-y-1 leading-relaxed text-center lg:hover:font-semibold lg:hover:text-slate-800 lg:dark:text-slate-200 transition-all duration-150">
               <p className="text-center w-3/4 max-md:w-full max-md:p-2 text-white">
-                I am actively seeking new opportunities in Software Engineering or Full Stack Development. If
-                you have a role or project that aligns with my skills and
-                experience, I would welcome the chance to connect. Please feel free
-                to reach out!
+                With a new full-time role, my availability is a bit more limited, but I&apos;m still open to select projects and meaningful collaborations. If you think I might be a good fit for your project, feel free to reach out using the form below. I enjoy applying what I&apos;ve learned, picking up new skills, and connecting with others.
               </p>
             </div>
             <div className="flex justify-center items-center w-4/5">
