@@ -49,6 +49,24 @@
 
     /* Color for the Arrow Icons on the About Page (Light Mode) */
     --color-arrow: 6 182 212; /* cyan-500 */
+
+    /* Background color for the Skills Page (Light Mode) */
+    --color-skills: 212 212 216; /* zinc-300 */
+
+    /* Background color for a Skill Category (Light Mode) */
+    --color-skill-category: 244 244 245; /* zinc-100 */
+
+    /* Background Color for a Box that Contains a Skill (Light Mode)*/
+    --color-skill-box: 34 211 238; /* cyan-400 */
+
+    /* Background Color for a Skill Box that is Hovered (Light Mode) */
+    --color-skill-box-hovered: 6 182 212; /* cyan-500 */
+
+    /* Hovered Text Color for the Text Inside a Skill Box (Light Mode) */
+    --color-skill-text-hovered: 255 255 255; /* White */
+
+    /* Color for a Separator between a Skill Logo and Text (Light Mode) */
+    --color-separator: 226 232 240; /* slate-200 */
 }
 
 .dark {
@@ -90,11 +108,26 @@
     /* Text Color for the Number in the Event Marker (Dark Mode)*/
     --color-event-text: 255 255 255; /* white */
 
-    /* Hovered Text Color for the Number in the Event Marker (Light Mode)*/
+    /* Hovered Text Color for the Number in the Event Marker (Dark Mode)*/
     --color-event-text-hovered: 226 232 240; /* slate-200 */
 
-    /* Color for the Arrow Icons on the About Page (Light Mode) */
+    /* Color for the Arrow Icons on the About Page (Dark Mode) */
     --color-arrow: 34 211 238; /* cyan-400 */
+
+    /* Background color for the Skills Page (Dark Mode) */
+    --color-skills: 39 39 42; /* zinc-800 */
+
+    /* Background color for a Skill Category (Dark Mode) */
+    --color-skill-category: 82 82 91; /* zinc-600 */
+
+    /* Background Color for a Box that Contains a Skill (Dark Mode)*/
+    --color-skill-box: 21 94 117; /* cyan-800 */
+
+    /* Hovered Text Color for the Text Inside a Skill Box (Dark Mode) */
+    --color-skill-text-hovered: 0 0 0; /* Black */
+
+    /* Color for a Separator between a Skill Logo and Text (Dark Mode) */
+    --color-separator: 15 23 42; /* slate-900 */
 }
 
 .text-heading {
@@ -172,4 +205,28 @@
 
 .arrow-color {
     color: rgb(var(--color-arrow));
+}
+
+.bg-skills {
+    background-color: rgb(var(--color-skills));
+}
+
+.bg-skill-category {
+    background-color: rgb(var(--color-skill-category) / 0.70);
+}
+
+.bg-skill-box {
+    background-color: rgb(var(--color-skill-box));
+}
+
+.bg-skill-box:hover {
+    background-color: rgb(var(--color-skill-box-hovered));
+}
+
+.text-skill-box:hover {
+    color: rgb(var(--color-skill-text-hovered));
+}
+
+.bg-separator {
+    background-color: rgb(var(--color-separator));
 }

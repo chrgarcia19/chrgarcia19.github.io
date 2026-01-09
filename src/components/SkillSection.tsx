@@ -11,7 +11,7 @@ const SkillSection = (props: Props) => {
         <>
             <div className="flex mb-8">
                 <div className={`w-1.5 rounded-l-2xl bg-linear-to-b ${props.gradientColors}`} />
-                <div className="flex-1 bg-zinc-100/70 dark:bg-zinc-600/70 shadow-md p-6">
+                <div className="flex-1 bg-skill-category shadow-md p-6">
                     <h3 className="flex justify-start max-md:justify-center text-center text-3xl max-md:text-xl font-bold italic underline p-2">
                         {props.sectionTitle}
                     </h3>

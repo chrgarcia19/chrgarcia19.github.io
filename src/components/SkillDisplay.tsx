@@ -10,16 +10,16 @@ const SkillDisplay = (props: Props) => {
     return (
         <>
             <ItemBox
-                color={"bg-cyan-400 dark:bg-cyan-800"}
+                color={"bg-skill-box"}
                 width={"w-fit h-fit"}
                 boxType={"rounded-lg"}
                 padding={"p-3 max-md:p-2"}
                 other={"place-items-center duration-150 transition-all"}
-                hoveredColor={"text-white dark:text-black bg-cyan-500 dark:hover:bg-cyan-500"}
+                hoveredColor={"text-skill-box"}
             >
                 <span className="flex items-center justify-center space-x-2">
                     {props.logo}
-                {props.logo ? (<div className="w-0.5 h-6 bg-slate-200 dark:bg-slate-900 opacity-75 mx-2" />) : (<></>)}
+                {props.logo ? (<div className="w-0.5 h-6 bg-separator opacity-75 mx-2" />) : (<></>)}
                 <p className="font-bold max-md:text-sm">
                     {props.skillName}
                 </p>
